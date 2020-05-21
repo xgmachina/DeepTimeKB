@@ -1,0 +1,4062 @@
+@prefix tswe: <http://deeptimekb.org/tswe#> .
+@prefix tsbr: <http://deeptimekb.org/tsbr#> .
+@prefix tsba: <http://deeptimekb.org/tsba#> .
+@prefix tsjp: <http://deeptimekb.org/tsjp#> .
+@prefix tsau: <http://deeptimekb.org/tsau#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix gts: <http://resource.geosciml.org/ontology/timescale/gts#> .
+@prefix isc: <http://resource.geosciml.org/classifier/ics/ischart/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rank: <http://resource.geosciml.org/ontology/timescale/rank/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix samfl: <http://def.seegrid.csiro.au/ontology/om/sam-lite#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix thors: <http://resource.geosciml.org/ontology/timescale/thors#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix ts: <http://resource.geosciml.org/vocabulary/timescale/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+tswe:
+  rdf:type skos:Collection ;
+  rdfs:label "Geologic Timescale Elements in West Europe"@en 
+.
+
+ts:tswe2019
+  rdf:type void:Dataset ;
+  rdf:type gts:GeologicTimescale ;
+  rdf:type owl:Ontology ;
+  rdf:type skos:ConceptScheme ;
+  rdf:type time:TRS ;
+  dc:creator "Xiaogang Ma, University of Idaho"@en ;
+  dc:creator "Chao Ma, University of Idaho"@en ;
+  dc:creator "Joel Oduro-Afriyie, University of Idaho"@en ; 
+  dc:creator "Amal Aljohani, University of Idaho"@en ;   
+  dc:creator "Smarth Subramanya Jyothi, University of Idaho"@en ; 
+  dc:creator "Amruta Kale, University of Idaho"@en ;   
+  dc:creator "Shrooq Algarni, University of Idaho"@en ; 
+  dc:creator "Cai Can, University of Idaho"@en ;       
+  dc:description "RDF/OWL representation of the geologic timescale elements in West Europe."@en ;
+  dc:rights "This Ontology is made available under the Open Data Commons Attribution License: http://opendatacommons.org/licenses/by/1.0"@en ;
+  dc:source "Concept list from TS Creator - Dr. James Ogg"@en ;
+  dc:title "Ontology for Geologic Timescale Elements in West Europe"@en ;
+  dcterms:created "2019-11-21"^^xsd:date ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:modified "2019-11-21"^^xsd:date ;
+  dcterms:subject <http://dbpedia.org/page/Geologic_time_scale> ;
+  vann:preferredNamespacePrefix "tswe"@en ;
+  vann:preferredNamespaceUri <http://deeptimekb.org/tswe#> ;
+  void:feature <http://www.w3.org/ns/formats/RDF_XML> ;
+  void:feature <http://www.w3.org/ns/formats/Turtle> ;
+  rdfs:label "Ontology for Geologic Timescale Elements in West Europe"@en
+.
+
+tsbr:
+  rdf:type skos:Collection ;
+  rdfs:label "Geologic Timescale Elements in Britain"@en 
+.
+
+ts:tsbr2019
+  rdf:type void:Dataset ;
+  rdf:type gts:GeologicTimescale ;
+  rdf:type owl:Ontology ;
+  rdf:type skos:ConceptScheme ;
+  rdf:type time:TRS ;
+  dc:creator "Xiaogang Ma, University of Idaho"@en ;
+  dc:creator "Chao Ma, University of Idaho"@en ;
+  dc:creator "Joel Oduro-Afriyie, University of Idaho"@en ; 
+  dc:creator "Amal Aljohani, University of Idaho"@en ;   
+  dc:creator "Smarth Subramanya Jyothi, University of Idaho"@en ; 
+  dc:creator "Amruta Kale, University of Idaho"@en ;   
+  dc:creator "Shrooq Algarni, University of Idaho"@en ; 
+  dc:creator "Cai Can, University of Idaho"@en ; 
+  dc:description "RDF/OWL representation of the geologic timescale elements in Britain"@en ;
+  dc:rights "This Ontology is made available under the Open Data Commons Attribution License: http://opendatacommons.org/licenses/by/1.0"@en ;
+  dc:source "Concept list from TS Creator - Dr. James Ogg"@en ;
+  dc:title "Ontology for Geologic Timescale Elements in Britain"@en ;
+  dcterms:created "2019-11-21"^^xsd:date ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:modified "2019-11-21"^^xsd:date ;
+  dcterms:subject <http://dbpedia.org/page/Geologic_time_scale> ;
+  vann:preferredNamespacePrefix "tsbr"@en ;
+  vann:preferredNamespaceUri <http://deeptimekb.org/tsbr#> ;
+  void:feature <http://www.w3.org/ns/formats/RDF_XML> ;
+  void:feature <http://www.w3.org/ns/formats/Turtle> ;
+  rdfs:label "Ontology for Geologic Timescale Elements in Britain"@en
+.
+
+tsba:
+  rdf:type skos:Collection ;
+  rdfs:label "Geologic Timescale Elements in Baltoscania"@en 
+.
+
+ts:tsba2019
+  rdf:type void:Dataset ;
+  rdf:type gts:GeologicTimescale ;
+  rdf:type owl:Ontology ;
+  rdf:type skos:ConceptScheme ;
+  rdf:type time:TRS ;
+  dc:creator "Xiaogang Ma, University of Idaho"@en ;
+  dc:creator "Chao Ma, University of Idaho"@en ;
+  dc:creator "Joel Oduro-Afriyie, University of Idaho"@en ; 
+  dc:creator "Amal Aljohani, University of Idaho"@en ;   
+  dc:creator "Smarth Subramanya Jyothi, University of Idaho"@en ; 
+  dc:creator "Amruta Kale, University of Idaho"@en ;   
+  dc:creator "Shrooq Algarni, University of Idaho"@en ; 
+  dc:creator "Cai Can, University of Idaho"@en ;   
+  dc:description "RDF/OWL representation of the geologic timescale elements in Baltoscania."@en ;
+  dc:rights "This Ontology is made available under the Open Data Commons Attribution License: http://opendatacommons.org/licenses/by/1.0"@en ;
+  dc:source "Concept list from TS Creator - Dr. James Ogg"@en ;
+  dc:title "Ontology for Geologic Timescale Elements in Baltoscania"@en ;
+  dcterms:created "2019-11-21"^^xsd:date ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:modified "2019-11-21"^^xsd:date ;
+  dcterms:subject <http://dbpedia.org/page/Geologic_time_scale> ;
+  vann:preferredNamespacePrefix "tsba"@en ;
+  vann:preferredNamespaceUri <http://deeptimekb.org/tsba#> ;
+  void:feature <http://www.w3.org/ns/formats/RDF_XML> ;
+  void:feature <http://www.w3.org/ns/formats/Turtle> ;
+  rdfs:label "Ontology for Geologic Timescale Elements in Baltoscania"@en
+.
+
+tsjp:
+  rdf:type skos:Collection ;
+  rdfs:label "Geologic Timescale Elements in Japan"@en 
+.
+
+ts:tsjp2019
+  rdf:type void:Dataset ;
+  rdf:type gts:GeologicTimescale ;
+  rdf:type owl:Ontology ;
+  rdf:type skos:ConceptScheme ;
+  rdf:type time:TRS ;
+  dc:creator "Xiaogang Ma, University of Idaho"@en ;
+  dc:creator "Chao Ma, University of Idaho"@en ;
+  dc:creator "Joel Oduro-Afriyie, University of Idaho"@en ; 
+  dc:creator "Amal Aljohani, University of Idaho"@en ;   
+  dc:creator "Smarth Subramanya Jyothi, University of Idaho"@en ; 
+  dc:creator "Amruta Kale, University of Idaho"@en ;   
+  dc:creator "Shrooq Algarni, University of Idaho"@en ; 
+  dc:creator "Cai Can, University of Idaho"@en ;   
+  dc:description "RDF/OWL representation of the geologic timescale elements in Japan."@en ;
+  dc:rights "This Ontology is made available under the Open Data Commons Attribution License: http://opendatacommons.org/licenses/by/1.0"@en ;
+  dc:source "Concept list from TS Creator - Dr. James Ogg"@en ;
+  dc:title "Ontology for Geologic Timescale Elements in Japan"@en ;
+  dcterms:created "2019-11-21"^^xsd:date ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:modified "2019-11-21"^^xsd:date ;
+  dcterms:subject <http://dbpedia.org/page/Geologic_time_scale> ;
+  vann:preferredNamespacePrefix "tsjp"@en ;
+  vann:preferredNamespaceUri <http://deeptimekb.org/tsjp#> ;
+  void:feature <http://www.w3.org/ns/formats/RDF_XML> ;
+  void:feature <http://www.w3.org/ns/formats/Turtle> ;
+  rdfs:label "Ontology for Geologic Timescale Elements in Japan"@en
+.
+
+tsau:
+  rdf:type skos:Collection ;
+  rdfs:label "Geologic Timescale Elements in Australia"@en 
+.
+
+ts:tsau2019
+  rdf:type void:Dataset ;
+  rdf:type gts:GeologicTimescale ;
+  rdf:type owl:Ontology ;
+  rdf:type skos:ConceptScheme ;
+  rdf:type time:TRS ;
+  dc:creator "Xiaogang Ma, University of Idaho"@en ;
+  dc:creator "Chao Ma, University of Idaho"@en ;
+  dc:creator "Joel Oduro-Afriyie, University of Idaho"@en ; 
+  dc:creator "Amal Aljohani, University of Idaho"@en ;   
+  dc:creator "Smarth Subramanya Jyothi, University of Idaho"@en ; 
+  dc:creator "Amruta Kale, University of Idaho"@en ;   
+  dc:creator "Shrooq Algarni, University of Idaho"@en ; 
+  dc:creator "Cai Can, University of Idaho"@en ;  
+  dc:description "RDF/OWL representation of the geologic timescale elements in Australia."@en ;
+  dc:rights "This Ontology is made available under the Open Data Commons Attribution License: http://opendatacommons.org/licenses/by/1.0"@en ;
+  dc:source "Concept list from TS Creator - Dr. James Ogg"@en ;
+  dc:title "Ontology for Geologic Timescale Elements in Australia"@en ;
+  dcterms:created "2019-11-21"^^xsd:date ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:modified "2019-11-21"^^xsd:date ;
+  dcterms:subject <http://dbpedia.org/page/Geologic_time_scale> ;
+  vann:preferredNamespacePrefix "tsau"@en ;
+  vann:preferredNamespaceUri <http://deeptimekb.org/tsau#> ;
+  void:feature <http://www.w3.org/ns/formats/RDF_XML> ;
+  void:feature <http://www.w3.org/ns/formats/Turtle> ;
+  rdfs:label "Ontology for Geologic Timescale Elements in Australia"@en
+.
+
+##### Harju Epoch #####
+
+tsba:Harju
+  rdf:type gts:Epoch ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Harju Epoch"@en ;
+  skos:broader isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseViru ;
+  time:hasEnd tsba:TopHarju ;
+.
+
+tsba:BaseHarju
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Harju"@en ;
+  skos:prefLabel "Base of Harju"@en ;
+  time:inTemporalPosition tsba:BaseHarjuTime ;
+.
+
+tsba:BaseHarjuTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "450.23"^^xsd:decimal ;
+.
+
+tsba:TopHarju
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Top of Harju"@en ;
+  skos:prefLabel "Top of Harju"@en ;
+  time:inTemporalPosition tsba:TopHarjuTime ;
+.
+
+tsba:TopHarjuTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "443.83"^^xsd:decimal ;
+.
+
+
+##### Viru Epoch #####
+
+tsba:Viru
+  rdf:type gts:Epoch ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Viru Epoch"@en ;
+  skos:broader isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseOeland ;
+  time:hasEnd tsba:BaseHarju ;
+.
+
+tsba:BaseViru
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Viru"@en ;
+  skos:prefLabel "Base of Viru"@en ;
+  time:inTemporalPosition tsba:BaseViruTime ;
+.
+
+tsba:BaseViruTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "462.52"^^xsd:decimal ;
+.
+
+
+##### Oeland Epoch #####
+
+tsba:Oeland
+  rdf:type gts:Epoch ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Oeland Epoch"@en ;
+  skos:broader isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseOeland ;
+  time:hasEnd tsba:BaseViru ;
+.
+
+tsba:BaseOeland
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Oeland"@en ;
+  skos:prefLabel "Base of Oeland"@en ;
+  time:inTemporalPosition tsba:BaseOelandTime ;
+.
+
+tsba:BaseOelandTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "485.37"^^xsd:decimal ;
+.
+
+##### Saxonian Age #####
+
+tswe:Saxonian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Saxonian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Permian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseSaxonian ;
+  time:hasEnd tswe:TopSaxonian ;
+.
+
+tswe:BaseSaxonian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Saxonian"@en ;
+  skos:prefLabel "Base of Saxonian"@en ;
+  time:inTemporalPosition tswe:BaseSaxonianTime ;
+.
+
+tswe:BaseSaxonianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "272.3"^^xsd:decimal ;
+.
+
+tswe:TopSaxonian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Top of Saxonian"@en ;
+  skos:prefLabel "Top of Saxonian"@en ;
+  time:inTemporalPosition tswe:TopSaxonianTime ;
+  rdfs:seeAlso isc:TopPhanerozoic ;
+.
+
+tswe:TopSaxonianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "260.34"^^xsd:decimal ;
+.
+
+##### Autunian Age #####
+
+tswe:Autunian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Autunian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Permian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseAutunian ;
+  time:hasEnd tswe:TopAutunian;
+.
+
+tswe:BaseAutunian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Autunian"@en ;
+  skos:prefLabel "Base of Autunian"@en ;
+  time:inTemporalPosition tswe:BaseAutunianTime ;
+.
+
+tswe:BaseAutunianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "302.15"^^xsd:decimal ;
+.
+
+tswe:TopAutunian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Top of Autunian"@en ;
+  skos:prefLabel "Top of Autunian"@en ;
+  time:inTemporalPosition tswe:TopAutunianTime ;
+.
+
+tswe:TopAutunianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "286.03"^^xsd:decimal ;
+.
+
+##### Stephanian Age #####
+
+tswe:Stephanian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Stephanian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Carboniferous ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseStephanian ;
+  time:hasEnd tswe:BaseAutunian ;
+.
+
+tswe:BaseStephanian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Stephanian"@en ;
+  skos:prefLabel "Base of Stephanian"@en ;
+  time:inTemporalPosition tswe:BaseStephanianTime ;
+.
+
+tswe:BaseStephanianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "307.22"^^xsd:decimal ;
+.
+
+
+##### Westphalian Age #####
+
+tswe:Westphalian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Westphalian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Carboniferous ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseWestphalian ;
+  time:hasEnd tswe:BaseStephanian ;
+.
+
+tswe:BaseWestphalian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Westphalian"@en ;
+  skos:prefLabel "Base of Westphalian"@en ;
+  time:inTemporalPosition tswe:BaseWestphalianTime ;
+.
+
+tswe:BaseWestphalianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "318.65"^^xsd:decimal ;
+.
+
+
+##### Namurian Age #####
+
+tswe:Namurian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Namurian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Carboniferous ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseNamurian ;
+  time:hasEnd tswe:BaseWestphalian ;
+.
+
+tswe:BaseNamurian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Namurian"@en ;
+  skos:prefLabel "Base of Namurian"@en ;
+  time:inTemporalPosition tswe:BaseNamurianTime ;
+.
+
+tswe:BaseNamurianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "329.06"^^xsd:decimal ;
+.
+
+
+##### Visean Age #####
+
+tswe:Visean
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Visean Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Carboniferous ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseVisean ;
+  time:hasEnd tswe:BaseNamurian ;
+.
+
+tswe:BaseVisean
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Visean"@en ;
+  skos:prefLabel "Base of Visean"@en ;
+  time:inTemporalPosition tswe:BaseViseanTime ;
+.
+
+tswe:BaseViseanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "346.73"^^xsd:decimal ;
+.
+
+
+##### Tournaisian Age #####
+
+tswe:Tournaisian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Tournaisian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Carboniferous ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseTournaisian ;
+  time:hasEnd tswe:BaseVisean ;
+.
+
+tswe:BaseTournaisian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Tournaisian"@en ;
+  skos:prefLabel "Base of Tournaisian"@en ;
+  time:inTemporalPosition tswe:BaseTournaisianTime ;
+.
+
+tswe:BaseTournaisianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "358.94"^^xsd:decimal ;
+.
+
+
+##### Hirnantian Age #####
+
+tswe:Hirnantian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Hirnantian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseHirnantian ;
+  time:hasEnd tswe:TopHirnantian ;
+.
+
+tswe:BaseHirnantian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Hirnantian"@en ;
+  skos:prefLabel "Base of Hirnantian"@en ;
+  time:inTemporalPosition tswe:BaseHirnantianTime ;
+.
+
+tswe:BaseHirnantianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "445.23"^^xsd:decimal ;
+.
+
+tswe:TopHirnantian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Top of Hirnantian"@en ;
+  skos:prefLabel "Top of Hirnantian"@en ;
+  time:inTemporalPosition tswe:TopHirnantianTime ;
+  rdfs:seeAlso isc:TopPhanerozoic ;
+.
+
+tswe:TopHirnantianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "443.83"^^xsd:decimal ;
+.
+
+
+##### Rawtheyan Age #####
+
+tswe:Rawtheyan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Rawtheyan Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseRawtheyan ;
+  time:hasEnd tswe:BaseHirnantian ;
+.
+
+tswe:BaseRawtheyan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Rawtheyan"@en ;
+  skos:prefLabel "Base of Rawtheyan"@en ;
+  time:inTemporalPosition tswe:BaseRawtheyanTime ;
+.
+
+tswe:BaseRawtheyanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "447.02"^^xsd:decimal ;
+.
+
+
+##### Cautleyan Age #####
+
+tswe:Cautleyan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Cautleyan Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseCautleyan ;
+  time:hasEnd tswe:BaseRawtheyan ;
+.
+
+tswe:BaseCautleyan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Cautleyan"@en ;
+  skos:prefLabel "Base of Cautleyan"@en ;
+  time:inTemporalPosition tswe:BaseCautleyanTime ;
+.
+
+tswe:BaseCautleyanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "447.86"^^xsd:decimal ;
+.
+
+
+##### Pusgillian Age #####
+
+tswe:Pusgillian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Pusgillian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BasePusgillian ;
+  time:hasEnd tswe:BaseCautleyan ;
+.
+
+tswe:BasePusgillian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Pusgillian"@en ;
+  skos:prefLabel "Base of Pusgillian"@en ;
+  time:inTemporalPosition tswe:BasePusgillianTime ;
+.
+
+tswe:BasePusgillianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "448.84"^^xsd:decimal ;
+.
+
+
+##### Streffordian Age #####
+
+tswe:Streffordian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Streffordian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseStreffordian ;
+  time:hasEnd tswe:BasePusgillian ;
+.
+
+tswe:BaseStreffordian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Streffordian"@en ;
+  skos:prefLabel "Base of Streffordian"@en ;
+  time:inTemporalPosition tswe:BaseStreffordianTime ;
+.
+
+tswe:BaseStreffordianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "451.28"^^xsd:decimal ;
+.
+
+
+##### Cheneyan Age #####
+
+tswe:Cheneyan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Cheneyan Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseCheneyan ;
+  time:hasEnd tswe:BaseStreffordian ;
+.
+
+tswe:BaseCheneyan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Cheneyan"@en ;
+  skos:prefLabel "Base of Cheneyan"@en ;
+  time:inTemporalPosition tswe:BaseCheneyanTime ;
+.
+
+tswe:BaseCheneyanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "452.73"^^xsd:decimal ;
+.
+
+
+##### Burrellian Age #####
+
+tswe:Burrellian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Burrellian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseBurrellian ;
+  time:hasEnd tswe:BaseCheneyan ;
+.
+
+tswe:BaseBurrellian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Burrellian"@en ;
+  skos:prefLabel "Base of Burrellian"@en ;
+  time:inTemporalPosition tswe:BaseBurrellianTime ;
+.
+
+tswe:BaseBurrellianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "456.34"^^xsd:decimal ;
+.
+
+
+##### Aurelucian Age #####
+
+tswe:Aurelucian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Aurelucian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseAurelucian ;
+  time:hasEnd tswe:BaseBurrellian ;
+.
+
+tswe:BaseAurelucian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Aurelucian"@en ;
+  skos:prefLabel "Base of Aurelucian"@en ;
+  time:inTemporalPosition tswe:BaseAurelucianTime ;
+.
+
+tswe:BaseAurelucianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "458.36"^^xsd:decimal ;
+.
+
+
+##### Llandeilian Age #####
+
+tswe:Llandeilian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Llandeilian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseLlandeilian ;
+  time:hasEnd tswe:BaseAurelucian ;
+.
+
+tswe:BaseLlandeilian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Llandeilian"@en ;
+  skos:prefLabel "Base of Llandeilian"@en ;
+  time:inTemporalPosition tswe:BaseLlandeilianTime ;
+.
+
+tswe:BaseLlandeilianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "460.45"^^xsd:decimal ;
+.
+
+
+##### Abereiddian Age #####
+
+tswe:Abereiddian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Abereiddian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseAbereiddian ;
+  time:hasEnd tswe:BaseLlandeilian ;
+.
+
+tswe:BaseAbereiddian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Abereiddian"@en ;
+  skos:prefLabel "Base of Abereiddian"@en ;
+  time:inTemporalPosition tswe:BaseAbereiddianTime ;
+.
+
+tswe:BaseAbereiddianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "465.32"^^xsd:decimal ;
+.
+
+
+##### Fennian Age #####
+
+tswe:Fennian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Fennian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseFennian ;
+  time:hasEnd tswe:BaseAbereiddian ;
+.
+
+tswe:BaseFennian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Fennian"@en ;
+  skos:prefLabel "Base of Fennian"@en ;
+  time:inTemporalPosition tswe:BaseFennianTime ;
+.
+
+tswe:BaseFennianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "469.96"^^xsd:decimal ;
+.
+
+
+##### Whitlandian Age #####
+
+tswe:Whitlandian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Whitlandian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseWhitlandian ;
+  time:hasEnd tswe:BaseFennian ;
+.
+
+tswe:BaseWhitlandian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Whitlandian"@en ;
+  skos:prefLabel "Base of Whitlandian"@en ;
+  time:inTemporalPosition tswe:BaseWhitlandianTime ;
+.
+
+tswe:BaseWhitlandianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "473.12"^^xsd:decimal ;
+.
+
+
+##### Moridunian Age #####
+
+tswe:Moridunian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Moridunian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseMoridunian ;
+  time:hasEnd tswe:BaseWhitlandian ;
+.
+
+tswe:BaseMoridunian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Moridunian"@en ;
+  skos:prefLabel "Base of Moridunian"@en ;
+  time:inTemporalPosition tswe:BaseMoridunianTime ;
+.
+
+tswe:BaseMoridunianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "477.72"^^xsd:decimal ;
+.
+
+
+##### Migneintian Age #####
+
+tswe:Migneintian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Migneintian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseMigneintian ;
+  time:hasEnd tswe:BaseMoridunian ;
+.
+
+tswe:BaseMigneintian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Migneintian"@en ;
+  skos:prefLabel "Base of Migneintian"@en ;
+  time:inTemporalPosition tswe:BaseMigneintianTime ;
+.
+
+tswe:BaseMigneintianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "481.55"^^xsd:decimal ;
+.
+
+
+##### Cressagian Age #####
+
+tswe:Cressagian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Cressagian Age"@en ;
+  skos:broader tswe: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tswe2019 ;
+  time:hasBeginning tswe:BaseCressagian ;
+  time:hasEnd tswe:BaseMigneintian ;
+.
+
+tswe:BaseCressagian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Cressagian"@en ;
+  skos:prefLabel "Base of Cressagian"@en ;
+  time:inTemporalPosition tswe:BaseCressagianTime ;
+.
+
+tswe:BaseCressagianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "485.37"^^xsd:decimal ;
+.
+
+
+##### Valanginian Age #####
+
+tsbr:Valanginian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Valanginian Age"@en ;
+  skos:broader tsbr: ;
+  skos:broaderTransitive isc:Cretaceous ;
+  skos:broaderTransitive isc:Mesozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsbr2019 ;
+  time:hasBeginning tsbr:BaseValanginian ;
+  time:hasEnd tsbr:TopValanginian ;
+.
+
+tsbr:BaseValanginian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Valanginian"@en ;
+  skos:prefLabel "Base of Valanginian"@en ;
+  time:inTemporalPosition tsbr:BaseValanginianTime ;
+.
+
+tsbr:BaseValanginianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "139.27"^^xsd:decimal ;
+.
+
+tsbr:TopValanginian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Top of Valanginian"@en ;
+  skos:prefLabel "Top of Valanginian"@en ;
+  time:inTemporalPosition tsbr:TopValanginianTime ;
+  rdfs:seeAlso isc:TopPhanerozoic ;
+.
+
+tsbr:TopValanginianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "137.27"^^xsd:decimal ;
+.
+
+
+##### Ryazanian Age #####
+
+tsbr:Ryazanian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Ryazanian Age"@en ;
+  skos:broader tsbr: ;
+  skos:broaderTransitive isc:Cretaceous ;
+  skos:broaderTransitive isc:Mesozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsbr2019 ;
+  time:hasBeginning tsbr:BaseRyazanian ;
+  time:hasEnd tsbr:BaseValanginian ;
+.
+
+tsbr:BaseRyazanian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Ryazanian"@en ;
+  skos:prefLabel "Base of Ryazanian"@en ;
+  time:inTemporalPosition tsbr:BaseRyazanianTime ;
+.
+
+tsbr:BaseRyazanianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "144.1"^^xsd:decimal ;
+.
+
+
+##### Portlandian Age #####
+
+tsbr:Portlandian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Portlandian Age"@en ;
+  skos:broader tsbr: ;
+  skos:broaderTransitive isc:Jurassic ;
+  skos:broaderTransitive isc:Mesozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsbr2019 ;
+  time:hasBeginning tsbr:BasePortlandian ;
+  time:hasEnd tsbr:BaseRyazanian ;
+.
+
+tsbr:BasePortlandian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Portlandian"@en ;
+  skos:prefLabel "Base of Portlandian"@en ;
+  time:inTemporalPosition tsbr:BasePortlandianTime ;
+.
+
+tsbr:BasePortlandianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "147.93"^^xsd:decimal ;
+.
+
+
+##### Kimmeridgian Age #####
+
+tsbr:Kimmeridgian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Kimmeridgian Age"@en ;
+  skos:broader tsbr: ;
+  skos:broaderTransitive isc:Jurassic ;
+  skos:broaderTransitive isc:Mesozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsbr2019 ;
+  time:hasBeginning tsbr:BaseKimmeridgian ;
+  time:hasEnd tsbr:BasePortlandian ;
+.
+
+tsbr:BaseKimmeridgian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Kimmeridgian"@en ;
+  skos:prefLabel "Base of Kimmeridgian"@en ;
+  time:inTemporalPosition tsbr:BaseKimmeridgianTime ;
+.
+
+tsbr:BaseKimmeridgianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "157.25"^^xsd:decimal ;
+.
+
+
+##### Oxfordian Age #####
+
+tsbr:Oxfordian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Oxfordian Age"@en ;
+  skos:broader tsbr: ;
+  skos:broaderTransitive isc:Jurassic ;
+  skos:broaderTransitive isc:Mesozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsbr2019 ;
+  time:hasBeginning tsbr:BaseOxfordian ;
+  time:hasEnd tsbr:BaseKimmeridgian ;
+.
+
+tsbr:BaseOxfordian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Oxfordian"@en ;
+  skos:prefLabel "Base of Oxfordian"@en ;
+  time:inTemporalPosition tsbr:BaseOxfordianTime ;
+.
+
+tsbr:BaseOxfordianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "163.06"^^xsd:decimal ;
+.
+
+
+##### Ohesaare Age #####
+
+tsba:Ohesaare
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Ohesaare Age"@en ;
+  skos:broader tsba: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseOhesaare ;
+  time:hasEnd tsba:TopOhesaare ;
+.
+
+tsba:BaseOhesaare
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Ohesaare"@en ;
+  skos:prefLabel "Base of Ohesaare"@en ;
+  time:inTemporalPosition tsba:BaseOhesaareTime ;
+.
+
+tsba:BaseOhesaareTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "422.13"^^xsd:decimal ;
+.
+
+tsba:TopOhesaare
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Top of Ohesaare"@en ;
+  skos:prefLabel "Top of Ohesaare"@en ;
+  time:inTemporalPosition tsba:TopOhesaareTime ;
+  rdfs:seeAlso isc:TopPhanerozoic ;
+.
+
+tsba:TopOhesaareTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "419.2"^^xsd:decimal ;
+.
+
+
+##### Kaugetuma Age #####
+
+tsba:Kaugetuma
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Kaugetuma Age"@en ;
+  skos:broader tsba: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseKaugetuma ;
+  time:hasEnd tsba:BaseOhesaare ;
+.
+
+tsba:BaseKaugetuma
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Kaugetuma"@en ;
+  skos:prefLabel "Base of Kaugetuma"@en ;
+  time:inTemporalPosition tsba:BaseKaugetumaTime ;
+.
+
+tsba:BaseKaugetumaTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "422.96"^^xsd:decimal ;
+.
+
+
+##### Kuressaare Age #####
+
+tsba:Kuressaare
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Kuressaare Age"@en ;
+  skos:broader tsba: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseKuressaare ;
+  time:hasEnd tsba:BaseKaugetuma ;
+.
+
+tsba:BaseKuressaare
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Kuressaare"@en ;
+  skos:prefLabel "Base of Kuressaare"@en ;
+  time:inTemporalPosition tsba:BaseKuressaareTime ;
+.
+
+tsba:BaseKuressaareTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "423.32"^^xsd:decimal ;
+.
+
+
+##### Paadla Age #####
+
+tsba:Paadla
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Paadla Age"@en ;
+  skos:broader tsba: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BasePaadla ;
+  time:hasEnd tsba:BaseKuressaare ;
+.
+
+tsba:BasePaadla
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Paadla"@en ;
+  skos:prefLabel "Base of Paadla"@en ;
+  time:inTemporalPosition tsba:BasePaadlaTime ;
+.
+
+tsba:BasePaadlaTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "427.36"^^xsd:decimal ;
+.
+
+
+##### Rootsikula Age #####
+
+tsba:Rootsikula
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Rootsikula Age"@en ;
+  skos:broader tsba: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseRootsikula ;
+  time:hasEnd tsba:BasePaadla ;
+.
+
+tsba:BaseRootsikula
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Rootsikula"@en ;
+  skos:prefLabel "Base of Rootsikula"@en ;
+  time:inTemporalPosition tsba:BaseRootsikulaTime ;
+.
+
+tsba:BaseRootsikulaTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "428.49"^^xsd:decimal ;
+.
+
+
+##### Jaagarahu Age #####
+
+tsba:Jaagarahu
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Jaagarahu Age"@en ;
+  skos:broader tsba: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseJaagarahu ;
+  time:hasEnd tsba:BaseRootsikula ;
+.
+
+tsba:BaseJaagarahu
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Jaagarahu"@en ;
+  skos:prefLabel "Base of Jaagarahu"@en ;
+  time:inTemporalPosition tsba:BaseJaagarahuTime ;
+.
+
+tsba:BaseJaagarahuTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "431.41"^^xsd:decimal ;
+.
+
+
+##### Jaani Age #####
+
+tsba:Jaani
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Jaani Age"@en ;
+  skos:broader tsba: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseJaani ;
+  time:hasEnd tsba:BaseJaagarahu ;
+.
+
+tsba:BaseJaani
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Jaani"@en ;
+  skos:prefLabel "Base of Jaani"@en ;
+  time:inTemporalPosition tsba:BaseJaaniTime ;
+.
+
+tsba:BaseJaaniTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "433.46"^^xsd:decimal ;
+.
+
+
+##### Adavere Age #####
+
+tsba:Adavere
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Adavere Age"@en ;
+  skos:broader tsba: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseAdavere ;
+  time:hasEnd tsba:BaseJaani ;
+.
+
+tsba:BaseAdavere
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Adavere"@en ;
+  skos:prefLabel "Base of Adavere"@en ;
+  time:inTemporalPosition tsba:BaseAdavereTime ;
+.
+
+tsba:BaseAdavereTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "438.76"^^xsd:decimal ;
+.
+
+
+##### Raikkula Age #####
+
+tsba:Raikkula
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Raikkula Age"@en ;
+  skos:broader tsba: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseRaikkula ;
+  time:hasEnd tsba:BaseAdavere ;
+.
+
+tsba:BaseRaikkula
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Raikkula"@en ;
+  skos:prefLabel "Base of Raikkula"@en ;
+  time:inTemporalPosition tsba:BaseRaikkulaTime ;
+.
+
+tsba:BaseRaikkulaTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "441.57"^^xsd:decimal ;
+.
+
+
+##### Juuru Age #####
+
+tsba:Juuru
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Juuru Age"@en ;
+  skos:broader tsba: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseJuuru ;
+  time:hasEnd tsba:BaseRaikkula ;
+.
+
+tsba:BaseJuuru
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Juuru"@en ;
+  skos:prefLabel "Base of Juuru"@en ;
+  time:inTemporalPosition tsba:BaseJuuruTime ;
+.
+
+tsba:BaseJuuruTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "443.83"^^xsd:decimal ;
+.
+
+
+##### Porkuni Age #####
+
+tsba:Porkuni
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Porkuni Age"@en ;
+  skos:broader tsba:Harju ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BasePorkuni ;
+  time:hasEnd tsba:BaseJuuru ;
+.
+
+tsba:BasePorkuni
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Porkuni"@en ;
+  skos:prefLabel "Base of Porkuni"@en ;
+  time:inTemporalPosition tsba:BasePorkuniTime ;
+.
+
+tsba:BasePorkuniTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "445.16"^^xsd:decimal ;
+.
+
+
+##### Pirgu Age #####
+
+tsba:Pirgu
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Pirgu Age"@en ;
+  skos:broader tsba:Harju ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BasePirgu ;
+  time:hasEnd tsba:BasePorkuni ;
+.
+
+tsba:BasePirgu
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Pirgu"@en ;
+  skos:prefLabel "Base of Pirgu"@en ;
+  time:inTemporalPosition tsba:BasePirguTime ;
+.
+
+tsba:BasePirguTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "448.38"^^xsd:decimal ;
+.
+
+
+##### Vormsi Age #####
+
+tsba:Vormsi
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Vormsi Age"@en ;
+  skos:broader tsba:Harju ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseVormsi ;
+  time:hasEnd tsba:BasePirgu ;
+.
+
+tsba:BaseVormsi
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Vormsi"@en ;
+  skos:prefLabel "Base of Vormsi"@en ;
+  time:inTemporalPosition tsba:BaseVormsiTime ;
+.
+
+tsba:BaseVormsiTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "449.3"^^xsd:decimal ;
+.
+
+
+##### Nabala Age #####
+
+tsba:Nabala
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Nabala Age"@en ;
+  skos:broader tsba:Harju ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseNabala ;
+  time:hasEnd tsba:BaseVormsi ;
+.
+
+tsba:BaseNabala
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Nabala"@en ;
+  skos:prefLabel "Base of Nabala"@en ;
+  time:inTemporalPosition tsba:BaseNabalaTime ;
+.
+
+tsba:BaseNabalaTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "450.23"^^xsd:decimal ;
+.
+
+
+##### Rakvere Age #####
+
+tsba:Rakvere
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Rakvere Age"@en ;
+  skos:broader tsba:Viru ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseRakvere ;
+  time:hasEnd tsba:BaseNabala ;
+.
+
+tsba:BaseRakvere
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Rakvere"@en ;
+  skos:prefLabel "Base of Rakvere"@en ;
+  time:inTemporalPosition tsba:BaseRakvereTime ;
+.
+
+tsba:BaseRakvereTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "451.87"^^xsd:decimal ;
+.
+
+
+##### Oandu Age #####
+
+tsba:Oandu
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Oandu Age"@en ;
+  skos:broader tsba:Viru ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseOandu ;
+  time:hasEnd tsba:BaseRakvere ;
+.
+
+tsba:BaseOandu
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Oandu"@en ;
+  skos:prefLabel "Base of Oandu"@en ;
+  time:inTemporalPosition tsba:BaseOanduTime ;
+.
+
+tsba:BaseOanduTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "452.97"^^xsd:decimal ;
+.
+
+
+##### Keila Age #####
+
+tsba:Keila
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Keila Age"@en ;
+  skos:broader tsba:Viru ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseKeila ;
+  time:hasEnd tsba:BaseOandu ;
+.
+
+tsba:BaseKeila
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Keila"@en ;
+  skos:prefLabel "Base of Keila"@en ;
+  time:inTemporalPosition tsba:BaseKeilaTime ;
+.
+
+tsba:BaseKeilaTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "453.99"^^xsd:decimal ;
+.
+
+
+##### Haljala Age #####
+
+tsba:Haljala
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Haljala Age"@en ;
+  skos:broader tsba:Viru ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseHaljala ;
+  time:hasEnd tsba:BaseKeila ;
+.
+
+tsba:BaseHaljala
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Haljala"@en ;
+  skos:prefLabel "Base of Haljala"@en ;
+  time:inTemporalPosition tsba:BaseHaljalaTime ;
+.
+
+tsba:BaseHaljalaTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "456.63"^^xsd:decimal ;
+.
+
+
+##### Kukruse Age #####
+
+tsba:Kukruse
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Kukruse Age"@en ;
+  skos:broader tsba:Viru ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseKukruse ;
+  time:hasEnd tsba:BaseHaljala ;
+.
+
+tsba:BaseKukruse
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Kukruse"@en ;
+  skos:prefLabel "Base of Kukruse"@en ;
+  time:inTemporalPosition tsba:BaseKukruseTime ;
+.
+
+tsba:BaseKukruseTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "458.19"^^xsd:decimal ;
+.
+
+
+##### Uhaku Age #####
+
+tsba:Uhaku
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Uhaku Age"@en ;
+  skos:broader tsba:Viru ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseUhaku ;
+  time:hasEnd tsba:BaseKukruse ;
+.
+
+tsba:BaseUhaku
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Uhaku"@en ;
+  skos:prefLabel "Base of Uhaku"@en ;
+  time:inTemporalPosition tsba:BaseUhakuTime ;
+.
+
+tsba:BaseUhakuTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "460.84"^^xsd:decimal ;
+.
+
+
+##### Lasnamagi Age #####
+
+tsba:Lasnamagi
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Lasnamagi Age"@en ;
+  skos:broader tsba:Viru ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseLasnamagi ;
+  time:hasEnd tsba:BaseUhaku ;
+.
+
+tsba:BaseLasnamagi
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Lasnamagi"@en ;
+  skos:prefLabel "Base of Lasnamagi"@en ;
+  time:inTemporalPosition tsba:BaseLasnamagiTime ;
+.
+
+tsba:BaseLasnamagiTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "461.95"^^xsd:decimal ;
+.
+
+
+##### Aseri Age #####
+
+tsba:Aseri
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Aseri Age"@en ;
+  skos:broader tsba:Viru ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseAseri ;
+  time:hasEnd tsba:BaseLasnamagi ;
+.
+
+tsba:BaseAseri
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Aseri"@en ;
+  skos:prefLabel "Base of Aseri"@en ;
+  time:inTemporalPosition tsba:BaseAseriTime ;
+.
+
+tsba:BaseAseriTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "462.52"^^xsd:decimal ;
+.
+
+
+##### Kunda Age #####
+
+tsba:Kunda
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Kunda Age"@en ;
+  skos:broader tsba:Oeland ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseKunda ;
+  time:hasEnd tsba:BaseAseri ;
+.
+
+tsba:BaseKunda
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Kunda"@en ;
+  skos:prefLabel "Base of Kunda"@en ;
+  time:inTemporalPosition tsba:BaseKundaTime ;
+.
+
+tsba:BaseKundaTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "466.17"^^xsd:decimal ;
+.
+
+
+##### Volkhov Age #####
+
+tsba:Volkhov
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Volkhov Age"@en ;
+  skos:broader tsba:Oeland ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseVolkhov ;
+  time:hasEnd tsba:BaseKunda ;
+.
+
+tsba:BaseVolkhov
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Volkhov"@en ;
+  skos:prefLabel "Base of Volkhov"@en ;
+  time:inTemporalPosition tsba:BaseVolkhovTime ;
+.
+
+tsba:BaseVolkhovTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "470.42"^^xsd:decimal ;
+.
+
+
+##### Billingen Age #####
+
+tsba:Billingen
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Billingen Age"@en ;
+  skos:broader tsba:Oeland ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseBillingen ;
+  time:hasEnd tsba:BaseVolkhov ;
+.
+
+tsba:BaseBillingen
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Billingen"@en ;
+  skos:prefLabel "Base of Billingen"@en ;
+  time:inTemporalPosition tsba:BaseBillingenTime ;
+.
+
+tsba:BaseBillingenTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "475.46"^^xsd:decimal ;
+.
+
+
+##### Hunneberg Age #####
+
+tsba:Hunneberg
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Hunneberg Age"@en ;
+  skos:broader tsba:Oeland ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseHunneberg ;
+  time:hasEnd tsba:BaseBillingen ;
+.
+
+tsba:BaseHunneberg
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Hunneberg"@en ;
+  skos:prefLabel "Base of Hunneberg"@en ;
+  time:inTemporalPosition tsba:BaseHunnebergTime ;
+.
+
+tsba:BaseHunnebergTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "479.86"^^xsd:decimal ;
+.
+
+
+##### Varangu Age #####
+
+tsba:Varangu
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Varangu Age"@en ;
+  skos:broader tsba:Oeland ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BaseVarangu ;
+  time:hasEnd tsba:BaseHunneberg ;
+.
+
+tsba:BaseVarangu
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Varangu"@en ;
+  skos:prefLabel "Base of Varangu"@en ;
+  time:inTemporalPosition tsba:BaseVaranguTime ;
+.
+
+tsba:BaseVaranguTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "481.61"^^xsd:decimal ;
+.
+
+
+##### Pakerort Age #####
+
+tsba:Pakerort
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Pakerort Age"@en ;
+  skos:broader tsba:Oeland ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsba2019 ;
+  time:hasBeginning tsba:BasePakerort ;
+  time:hasEnd tsba:BaseVarangu ;
+.
+
+tsba:BasePakerort
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Pakerort"@en ;
+  skos:prefLabel "Base of Pakerort"@en ;
+  time:inTemporalPosition tsba:BasePakerortTime ;
+.
+
+tsba:BasePakerortTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "485.37"^^xsd:decimal ;
+.
+
+
+##### Yuzanjian Age #####
+
+tsjp:Yuzanjian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Yuzanjian Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Quaternary ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseYuzanjian ;
+  time:hasEnd tsjp:TopYuzanjian ;
+.
+
+tsjp:BaseYuzanjian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Yuzanjian"@en ;
+  skos:prefLabel "Base of Yuzanjian"@en ;
+  time:inTemporalPosition tsjp:BaseYuzanjianTime ;
+.
+
+tsjp:BaseYuzanjianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "1.49"^^xsd:decimal ;
+.
+
+tsjp:TopYuzanjian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Top of Yuzanjian"@en ;
+  skos:prefLabel "Top of Yuzanjian"@en ;
+  time:inTemporalPosition tsjp:TopYuzanjianTime ;
+  rdfs:seeAlso isc:TopPhanerozoic ;
+.
+
+tsjp:TopYuzanjianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "0.77"^^xsd:decimal ;
+.
+
+
+##### Kechienjian Age #####
+
+tsjp:Kechienjian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Kechienjian Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Quaternary ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseKechienjian ;
+  time:hasEnd tsjp:BaseYuzanjian ;
+.
+
+tsjp:BaseKechienjian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Kechienjian"@en ;
+  skos:prefLabel "Base of Kechienjian"@en ;
+  time:inTemporalPosition tsjp:BaseKechienjianTime ;
+.
+
+tsjp:BaseKechienjianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "1.89"^^xsd:decimal ;
+.
+
+
+##### Suchian Age #####
+
+tsjp:Suchian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Suchian Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Quaternary ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseSuchian ;
+  time:hasEnd tsjp:BaseKechienjian ;
+.
+
+tsjp:BaseSuchian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Suchian"@en ;
+  skos:prefLabel "Base of Suchian"@en ;
+  time:inTemporalPosition tsjp:BaseSuchianTime ;
+.
+
+tsjp:BaseSuchianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "3.0"^^xsd:decimal ;
+.
+
+
+##### Totomian Age #####
+
+tsjp:Totomian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Totomian Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseTotomian ;
+  time:hasEnd tsjp:BaseSuchian ;
+.
+
+tsjp:BaseTotomian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Totomian"@en ;
+  skos:prefLabel "Base of Totomian"@en ;
+  time:inTemporalPosition tsjp:BaseTotomianTime ;
+.
+
+tsjp:BaseTotomianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "3.6"^^xsd:decimal ;
+.
+
+
+##### Yuian Age #####
+
+tsjp:Yuian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Yuian Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseYuian ;
+  time:hasEnd tsjp:BaseTotomian ;
+.
+
+tsjp:BaseYuian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Yuian"@en ;
+  skos:prefLabel "Base of Yuian"@en ;
+  time:inTemporalPosition tsjp:BaseYuianTime ;
+.
+
+tsjp:BaseYuianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "9.52"^^xsd:decimal ;
+.
+
+
+##### Fujian Age #####
+
+tsjp:Fujian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Fujian Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseFujian ;
+  time:hasEnd tsjp:BaseYuian ;
+.
+
+tsjp:BaseFujian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Fujian"@en ;
+  skos:prefLabel "Base of Fujian"@en ;
+  time:inTemporalPosition tsjp:BaseFujianTime ;
+.
+
+tsjp:BaseFujianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "11.14"^^xsd:decimal ;
+.
+
+
+##### Kaburan Age #####
+
+tsjp:Kaburan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Kaburan Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseKaburan ;
+  time:hasEnd tsjp:BaseFujian ;
+.
+
+tsjp:BaseKaburan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Kaburan"@en ;
+  skos:prefLabel "Base of Kaburan"@en ;
+  time:inTemporalPosition tsjp:BaseKaburanTime ;
+.
+
+tsjp:BaseKaburanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "13.51"^^xsd:decimal ;
+.
+
+
+##### Tozawan Age #####
+
+tsjp:Tozawan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Tozawan Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseTozawan ;
+  time:hasEnd tsjp:BaseKaburan ;
+.
+
+tsjp:BaseTozawan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Tozawan"@en ;
+  skos:prefLabel "Base of Tozawan"@en ;
+  time:inTemporalPosition tsjp:BaseTozawanTime ;
+.
+
+tsjp:BaseTozawanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "15.97"^^xsd:decimal ;
+.
+
+
+##### Haranoyan Age #####
+
+tsjp:Haranoyan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Haranoyan Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseHaranoyan ;
+  time:hasEnd tsjp:BaseTozawan ;
+.
+
+tsjp:BaseHaranoyan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Haranoyan"@en ;
+  skos:prefLabel "Base of Haranoyan"@en ;
+  time:inTemporalPosition tsjp:BaseHaranoyanTime ;
+.
+
+tsjp:BaseHaranoyanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "18.21"^^xsd:decimal ;
+.
+
+
+##### Hetonian Age #####
+
+tsjp:Hetonian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Hetonian Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Cretaceous ;
+  skos:broaderTransitive isc:Mesozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseHetonian ;
+  time:hasEnd tsjp:TopHetonian ;
+.
+
+tsjp:BaseHetonian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Hetonian"@en ;
+  skos:prefLabel "Base of Hetonian"@en ;
+  time:inTemporalPosition tsjp:BaseHetonianTime ;
+.
+
+tsjp:BaseHetonianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "78.12"^^xsd:decimal ;
+.
+
+tsjp:TopHetonian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Top of Hetonian"@en ;
+  skos:prefLabel "Top of Hetonian"@en ;
+  time:inTemporalPosition tsjp:TopHetonianTime ;
+  rdfs:seeAlso isc:TopPhanerozoic ;
+.
+
+tsjp:TopHetonianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "66.04"^^xsd:decimal ;
+.
+
+
+##### Urakawan Age #####
+
+tsjp:Urakawan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Urakawan Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Cretaceous ;
+  skos:broaderTransitive isc:Mesozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseUrakawan ;
+  time:hasEnd tsjp:BaseHetonian ;
+.
+
+tsjp:BaseUrakawan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Urakawan"@en ;
+  skos:prefLabel "Base of Urakawan"@en ;
+  time:inTemporalPosition tsjp:BaseUrakawanTime ;
+.
+
+tsjp:BaseUrakawanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "90.05"^^xsd:decimal ;
+.
+
+
+##### Gyliakian Age #####
+
+tsjp:Gyliakian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Gyliakian Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Cretaceous ;
+  skos:broaderTransitive isc:Mesozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseGyliakian ;
+  time:hasEnd tsjp:BaseUrakawan ;
+.
+
+tsjp:BaseGyliakian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Gyliakian"@en ;
+  skos:prefLabel "Base of Gyliakian"@en ;
+  time:inTemporalPosition tsjp:BaseGyliakianTime ;
+.
+
+tsjp:BaseGyliakianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "97.27"^^xsd:decimal ;
+.
+
+
+##### Miyakoan Age #####
+
+tsjp:Miyakoan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Miyakoan Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Cretaceous ;
+  skos:broaderTransitive isc:Mesozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseMiyakoan ;
+  time:hasEnd tsjp:BaseGyliakian ;
+.
+
+tsjp:BaseMiyakoan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Miyakoan"@en ;
+  skos:prefLabel "Base of Miyakoan"@en ;
+  time:inTemporalPosition tsjp:BaseMiyakoanTime ;
+.
+
+tsjp:BaseMiyakoanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "126.3"^^xsd:decimal ;
+.
+
+
+##### Aritan Age #####
+
+tsjp:Aritan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Aritan Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Cretaceous ;
+  skos:broaderTransitive isc:Mesozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseAritan ;
+  time:hasEnd tsjp:BaseMiyakoan ;
+.
+
+tsjp:BaseAritan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Aritan"@en ;
+  skos:prefLabel "Base of Aritan"@en ;
+  time:inTemporalPosition tsjp:BaseAritanTime ;
+.
+
+tsjp:BaseAritanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "134.69"^^xsd:decimal ;
+.
+
+
+##### Kochian Age #####
+
+tsjp:Kochian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Kochian Age"@en ;
+  skos:broader tsjp: ;
+  skos:broaderTransitive isc:Cretaceous ;
+  skos:broaderTransitive isc:Mesozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsjp2019 ;
+  time:hasBeginning tsjp:BaseKochian ;
+  time:hasEnd tsjp:BaseAritan ;
+.
+
+tsjp:BaseKochian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Kochian"@en ;
+  skos:prefLabel "Base of Kochian"@en ;
+  time:inTemporalPosition tsjp:BaseKochianTime ;
+.
+
+tsjp:BaseKochianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "145.01"^^xsd:decimal ;
+.
+
+
+##### Werrikooian Age #####
+
+tsau:Werrikooian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Werrikooian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Quaternary ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseWerrikooian ;
+  time:hasEnd tsau:TopWerrikooian ;
+.
+
+tsau:BaseWerrikooian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Werrikooian"@en ;
+  skos:prefLabel "Base of Werrikooian"@en ;
+  time:inTemporalPosition tsau:BaseWerrikooianTime ;
+.
+
+tsau:BaseWerrikooianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "1.8"^^xsd:decimal ;
+.
+
+tsau:TopWerrikooian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Top of Werrikooian"@en ;
+  skos:prefLabel "Top of Werrikooian"@en ;
+  time:inTemporalPosition tsau:TopWerrikooianTime ;
+  rdfs:seeAlso isc:TopPhanerozoic ;
+.
+
+tsau:TopWerrikooianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "0.99"^^xsd:decimal ;
+.
+
+
+##### Yatalan Age #####
+
+tsau:Yatalan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Yatalan Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Quaternary ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseYatalan ;
+  time:hasEnd tsau:BaseWerrikooian ;
+.
+
+tsau:BaseYatalan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Yatalan"@en ;
+  skos:prefLabel "Base of Yatalan"@en ;
+  time:inTemporalPosition tsau:BaseYatalanTime ;
+.
+
+tsau:BaseYatalanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "3.4"^^xsd:decimal ;
+.
+
+
+##### Kalimnan Age #####
+
+tsau:Kalimnan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Kalimnan Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseKalimnan ;
+  time:hasEnd tsau:BaseYatalan ;
+.
+
+tsau:BaseKalimnan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Kalimnan"@en ;
+  skos:prefLabel "Base of Kalimnan"@en ;
+  time:inTemporalPosition tsau:BaseKalimnanTime ;
+.
+
+tsau:BaseKalimnanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "4.29"^^xsd:decimal ;
+.
+
+
+##### Cheltenhamian Age #####
+
+tsau:Cheltenhamian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Cheltenhamian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseCheltenhamian ;
+  time:hasEnd tsau:BaseKalimnan ;
+.
+
+tsau:BaseCheltenhamian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Cheltenhamian"@en ;
+  skos:prefLabel "Base of Cheltenhamian"@en ;
+  time:inTemporalPosition tsau:BaseCheltenhamianTime ;
+.
+
+tsau:BaseCheltenhamianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "5.0"^^xsd:decimal ;
+.
+
+
+##### Mitchellian Age #####
+
+tsau:Mitchellian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Mitchellian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseMitchellian ;
+  time:hasEnd tsau:BaseCheltenhamian ;
+.
+
+tsau:BaseMitchellian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Mitchellian"@en ;
+  skos:prefLabel "Base of Mitchellian"@en ;
+  time:inTemporalPosition tsau:BaseMitchellianTime ;
+.
+
+tsau:BaseMitchellianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "10.53"^^xsd:decimal ;
+.
+
+
+##### Bairnsdalian Age #####
+
+tsau:Bairnsdalian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Bairnsdalian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseBairnsdalian ;
+  time:hasEnd tsau:BaseMitchellian ;
+.
+
+tsau:BaseBairnsdalian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Bairnsdalian"@en ;
+  skos:prefLabel "Base of Bairnsdalian"@en ;
+  time:inTemporalPosition tsau:BaseBairnsdalianTime ;
+.
+
+tsau:BaseBairnsdalianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "15.0"^^xsd:decimal ;
+.
+
+
+##### Balcombian Age #####
+
+tsau:Balcombian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Balcombian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseBalcombian ;
+  time:hasEnd tsau:BaseBairnsdalian ;
+.
+
+tsau:BaseBalcombian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Balcombian"@en ;
+  skos:prefLabel "Base of Balcombian"@en ;
+  time:inTemporalPosition tsau:BaseBalcombianTime ;
+.
+
+tsau:BaseBalcombianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "15.51"^^xsd:decimal ;
+.
+
+
+##### Batesfordian Age #####
+
+tsau:Batesfordian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Batesfordian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseBatesfordian ;
+  time:hasEnd tsau:BaseBalcombian ;
+.
+
+tsau:BaseBatesfordian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Batesfordian"@en ;
+  skos:prefLabel "Base of Batesfordian"@en ;
+  time:inTemporalPosition tsau:BaseBatesfordianTime ;
+.
+
+tsau:BaseBatesfordianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "16.51"^^xsd:decimal ;
+.
+
+
+##### Longfordian Age #####
+
+tsau:Longfordian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Longfordian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Neogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseLongfordian ;
+  time:hasEnd tsau:BaseBatesfordian ;
+.
+
+tsau:BaseLongfordian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Longfordian"@en ;
+  skos:prefLabel "Base of Longfordian"@en ;
+  time:inTemporalPosition tsau:BaseLongfordianTime ;
+.
+
+tsau:BaseLongfordianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "27.18"^^xsd:decimal ;
+.
+
+
+##### Janjukian Age #####
+
+tsau:Janjukian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Janjukian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Paleogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseJanjukian ;
+  time:hasEnd tsau:BaseLongfordian ;
+.
+
+tsau:BaseJanjukian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Janjukian"@en ;
+  skos:prefLabel "Base of Janjukian"@en ;
+  time:inTemporalPosition tsau:BaseJanjukianTime ;
+.
+
+tsau:BaseJanjukianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "29.77"^^xsd:decimal ;
+.
+
+
+##### Aldingan Age #####
+
+tsau:Aldingan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Aldingan Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Paleogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseAldingan ;
+  time:hasEnd tsau:BaseJanjukian ;
+.
+
+tsau:BaseAldingan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Aldingan"@en ;
+  skos:prefLabel "Base of Aldingan"@en ;
+  time:inTemporalPosition tsau:BaseAldinganTime ;
+.
+
+tsau:BaseAldinganTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "36.48"^^xsd:decimal ;
+.
+
+
+##### Johannian Age #####
+
+tsau:Johannian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Johannian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Paleogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseJohannian ;
+  time:hasEnd tsau:BaseAldingan ;
+.
+
+tsau:BaseJohannian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Johannian"@en ;
+  skos:prefLabel "Base of Johannian"@en ;
+  time:inTemporalPosition tsau:BaseJohannianTime ;
+.
+
+tsau:BaseJohannianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "51.73"^^xsd:decimal ;
+.
+
+
+##### Wangerripian Age #####
+
+tsau:Wangerripian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Wangerripian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Paleogene ;
+  skos:broaderTransitive isc:Cenozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseWangerripian ;
+  time:hasEnd tsau:BaseJohannian ;
+.
+
+tsau:BaseWangerripian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Wangerripian"@en ;
+  skos:prefLabel "Base of Wangerripian"@en ;
+  time:inTemporalPosition tsau:BaseWangerripianTime ;
+.
+
+tsau:BaseWangerripianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "62.29"^^xsd:decimal ;
+.
+
+##### Melbournian Age #####
+
+tsau:Melbournian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Melbournian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseMelbournian ;
+  time:hasEnd tsau:TopMelbournian ;
+.
+
+tsau:BaseMelbournian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Melbournian"@en ;
+  skos:prefLabel "Base of Melbournian"@en ;
+  time:inTemporalPosition tsau:BaseMelbournianTime ;
+.
+
+tsau:BaseMelbournianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "433.35"^^xsd:decimal ;
+.
+
+tsau:TopMelbournian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Top of Melbournian"@en ;
+  skos:prefLabel "Top of Melbournian"@en ;
+  time:inTemporalPosition tsau:TopMelbournianTime ;
+  rdfs:seeAlso isc:TopPhanerozoic ;
+.
+
+tsau:TopMelbournianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "419.2"^^xsd:decimal ;
+.
+
+
+##### Eildonian Age #####
+
+tsau:Eildonian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Eildonian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseEildonian ;
+  time:hasEnd tsau:BaseMelbournian ;
+.
+
+tsau:BaseEildonian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Eildonian"@en ;
+  skos:prefLabel "Base of Eildonian"@en ;
+  time:inTemporalPosition tsau:BaseEildonianTime ;
+.
+
+tsau:BaseEildonianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "436.49"^^xsd:decimal ;
+.
+
+
+##### Keiloran Age #####
+
+tsau:Keiloran
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Keiloran Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseKeiloran ;
+  time:hasEnd tsau:BaseEildonian ;
+.
+
+tsau:BaseKeiloran
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Keiloran"@en ;
+  skos:prefLabel "Base of Keiloran"@en ;
+  time:inTemporalPosition tsau:BaseKeiloranTime ;
+.
+
+tsau:BaseKeiloranTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "443.83"^^xsd:decimal ;
+.
+
+
+##### Bolindian Age #####
+
+tsau:Bolindian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Bolindian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Silurian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseBolindian ;
+  time:hasEnd tsau:BaseKeiloran ;
+.
+
+tsau:BaseBolindian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Bolindian"@en ;
+  skos:prefLabel "Base of Bolindian"@en ;
+  time:inTemporalPosition tsau:BaseBolindianTime ;
+.
+
+tsau:BaseBolindianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "448.38"^^xsd:decimal ;
+.
+
+
+##### Eastonian Age #####
+
+tsau:Eastonian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Eastonian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseEastonian ;
+  time:hasEnd tsau:BaseBolindian ;
+.
+
+tsau:BaseEastonian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Eastonian"@en ;
+  skos:prefLabel "Base of Eastonian"@en ;
+  time:inTemporalPosition tsau:BaseEastonianTime ;
+.
+
+tsau:BaseEastonianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "452.97"^^xsd:decimal ;
+.
+
+
+##### Gisbornian Age #####
+
+tsau:Gisbornian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Gisbornian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseGisbornian ;
+  time:hasEnd tsau:BaseEastonian ;
+.
+
+tsau:BaseGisbornian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Gisbornian"@en ;
+  skos:prefLabel "Base of Gisbornian"@en ;
+  time:inTemporalPosition tsau:BaseGisbornianTime ;
+.
+
+tsau:BaseGisbornianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "458.36"^^xsd:decimal ;
+.
+
+
+##### Darriwilian Age #####
+
+tsau:Darriwilian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Darriwilian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseDarriwilian ;
+  time:hasEnd tsau:BaseGisbornian ;
+.
+
+tsau:BaseDarriwilian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Darriwilian"@en ;
+  skos:prefLabel "Base of Darriwilian"@en ;
+  time:inTemporalPosition tsau:BaseDarriwilianTime ;
+.
+
+tsau:BaseDarriwilianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "467.25"^^xsd:decimal ;
+.
+
+
+##### Yapeenian Age #####
+
+tsau:Yapeenian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Yapeenian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseYapeenian ;
+  time:hasEnd tsau:BaseDarriwilian ;
+.
+
+tsau:BaseYapeenian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Yapeenian"@en ;
+  skos:prefLabel "Base of Yapeenian"@en ;
+  time:inTemporalPosition tsau:BaseYapeenianTime ;
+.
+
+tsau:BaseYapeenianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "468.31"^^xsd:decimal ;
+.
+
+
+##### Castlemainian Age #####
+
+tsau:Castlemainian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Castlemainian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseCastlemainian ;
+  time:hasEnd tsau:BaseYapeenian ;
+.
+
+tsau:BaseCastlemainian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Castlemainian"@en ;
+  skos:prefLabel "Base of Castlemainian"@en ;
+  time:inTemporalPosition tsau:BaseCastlemainianTime ;
+.
+
+tsau:BaseCastlemainianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "470.42"^^xsd:decimal ;
+.
+
+
+##### Chewtonian Age #####
+
+tsau:Chewtonian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Chewtonian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseChewtonian ;
+  time:hasEnd tsau:BaseCastlemainian ;
+.
+
+tsau:BaseChewtonian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Chewtonian"@en ;
+  skos:prefLabel "Base of Chewtonian"@en ;
+  time:inTemporalPosition tsau:BaseChewtonianTime ;
+.
+
+tsau:BaseChewtonianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "472.41"^^xsd:decimal ;
+.
+
+
+##### Bendigonian Age #####
+
+tsau:Bendigonian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Bendigonian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseBendigonian ;
+  time:hasEnd tsau:BaseChewtonian ;
+.
+
+tsau:BaseBendigonian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Bendigonian"@en ;
+  skos:prefLabel "Base of Bendigonian"@en ;
+  time:inTemporalPosition tsau:BaseBendigonianTime ;
+.
+
+tsau:BaseBendigonianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "475.97"^^xsd:decimal ;
+.
+
+
+##### Lancefieldian Age #####
+
+tsau:Lancefieldian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Lancefieldian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseLancefieldian ;
+  time:hasEnd tsau:BaseBendigonian ;
+.
+
+tsau:BaseLancefieldian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Lancefieldian"@en ;
+  skos:prefLabel "Base of Lancefieldian"@en ;
+  time:inTemporalPosition tsau:BaseLancefieldianTime ;
+.
+
+tsau:BaseLancefieldianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "484.28"^^xsd:decimal ;
+.
+
+
+##### Warendan Age #####
+
+tsau:Warendan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Warendan Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Ordovician ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseWarendan ;
+  time:hasEnd tsau:BaseLancefieldian ;
+.
+
+tsau:BaseWarendan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Warendan"@en ;
+  skos:prefLabel "Base of Warendan"@en ;
+  time:inTemporalPosition tsau:BaseWarendanTime ;
+.
+
+tsau:BaseWarendanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "485.43"^^xsd:decimal ;
+.
+
+
+##### Datsonian Age #####
+
+tsau:Datsonian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Datsonian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Cambrian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseDatsonian ;
+  time:hasEnd tsau:BaseWarendan ;
+.
+
+tsau:BaseDatsonian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Datsonian"@en ;
+  skos:prefLabel "Base of Datsonian"@en ;
+  time:inTemporalPosition tsau:BaseDatsonianTime ;
+.
+
+tsau:BaseDatsonianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "486.73"^^xsd:decimal ;
+.
+
+
+##### Payntonian Age #####
+
+tsau:Payntonian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Payntonian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Cambrian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BasePayntonian ;
+  time:hasEnd tsau:BaseDatsonian ;
+.
+
+tsau:BasePayntonian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Payntonian"@en ;
+  skos:prefLabel "Base of Payntonian"@en ;
+  time:inTemporalPosition tsau:BasePayntonianTime ;
+.
+
+tsau:BasePayntonianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "489.5"^^xsd:decimal ;
+.
+
+
+##### Iverian Age #####
+
+tsau:Iverian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Iverian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Cambrian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseIverian ;
+  time:hasEnd tsau:BasePayntonian ;
+.
+
+tsau:BaseIverian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Iverian"@en ;
+  skos:prefLabel "Base of Iverian"@en ;
+  time:inTemporalPosition tsau:BaseIverianTime ;
+.
+
+tsau:BaseIverianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "494.0"^^xsd:decimal ;
+.
+
+
+##### Idamean Age #####
+
+tsau:Idamean
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Idamean Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Cambrian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseIdamean ;
+  time:hasEnd tsau:BaseIverian ;
+.
+
+tsau:BaseIdamean
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Idamean"@en ;
+  skos:prefLabel "Base of Idamean"@en ;
+  time:inTemporalPosition tsau:BaseIdameanTime ;
+.
+
+tsau:BaseIdameanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "497.0"^^xsd:decimal ;
+.
+
+
+##### Mindyallan Age #####
+
+tsau:Mindyallan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Mindyallan Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Cambrian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseMindyallan ;
+  time:hasEnd tsau:BaseIdamean ;
+.
+
+tsau:BaseMindyallan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Mindyallan"@en ;
+  skos:prefLabel "Base of Mindyallan"@en ;
+  time:inTemporalPosition tsau:BaseMindyallanTime ;
+.
+
+tsau:BaseMindyallanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "499.1"^^xsd:decimal ;
+.
+
+
+##### Boomerangian Age #####
+
+tsau:Boomerangian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Boomerangian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Cambrian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseBoomerangian ;
+  time:hasEnd tsau:BaseMindyallan ;
+.
+
+tsau:BaseBoomerangian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Boomerangian"@en ;
+  skos:prefLabel "Base of Boomerangian"@en ;
+  time:inTemporalPosition tsau:BaseBoomerangianTime ;
+.
+
+tsau:BaseBoomerangianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "500.5"^^xsd:decimal ;
+.
+
+
+##### Undillan Age #####
+
+tsau:Undillan
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Undillan Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Cambrian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseUndillan ;
+  time:hasEnd tsau:BaseBoomerangian ;
+.
+
+tsau:BaseUndillan
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Undillan"@en ;
+  skos:prefLabel "Base of Undillan"@en ;
+  time:inTemporalPosition tsau:BaseUndillanTime ;
+.
+
+tsau:BaseUndillanTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "502.98"^^xsd:decimal ;
+.
+
+
+##### Floran Age #####
+
+tsau:Floran
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Floran Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Cambrian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseFloran ;
+  time:hasEnd tsau:BaseUndillan ;
+.
+
+tsau:BaseFloran
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Floran"@en ;
+  skos:prefLabel "Base of Floran"@en ;
+  time:inTemporalPosition tsau:BaseFloranTime ;
+.
+
+tsau:BaseFloranTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "504.5"^^xsd:decimal ;
+.
+
+
+##### Templetonian Age #####
+
+tsau:Templetonian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Templetonian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Cambrian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseTempletonian ;
+  time:hasEnd tsau:BaseFloran ;
+.
+
+tsau:BaseTempletonian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Templetonian"@en ;
+  skos:prefLabel "Base of Templetonian"@en ;
+  time:inTemporalPosition tsau:BaseTempletonianTime ;
+.
+
+tsau:BaseTempletonianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "507.96"^^xsd:decimal ;
+.
+
+
+##### Ordian Age #####
+
+tsau:Ordian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "Ordian Age"@en ;
+  skos:broader tsau: ;
+  skos:broaderTransitive isc:Cambrian ;
+  skos:broaderTransitive isc:Paleozoic ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:tsau2019 ;
+  time:hasBeginning tsau:BaseOrdian ;
+  time:hasEnd tsau:BaseTempletonian ;
+.
+
+tsau:BaseOrdian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of Ordian"@en ;
+  skos:prefLabel "Base of Ordian"@en ;
+  time:inTemporalPosition tsau:BaseOrdianTime ;
+.
+
+tsau:BaseOrdianTime
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "511.5"^^xsd:decimal ;
+.
