@@ -342,7 +342,7 @@ tsna:TopCincinnatian
   rdfs:label "Top of Cincinnatian"@en ;
   skos:prefLabel "Top of Cincinnatian"@en ;
   time:inTemporalPosition tsna:TopCincinnatianTime ;
-  rdfs:seeAlso isc: BaseSilurian
+  rdfs:seeAlso isc:BaseSilurian
 .
 
 tsna:TopCincinnatianTime
@@ -403,7 +403,7 @@ tsna:BaseWhiterockian
   rdfs:label "Base of Whiterockian"@en ;
   skos:prefLabel "Base of Whiterockian"@en ;
   time:inTemporalPosition tsna:BaseWhiterockian ;
-  rdfs:seeAlso BaseMiddleOrdovician
+  rdfs:seeAlso isc:BaseMiddleOrdovician
 .
 
 tsna:BaseWhiterockianTime
@@ -424,7 +424,7 @@ tsna:Ibexian
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsna2019 ;
   time:hasBeginning  tsna:BaseIbexian ;
-  time:hasEnd tsna: BaseWhiterockianTime;
+  time:hasEnd tsna:BaseWhiterockianTime;
 .
 
 tsna:BaseIbexian
@@ -1231,7 +1231,7 @@ tsna:BaseMedinan
   rdf:type skos:Concept ;
   rdf:type time:Instant ;
   rdfs:label "Base of Medinan"@en ;
-  rdfs:seeAlso isc:BaseSilurian
+  rdfs:seeAlso isc:BaseSilurian ;
   skos:prefLabel "Base of Medinan"@en ;
   time:inTemporalPosition tsna:BaseMedinanTime ;
 .
