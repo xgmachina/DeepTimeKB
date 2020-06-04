@@ -1,7 +1,14 @@
+#The goal is to find all the broader and broaderTransitive concepts.i.e. concepts at higher levels, such as Epoch, Period, Era, and Eon.  
+
+# INPUT: 
+# 1. T_beg: time in geology, e.g. 50 Ma
+# 2. prefix: optional, the prefix that need to be added
+# 3. graph: optional, the graph user provided
+
+# OUTPUT:
+# All the geoConcepts for the given geology time
 
 
-#The goal is to find all the broader and broaderTransitive concepts.
-#i.e. concepts at higher levels, such as Epoch, Period, Era, and Eon.  
 
 library(SPARQL)
 gts.timeconcept = function(T_beg){
