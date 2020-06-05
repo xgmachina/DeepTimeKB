@@ -1440,13 +1440,8 @@ isc:BaseMiaolingian
   rdf:type time:Instant ;
   dc:description
     [
-    gts:ratifiedGSSP "true"^^xsd:boolean ;
-    skos:inScheme ts:isc2018-08, ts:isc2018-07
-    ],
-
-    [
     gts:stratotype isc:BaseMiaolingianSP ;
-    skos:inScheme ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12
+    skos:inScheme ts:isc2018-08, ts:isc2018-07
     ] ;
   rdfs:label "Base of Miaolingian"@en ;
   skos:altlabel "Base of Cambrian Series 3"@en ;
@@ -1475,14 +1470,28 @@ isc:BaseMiaolingianTime
     skos:inScheme ts:isc2005-12
     ] ;
 .
+
 isc:BaseMiaolingianSP
   rdf:type gts:StratigraphicPoint ;
-  gts:correlationEvent "Trilobite, potentially FAD of Oryctocephalus indicus"@en ;
-  rdfs:comment "candidate sections are Wuliu-Zengjiayan (east Guizhou, China) ; and litSP Mountain (Nevada, USA) "@en ;
-  rdfs:label "Stratotype Point Base of Wuliuan"@en ;
+  samfl:shape isc:BaseMiaolingian-location ;
+  dc:source "Episodes 42/2, p.165-184, 2019"@en ;
+  gts:correlationEvent "Trilobite, FAD of Oryctocephalus indicus"@en ;
+  gts:boundaryLevel "at the base of a silty mudstone layer (within bed 9) 52.8m above the base of the Kaili Formation in the Wuliu-Zengjiayan section"@en ;
+  gts:ratifiedGSSP "true"^^xsd:boolean ;
+  gts:status "Ratified 2019"@en ;
+  rdfs:comment "Wuliu-Zengjiayan section in Jianhe County, eastern Guizhou Province, China"@en ;
+  rdfs:label "Stratotype Point Base of Miaolingian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
+  rdfs:seeAlso <http://www.episodes.org/journal/view.html?doi=10.18814/epiiugs/2019/019013> ;
+  rdfs:seeAlso <https://timescalefoundation.org/gssp/index.php?parentid=all> ;
 .
 
+isc:BaseMiaolingian-location
+  rdf:type geo:Geometry ;
+  rdf:type sf:Point ;
+  geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(108.4138 26.7474) "^^geo:wktLiteral ;
+  rdfs:label "Location of Stratotype Point Base of Miaolingian"@en ;
+.
 
 # added skos:label for cambrianstage6 for 2005, 2006
 isc:BaseDrumian
@@ -3768,13 +3777,8 @@ isc:BaseSakmarian
   rdf:type time:Instant ;
   dc:description
     [
-    gts:ratifiedGSSP "true"^^xsd:boolean ;
-    skos:inScheme ts:isc2018-08
-    ],  
-
-    [
     gts:stratotype isc:BaseSakmarianSP ;
-    skos:inScheme ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 
+    skos:inScheme ts:isc2018-08, ts:isc2018-07
     ] ; 
   rdfs:label "Base of Sakmarian"@en ;
   skos:prefLabel "Base of Sakmarian"@en ;
@@ -3830,15 +3834,28 @@ isc:BaseSakmarianUncertainty
     ] ;  
   time:unitType <http://www.opengis.net/def/uom/UCUM/0/Ma> ;
 .
+
+
 isc:BaseSakmarianSP
   rdf:type gts:StratigraphicPoint ;
-  gts:correlationEvent "Near conodont FAD Sweetognathus merrelli"@en ;
-  gts:status "Anticipated 2009"@en ;
-  rdfs:comment "candidate is at Kondurovsky, Orenburg Province, Russia."@en ;
+  samfl:shape isc:BaseSakmarian-location ;
+  dc:source "Episodes, doi:10.18814/epiiugs/2020/020059, published online 2020"@en ; 
+  gts:correlationEvent "Conodont FAD Mesogondolella monstra"@en ;
+  rdfs:comment "Usolka section, Southern Urals, Russia"@en ;
+  gts:ratifiedGSSP "true"^^xsd:boolean ;
+  gts:status "Ratified 2018"@en ;
   rdfs:label "Stratotype Point Base of Sakmarian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
+  rdfs:seeAlso <https://doi.org/10.18814/epiiugs/2020/020059> ;
+  rdfs:seeAlso <https://timescalefoundation.org/gssp/index.php?parentid=all> ;
 .
 
+isc:BaseSakmarian-location
+  rdf:type geo:Geometry ;
+  rdf:type sf:Point ;
+  geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(56.5287 53.9247) "^^geo:wktLiteral ; #coordinates are not exactly the location of the GSSP, but the location of the Usolka section taken from the GSSP paper   
+  rdfs:label "Location of Stratotype Point Base of Sakmarian"@en ;
+.
 
 isc:BaseArtinskian
   rdf:type gts:GeochronologicBoundary ;
@@ -5029,15 +5046,27 @@ isc:BaseToarcianUncertainty
     ] ;  
   time:unitType <http://www.opengis.net/def/uom/UCUM/0/Ma> ;
 .
+
 isc:BaseToarcianSP
   rdf:type gts:StratigraphicPoint ;
-  gts:correlationEvent "Ammonite near FAD of a diversified Eodactylites ammonite fauna; correlates with the NW European Protogrammoceras paltus horizon."@en ;
+  samfl:shape isc:BaseToarcian-location ;
+  dc:source "Episodes 39/3, p. 460 - 481, 2016" ;
+  gts:correlationEvent "Ammonite FAD of Dactylioceras (Eodactylioceras) simplex co-occurring with D. (E.) pseudocommune and D. (E.) polymorphum"@en ;
+  gts:boundaryLevel "base of micritic limestone bed 15e in the uppermost Lemede Formatio"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
-  rdfs:comment "Peniche (Portugal) "@en ;
+  rdfs:comment "Ponta do Trovao, Peniche (Portugal) "@en ;
   rdfs:label "Stratotype Point Base of Toarcian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
+  rdfs:seeAlso <https://timescalefoundation.org/references/Toarcian_Episodes39_3_20160.pdf> ;
+  rdfs:seeAlso <https://timescalefoundation.org/gssp/index.php?parentid=all> ;
 .
 
+isc:BaseToarcian-location
+  rdf:type geo:Geometry ;
+  rdf:type sf:Point ;
+  geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(-9.3853 39.3708) "^^geo:wktLiteral ;
+  rdfs:label "Location of Stratotype Point Base of Toarcian"@en ;
+.
 
 isc:BaseMiddleJurassic
   rdf:type gts:GeochronologicBoundary ;
@@ -5775,16 +5804,28 @@ isc:BaseAlbianUncertainty
     ] ;  
   time:unitType <http://www.opengis.net/def/uom/UCUM/0/Ma> ;
 .
+
 isc:BaseAlbianSP
   rdf:type gts:StratigraphicPoint ;
-  gts:correlationEvent "Candidates include: (1) ; calcareous nannofossil FAD of PraediscohaeraSP columnata (= P. cretacea of some earlier studies) ;, (2) ; carbon-isotope excursion (black-shale episode) ;, (3) ; ammonite"@en ;
+  samfl:shape isc:BaseAlbian-location ;
+  dc:source "Episodes 40/3, p. 177-188. 2017"@en ;
+  gts:correlationEvent "Planktonic foraminiferan FAD Microhedbergella renilaevis"@en ;
+  gts:boundaryLevel "37.4 m above the base of the Marnes Bleues Formation and 40 cm above the base of the Niveau Kilian Marker Bed near Col de Pré-Guittard"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2016-04-08" ;
-  rdfs:comment "Southeastern France"@en ;
+  rdfs:comment "Col de Pré-Guittard, Arnayon, Drôme, France"@en ;
   rdfs:label "Stratotype Point Base of Albian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
+  rdfs:seeAlso <http://www.episodes.org/journal/view.html?doi=10.18814/epiiugs/2017/v40i3/017021> ;
+  rdfs:seeAlso <https://timescalefoundation.org/gssp/index.php?parentid=all> ;
 .
 
+isc:BaseAlbian-location
+  rdf:type geo:Geometry ;
+  rdf:type sf:Point ;
+  geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(5.3114 44.4964) "^^geo:wktLiteral ;
+  rdfs:label "Location of Stratotype Point Base of Albian"@en ;
+.
 
 isc:BaseUpperCretaceous
   rdf:type gts:GeochronologicBoundary ;
@@ -6721,15 +6762,25 @@ isc:BaseChattianUncertainty
 .
 isc:BaseChattianSP
   rdf:type gts:StratigraphicPoint ;
-  dc:source "Nanno et al. exp. 2017" ;
-  gts:correlationEvent "Potentially extinction of planktonic foraminifer Chiloguembelina (Base of Foram Zone P21b) ; or an isotopic/climatic event"@en ;
+  samfl:shape isc:BaseChattian-location ;
+  dc:source "Episodes 41/1, p. 17-32, 2018" ;
+  gts:correlationEvent "HCO (highest common occurrence) of planktonic foraminifer Chiloguembelina cubensis"@en ;
+  gts:boundaryLevel "3at meter level 197"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2016-10-01" ;
-  rdfs:comment "Possibly Monte Cagnero, Umbria-Marche region, Italy"@en ;
+  rdfs:comment "Monte Cagnero, Umbria-Marche region, Italy"@en ;
   rdfs:label "Stratotype Point Base of Chattian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
+  rdfs:seeAlso <http://www.episodes.org/journal/view.html?doi=10.18814/epiiugs/2018/v41i1/018003> ;
+  rdfs:seeAlso <https://timescalefoundation.org/gssp/index.php?parentid=all> ;
 .
 
+isc:BaseChattian-location
+  rdf:type geo:Geometry ;
+  rdf:type sf:Point ;
+  geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(12.4677 43.6466) "^^geo:wktLiteral ;
+  rdfs:label "Location of Stratotype Point Base of Chattian"@en ;
+.
 
 isc:BaseNeogene
   rdf:type gts:GeochronologicBoundary ;
@@ -7332,7 +7383,7 @@ isc:BaseNorthgrippian
   rdf:type time:Instant ;
   dc:description
     [
-    gts:ratifiedGSSP "true"^^xsd:boolean ;
+    gts:stratotype isc:BaseNorthgrippianSP ;
     skos:inScheme ts:isc2018-08, ts:isc2018-07
     ] ; 
   rdfs:label "Base of Northgrippian"@en ;
@@ -7350,6 +7401,28 @@ isc:BaseNorthgrippianTime
     ] ;
 .
 
+isc:BaseNorthgrippianSP
+  rdf:type gts:StratigraphicPoint ;
+  samfl:shape isc:BaseNorthgrippian-location ;
+  dc:source "Episodes 41/4, 213-223, 2018"@en ;
+  gts:boundaryLevel "1228.67 m depth in NGRIP 1 ice core"@en ;
+  gts:correlationEvent "Climatic cooling following a period of generally rising temperatures during the Early Holocene"@en ;
+  gts:ratifiedGSSP "true"^^xsd:boolean ;
+  gts:status "Ratified 2018"@en ;
+  rdfs:comment "borehole NGRIP1 in the central Greenland ice sheet"@en ;
+  rdfs:label "Stratotype Point Base of Northgrippian"@en ;
+  rdfs:seeAlso <http://www.episodes.org/journal/view.html?doi=10.18814/epiiugs/2018/018016> ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
+  rdfs:seeAlso <https://timescalefoundation.org/gssp/index.php?parentid=all> ;
+.
+
+isc:BaseNorthgrippian-location
+  rdf:type geo:Geometry ;
+  rdf:type sf:Point ;
+  geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(-42.3200 75.1000) "^^geo:wktLiteral ;
+  rdfs:label "Location of Stratotype Point Base of Northgrippian"@en ;
+.
+
 
 isc:BaseMeghalayan
   rdf:type gts:GeochronologicBoundary ;
@@ -7358,13 +7431,15 @@ isc:BaseMeghalayan
   rdf:type time:Instant ;
   dc:description
     [
-    gts:ratifiedGSSP "true"^^xsd:boolean ;
+    gts:stratotype isc:BaseMeghalayanSP ;
     skos:inScheme ts:isc2018-08, ts:isc2018-07
-    ] ;   rdfs:label "Base of Meghalayan"@en ;
+    ] ;   
+  rdfs:label "Base of Meghalayan"@en ;
   skos:prefLabel "Base of Meghalayan"@en ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07 ;
   time:inTemporalPosition isc:BaseMeghalayanTime ;
 .
+
 isc:BaseMeghalayanTime
   rdf:type time:TimePosition ;
   time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
@@ -7375,6 +7450,27 @@ isc:BaseMeghalayanTime
     ] ;
 .
 
+isc:BaseMeghalayanSP
+  rdf:type gts:StratigraphicPoint ;
+  samfl:shape isc:BaseMeghalayan-location ;
+  dc:source "Episodes 41/4, 213-223, 2018"@en ;
+  gts:boundaryLevel "Mawmluh Cave speleothem dated at 4250yr bk2 (before AD2000)"@en ;
+  gts:correlationEvent "Stable isotope profile shows a shift to heavier isotopic values"@en ;
+  gts:ratifiedGSSP "true"^^xsd:boolean ;
+  gts:status "Ratified 2018"@en ;
+  rdfs:comment "Mawmluh Cave, Meghalaya,India"@en ;
+  rdfs:label "Stratotype Point Base of Meghalayan"@en ;
+  rdfs:seeAlso <http://www.episodes.org/journal/view.html?doi=10.18814/epiiugs/2018/018016> ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
+  rdfs:seeAlso <https://timescalefoundation.org/gssp/index.php?parentid=all> ;
+.
+
+isc:BaseMeghalayan-location
+  rdf:type geo:Geometry ;
+  rdf:type sf:Point ;
+  geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(91.7150 25.2622) "^^geo:wktLiteral ;
+  rdfs:label "Location of Stratotype Point Base of Meghalayan"@en ;
+.
 
 isc:Present
   rdf:type thors:EraBoundary ;
@@ -18926,7 +19022,6 @@ isc:Greenlandian
       time:intervalMetBy isc:UpperPleistocene ;
       skos:inScheme ts:isc2018-08, ts:isc2018-07
       ] ;
-  #foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Tremadocian> ;
 .
 
 isc:Northgrippian
