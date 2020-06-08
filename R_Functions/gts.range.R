@@ -7,7 +7,7 @@
 # OUTPUT:
 # all the geoConcepts that is between geotime1 and geotime2.
 
-gts.range = function(geotime1, geotime2, endpoint=NULL, graph=NULL){
+gts.range = function(geotime1, geotime2, prefix=NULL, graph=NULL){
         
         # set up an endpoint
         endpoint = "http://virtuoso.nkn.uidaho.edu:8890/sparql/"
@@ -21,6 +21,9 @@ gts.range = function(geotime1, geotime2, endpoint=NULL, graph=NULL){
                 prefix ts: <http://resource.geosciml.org/vocabulary/timescale/> 
                 prefix isc: <http://resource.geosciml.org/classifier/ics/ischart/> 
         "
+        if (!is.null(prefix)){
+                sparql_prefix = paste(prefix, sparql_prefix, sep = "/n")
+        }
         
         # sort the two input geotimes and find the old one as the begging time and the younger one as the end time.
         if(geotime1 > geotime2){
