@@ -33,44 +33,90 @@ gts.range = function(geotime1, geotime2, endpoint=NULL, graph=NULL){
         }
 
         # select the geotime that is between geotime1 and geotime2
-        q = paste(sparql_prefix, '
-       SELECT   str(?label) AS ?geoConcept
-       WHERE
-       {
-       GRAPH <http://deeptimekb.org/iscallnew> 
-       {
-       {?tconcept  a gts:GeochronologicEra ;  
-                       rdfs:label ?label ;
-       time:hasBeginning ?beg ;
-       time:hasEnd ?end .
-       ?beg time:inTemporalPosition ?begTime .
-       ?end time:inTemporalPosition ?endTime .
-       ?begTime time:numericPosition ?begTimeValue .
-       FILTER(?begTimeValue <=', T_beg, ') .
-       ?endTime time:numericPosition ?endTimeValue .
-       FILTER(?endTimeValue >=', T_end, ') .}
-       UNION
-                  {
-                             ?tconcept a gts:GeochronologicEra ;  
+        
+        if(!is.null(graph)){
+                q = paste(sparql_prefix, '
+                       SELECT DISTINCT str(?label) AS ?geoConcept
+                       WHERE
+                       {', graph, '
+                       {
+                                {
+                                ?tconcept  a gts:GeochronologicEra ;  
+                                               rdfs:label ?label ;
+                                time:hasBeginning ?beg ;
+                                time:hasEnd ?end .
+                                ?beg time:inTemporalPosition ?begTime .
+                                ?end time:inTemporalPosition ?endTime .
+                                ?begTime time:numericPosition ?begTimeValue .
+                                FILTER(?begTimeValue <=', T_beg, ') .
+                                ?endTime time:numericPosition ?endTimeValue .
+                                FILTER(?endTimeValue >=', T_end, ') .
+                                }
+                        UNION
+                                {
+                                ?tconcept a gts:GeochronologicEra ;  
                                        rdfs:label ?label .
-                             ?tconcept dc:description
-                             [time:hasBeginning ?beg ;
-                              time:hasEnd ?end ;
-                              skos:inScheme  ts:isc2012-08].
-                              ?beg time:inTemporalPosition ?begTime .
-                              ?end time:inTemporalPosition ?endTime .
-                              ?begTime dc:description
-                              [time:numericPosition ?begTimeValue ;
-                              skos:inScheme  ts:isc2012-08].
-                              ?endTime dc:description
-                              [time:numericPosition ?endTimeValue ;
-                              skos:inScheme  ts:isc2012-08].
-                             FILTER(?begTimeValue <=', T_beg, ') .
-                             FILTER(?endTimeValue >=', T_end, ') .
-                             }
+                                ?tconcept dc:description
+                                [time:hasBeginning ?beg ;
+                                time:hasEnd ?end ;
+                                skos:inScheme  ts:isc2012-08].
+                                ?beg time:inTemporalPosition ?begTime .
+                                ?end time:inTemporalPosition ?endTime .
+                                ?begTime dc:description
+                                [time:numericPosition ?begTimeValue ;
+                                skos:inScheme  ts:isc2012-08].
+                                ?endTime dc:description
+                                [time:numericPosition ?endTimeValue ;
+                                skos:inScheme  ts:isc2012-08].
+                                FILTER(?begTimeValue <=', T_beg, ') .
+                                FILTER(?endTimeValue >=', T_end, ') .
+                                }
+                
+                       }
+                       }')
+        }else{
+                q = paste(sparql_prefix, '
+                       SELECT DISTINCT str(?label) AS ?geoConcept
+                       WHERE
+                       {
+                       GRAPH <http://deeptimekb.org/iscallnew> 
+                       {
+                                {
+                                ?tconcept  a gts:GeochronologicEra ;  
+                                               rdfs:label ?label ;
+                                time:hasBeginning ?beg ;
+                                time:hasEnd ?end .
+                                ?beg time:inTemporalPosition ?begTime .
+                                ?end time:inTemporalPosition ?endTime .
+                                ?begTime time:numericPosition ?begTimeValue .
+                                FILTER(?begTimeValue <=', T_beg, ') .
+                                ?endTime time:numericPosition ?endTimeValue .
+                                FILTER(?endTimeValue >=', T_end, ') .
+                                }
+                        UNION
+                                {
+                                ?tconcept a gts:GeochronologicEra ;  
+                                       rdfs:label ?label .
+                                ?tconcept dc:description
+                                [time:hasBeginning ?beg ;
+                                time:hasEnd ?end ;
+                                skos:inScheme  ts:isc2012-08].
+                                ?beg time:inTemporalPosition ?begTime .
+                                ?end time:inTemporalPosition ?endTime .
+                                ?begTime dc:description
+                                [time:numericPosition ?begTimeValue ;
+                                skos:inScheme  ts:isc2012-08].
+                                ?endTime dc:description
+                                [time:numericPosition ?endTimeValue ;
+                                skos:inScheme  ts:isc2012-08].
+                                FILTER(?begTimeValue <=', T_beg, ') .
+                                FILTER(?endTimeValue >=', T_end, ') .
+                                }
+                
+                       }
+                       }')    
+        }
        
-       }
-       }')
         res = SPARQL(endpoint, q)$results
         return(res)
 }

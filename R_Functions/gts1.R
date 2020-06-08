@@ -25,10 +25,54 @@ gts1 = function(geoConcept, prefix = NULL, graph = NULL){
   }
 
   # run the query
+  if(!is.null(graph)){
+    q = paste0(
+      sparql_prefix, 
+      '
+                   SELECT   DISTINCT ?begTimeValue ?endTimeValue
+                   WHERE
+                   {', graph, '
+                     {
+                             {
+                             ?tconcept  a gts:GeochronologicEra ;  
+                                             rdfs:label ?label .
+                             FILTER (lang(?label) = "en")
+                             FILTER strstarts(?label, "', geoConcept, '").
+                             ?tconcept time:hasBeginning ?beg ;
+                             time:hasEnd ?end .
+                             ?beg time:inTemporalPosition ?begTime .
+                             ?end time:inTemporalPosition ?endTime .
+                             ?begTime time:numericPosition ?begTimeValue .
+                             ?endTime time:numericPosition ?endTimeValue .
+                             }
+                       UNION
+                             {
+                             ?tconcept a gts:GeochronologicEra ;  
+                                       rdfs:label ?label .
+                             FILTER (lang(?label) = "en")
+                             FILTER strstarts(?label, "', geoConcept, '").
+                             ?tconcept dc:description
+                             [time:hasBeginning ?beg ;
+                              time:hasEnd ?end ;
+                              skos:inScheme  ts:isc2012-08].
+                              ?beg time:inTemporalPosition ?begTime .
+                              ?end time:inTemporalPosition ?endTime .
+                              ?begTime dc:description
+                              [time:numericPosition ?begTimeValue ;
+                              skos:inScheme  ts:isc2012-08].
+                              ?endTime dc:description
+                              [time:numericPosition ?endTimeValue ;
+                              skos:inScheme  ts:isc2012-08].
+                             }
+                     }
+                   }
+                  '
+    )
+  }else{
   q = paste0(
               sparql_prefix, 
                   '
-                   SELECT   ?begTimeValue ?endTimeValue
+                   SELECT   DISTINCT ?begTimeValue ?endTimeValue
                    WHERE
                    {
                      GRAPH <http://deeptimekb.org/iscallnew> 
@@ -68,6 +112,7 @@ gts1 = function(geoConcept, prefix = NULL, graph = NULL){
                    }
                   '
               )
+  }
   res = SPARQL(endpoint, q)$results
   
   # display the SPARQL query
@@ -80,6 +125,6 @@ gts1 = function(geoConcept, prefix = NULL, graph = NULL){
   # calculate the druation
   res$duration = abs(res[[1]]-res[[2]])
   
-  cat("#### RESULT ####\n")
+  #cat("#### RESULT ####\n")
   return(res)
 }
