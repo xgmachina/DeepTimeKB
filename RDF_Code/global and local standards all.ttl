@@ -22044,7 +22044,7 @@ tsna:Coahulian
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsna2019 ;
   time:hasBeginning  tsna:BaseCoahulian ;
-  time:hasEnd isc:BaseComanchean ;
+  time:hasEnd tsna:BaseComanchean ;
 .
 
 tsna:BaseCoahulian
@@ -22277,7 +22277,7 @@ tsna:Ibexian
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsna2019 ;
   time:hasBeginning  tsna:BaseIbexian ;
-  time:hasEnd tsna:BaseWhiterockianTime;
+  time:hasEnd tsna:BaseWhiterockian;
 .
 
 tsna:BaseIbexian
@@ -22308,7 +22308,7 @@ tsna:Millardan
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsna2019 ;
   time:hasBeginning  tsna:BaseMillardan ;
-  time:hasEnd tsna:BaseIbexianTime ;
+  time:hasEnd tsna:BaseIbexian ;
 .
 
 tsna:BaseMillardan
@@ -23292,7 +23292,7 @@ tsna:Blackhillsian
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsna2019 ;
   time:hasBeginning  tsna:BaseBlackhillsian ;
-  time:hasEnd tsna:BaseRangerian ;
+  time:hasEnd tsna:BaseWhiterockian ;
 .
 
 tsna:BaseBlackhillsian
@@ -23400,7 +23400,7 @@ tsna:Sunwaptan
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsna2019 ;
   time:hasBeginning  tsna:BaseSunwaptan ;
-  time:hasEnd tsna:BaseSkullrockian ;
+  time:hasEnd tsna:BaseIbexian ;
 .
 
 tsna:BaseSunwaptan
@@ -23524,7 +23524,7 @@ tsna:Dyeran
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsna2019 ;
   time:hasBeginning  tsna:BaseDyeran ;
-  time:hasEnd tsna:BaseDelamaran ;
+  time:hasEnd tsna:BaseLincolnian ;
 .
 
 tsna:BaseDyeran
