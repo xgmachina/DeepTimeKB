@@ -22255,7 +22255,7 @@ tsna:BaseWhiterockian
   rdf:type time:Instant ;
   rdfs:label "Base of Whiterockian"@en ;
   skos:prefLabel "Base of Whiterockian"@en ;
-  time:inTemporalPosition tsna:BaseWhiterockian ;
+  time:inTemporalPosition tsna:BaseWhiterockianTime ;
   rdfs:seeAlso isc:BaseMiddleOrdovician
 .
 
