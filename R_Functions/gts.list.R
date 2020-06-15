@@ -8,8 +8,11 @@
 #OUTPUT
 #1. List all the geological concept of North America.
 
-library(SPARQL)
-gts.list = function(){
+gts.list = function(region, level=NULL){
+  
+  if(!is.null(level) & !any(level == c(NULL, "Age", "Epoch", "Period", "Era", "Eon"))){
+    stop('level must be NULL, "Age", "Epoch", "Period", "Era" or "Eon", see help page for more detail')
+  }
   
   # endpoint need to update accordingly
   endpoint = "http://virtuoso.nkn.uidaho.edu:8890/sparql/"
@@ -39,41 +42,64 @@ gts.list = function(){
                   prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
                 "
   
-  q = paste(sparql_prefix, '
+  if(region == "international" | region == "International") scheme = "isc"
+  if(region == "North America") scheme = "tsna"
+  if(region == "South China") scheme = "tssc"
+  if(region == "North China") scheme = "tsnc"
+  if(region == "West Europe") scheme = "tswe"
+  if(region == "Britain") scheme = "tsbr"
+  if(region == "New Zealand") scheme = "tsnz"
+  if(region == "Japan") scheme = "tsjp"
+  if(region == "Baltoscania") scheme = "tsba"
+  if(region == "Australia") scheme = "tsau"
+  
+  
+  if(scheme == "isc"){
+    q = paste0(sparql_prefix, '
             
-            SELECT DISTINCT ?concept
+SELECT DISTINCT str(?label) AS ?geoConcept
+WHERE
+{
+   GRAPH <http://deeptimekb.org/iscallnew>
+   { 
+     ?concept  a gts:GeochronologicEra ;
+              rdfs:label ?label .
+     ?concept  dc:description[
+                  skos:inScheme ?sch]
+     FILTER(regex(STR(?sch), "isc", "i"))
+     FILTER(regex(STR(?label), "', level, '", "i"))
+   }
+}
+            ')
+  } else {
+    q = paste0(sparql_prefix, '
+            
+SELECT DISTINCT str(?label) AS ?geoConcept
 WHERE
 {
                 
    GRAPH <http://deeptimekb.org/iscallnew>
    { 
-      {
-        ?sch  a skos:ConceptScheme ;
-              rdfs:label ?slabel . 
-        FILTER(regex(STR(?slabel), "North America", "i"))
-      }
-
-    UNION 
-      {
-        ?sch  a skos:ConceptScheme . 
-        FILTER(regex(STR(?sch),"tsna", "i"))
-      }
-
-     ?concept  a gts:GeochronologicEra ,
-                 gts:Age ; 
+      
+     ?sch  a skos:ConceptScheme . 
+     FILTER(regex(STR(?sch), "', scheme, '", "i"))
+     ?concept  a gts:GeochronologicEra ;
                skos:inScheme ?sch ;
+               rdfs:label ?label ;
                time:hasBeginning ?basePosition .  
      ?basePosition time:inTemporalPosition ?baseTime .
      ?baseTime time:numericPosition ?baseNum .
+     FILTER(regex(STR(?label), "', level, '", "i"))
     }
    
 }
 ORDER BY ?baseNum
          
             ')
+  }
+
   
   res1 = SPARQL(endpoint, q)$results
-  return(res1)
+  return(t(res1))
 }         
-gts.list()
 
