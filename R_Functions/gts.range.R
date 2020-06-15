@@ -1,19 +1,19 @@
 # INPUT: 
-# 1. geotime1: time in geology, e.g. 50 Ma
-# 2. geotime2: time in geology, e.g. 100 Ma
-# 3. prefix: optional, the prefix that need to be added
-# 4. graph: optional, the graph user provided
+# 1. geoConcept: geological time concept, eg. Cambrian
+# 2. prefix: optional, the prefix that need to be added
+# 3. graph: optional, the graph user provided
 
 # OUTPUT:
-# all the geoConcepts that is between geotime1 and geotime2.
+# begin and end time of the geotime and its duration.
 
-gts.range = function(geotime1, geotime2, prefix=NULL, graph=NULL){
-        
-        # set up an endpoint
-        endpoint = "http://virtuoso.nkn.uidaho.edu:8890/sparql/"
-        
-        # SPARQL prefix
-        sparql_prefix = " 
+gts.range = function(geoConcept, region = NULL, prefix = NULL, graph = NULL){
+  
+
+  # set up end point
+  endpoint = "http://virtuoso.nkn.uidaho.edu:8890/sparql/"
+  
+  # attach SPARQL querry prefix. Note: the graph for our study should be updated
+  sparql_prefix = " 
                 prefix dc: <http://purl.org/dc/elements/1.1/>
                 prefix gts: <http://resource.geosciml.org/ontology/timescale/gts#>
                 prefix skos: <http://www.w3.org/2004/02/skos/core#>
@@ -21,105 +21,142 @@ gts.range = function(geotime1, geotime2, prefix=NULL, graph=NULL){
                 prefix ts: <http://resource.geosciml.org/vocabulary/timescale/> 
                 prefix isc: <http://resource.geosciml.org/classifier/ics/ischart/> 
         "
-        if (!is.null(prefix)){
-                sparql_prefix = paste(prefix, sparql_prefix, sep = "/n")
-        }
-        
-        # sort the two input geotimes and find the old one as the begging time and the younger one as the end time.
-        if(geotime1 > geotime2){
-                T_beg = geotime1
-                T_end = geotime2
-                
-        }else{
-                T_beg = geotime2
-                T_end = geotime1
-        }
+  if (!is.null(prefix)){
+    sparql_prefix = paste(prefix, sparql_prefix, sep = "/n")
+  }
 
-        # select the geotime that is between geotime1 and geotime2
-        
-        if(!is.null(graph)){
-                q = paste(sparql_prefix, '
-                       SELECT DISTINCT str(?label) AS ?geoConcept
-                       WHERE
-                       {', graph, '
-                       {
-                                {
-                                ?tconcept  a gts:GeochronologicEra ;  
-                                               rdfs:label ?label ;
-                                time:hasBeginning ?beg ;
-                                time:hasEnd ?end .
-                                ?beg time:inTemporalPosition ?begTime .
-                                ?end time:inTemporalPosition ?endTime .
-                                ?begTime time:numericPosition ?begTimeValue .
-                                FILTER(?begTimeValue <=', T_beg, ') .
-                                ?endTime time:numericPosition ?endTimeValue .
-                                FILTER(?endTimeValue >=', T_end, ') .
-                                }
-                        UNION
-                                {
-                                ?tconcept a gts:GeochronologicEra ;  
+  # run the query
+  if(!is.null(graph)){
+    q = paste0(
+      sparql_prefix, 
+      '
+                   SELECT   DISTINCT ?schemeID str(?label) AS ?geoConcpet ?begTimeValue ?endTimeValue 
+                   WHERE
+                   {', graph, '
+                     {
+                             {
+                             ?tconcept  a gts:GeochronologicEra ;  
+                                             rdfs:label ?label ;
+                                             skos:inScheme ?schemeID.
+                             FILTER (lang(?label) = "en")
+                             FILTER strstarts(?label, "', geoConcept, '").
+                             ?tconcept time:hasBeginning ?beg ;
+                             time:hasEnd ?end .
+                             ?beg time:inTemporalPosition ?begTime .
+                             ?end time:inTemporalPosition ?endTime .
+                             ?begTime time:numericPosition ?begTimeValue .
+                             ?endTime time:numericPosition ?endTimeValue .
+                             }
+                       UNION
+                             {
+                             ?tconcept a gts:GeochronologicEra ;  
                                        rdfs:label ?label .
-                                ?tconcept dc:description
-                                [time:hasBeginning ?beg ;
-                                time:hasEnd ?end ;
-                                skos:inScheme  ts:isc2012-08].
-                                ?beg time:inTemporalPosition ?begTime .
-                                ?end time:inTemporalPosition ?endTime .
-                                ?begTime dc:description
-                                [time:numericPosition ?begTimeValue ;
-                                skos:inScheme  ts:isc2012-08].
-                                ?endTime dc:description
-                                [time:numericPosition ?endTimeValue ;
-                                skos:inScheme  ts:isc2012-08].
-                                FILTER(?begTimeValue <=', T_beg, ') .
-                                FILTER(?endTimeValue >=', T_end, ') .
-                                }
-                
-                       }
-                       }')
-        }else{
-                q = paste(sparql_prefix, '
-                       SELECT DISTINCT str(?label) AS ?geoConcept
-                       WHERE
-                       {
-                       GRAPH <http://deeptimekb.org/iscallnew> 
-                       {
-                                {
-                                ?tconcept  a gts:GeochronologicEra ;  
-                                               rdfs:label ?label ;
-                                time:hasBeginning ?beg ;
-                                time:hasEnd ?end .
-                                ?beg time:inTemporalPosition ?begTime .
-                                ?end time:inTemporalPosition ?endTime .
-                                ?begTime time:numericPosition ?begTimeValue .
-                                FILTER(?begTimeValue <=', T_beg, ') .
-                                ?endTime time:numericPosition ?endTimeValue .
-                                FILTER(?endTimeValue >=', T_end, ') .
-                                }
-                        UNION
-                                {
-                                ?tconcept a gts:GeochronologicEra ;  
+                             FILTER (lang(?label) = "en")
+                             FILTER strstarts(?label, "', geoConcept, '").
+                             ?tconcept dc:description
+                             [time:hasBeginning ?beg ;
+                              time:hasEnd ?end ;
+                              skos:inScheme  ts:isc2012-08].
+                              ?beg time:inTemporalPosition ?begTime .
+                              ?end time:inTemporalPosition ?endTime .
+                              ?begTime dc:description
+                              [time:numericPosition ?begTimeValue ;
+                              skos:inScheme  ts:isc2012-08].
+                              ?endTime dc:description
+                              [time:numericPosition ?endTimeValue ;
+                              skos:inScheme  ts:isc2012-08 ;
+                              skos:inScheme ?schemeID].
+                             }
+                     }
+                   }
+                  '
+    )
+  }else{
+  q = paste0(
+              sparql_prefix, 
+                  '
+                   SELECT   DISTINCT ?schemeID str(?label) AS ?geoConcpet ?begTimeValue ?endTimeValue 
+                   WHERE
+                   {
+                     GRAPH <http://deeptimekb.org/iscallnew> 
+                     {
+                            {       
+                             ?tconcept  a gts:GeochronologicEra ;  
+                                             rdfs:label ?label ; 
+                                             skos:inScheme ?schemeID.
+                             FILTER (lang(?label) = "en")
+                             FILTER strstarts(?label, "', geoConcept, '").
+                             ?tconcept time:hasBeginning ?beg ;
+                             time:hasEnd ?end .
+                             ?beg time:inTemporalPosition ?begTime .
+                             ?end time:inTemporalPosition ?endTime .
+                             ?begTime time:numericPosition ?begTimeValue .
+                             ?endTime time:numericPosition ?endTimeValue .
+                             }
+                       UNION
+                             {
+                             ?tconcept a gts:GeochronologicEra ;  
                                        rdfs:label ?label .
-                                ?tconcept dc:description
-                                [time:hasBeginning ?beg ;
-                                time:hasEnd ?end ;
-                                skos:inScheme  ts:isc2012-08].
-                                ?beg time:inTemporalPosition ?begTime .
-                                ?end time:inTemporalPosition ?endTime .
-                                ?begTime dc:description
-                                [time:numericPosition ?begTimeValue ;
-                                skos:inScheme  ts:isc2012-08].
-                                ?endTime dc:description
-                                [time:numericPosition ?endTimeValue ;
-                                skos:inScheme  ts:isc2012-08].
-                                FILTER(?begTimeValue <=', T_beg, ') .
-                                FILTER(?endTimeValue >=', T_end, ') .
-                                }
-                
-                       }
-                       }')    
-        }
-       
-        res = SPARQL(endpoint, q)$results
-        return(res)
+                             FILTER (lang(?label) = "en")
+                             FILTER strstarts(?label, "', geoConcept, '").
+                             ?tconcept dc:description
+                             [time:hasBeginning ?beg ;
+                              time:hasEnd ?end ;
+                              skos:inScheme  ts:isc2012-08].
+                              ?beg time:inTemporalPosition ?begTime .
+                              ?end time:inTemporalPosition ?endTime .
+                              ?begTime dc:description
+                              [time:numericPosition ?begTimeValue ;
+                              skos:inScheme  ts:isc2012-08].
+                              ?endTime dc:description
+                              [time:numericPosition ?endTimeValue ;
+                              skos:inScheme  ts:isc2012-08 ;
+                              skos:inScheme ?schemeID].
+                             }
+                     }
+                   }
+                  '
+              )
+  }
+  res = SPARQL(endpoint, q)$results
+  
+  # display the SPARQL query
+  #cat("*****************************************\n")
+  #cat("#### Running the following query #####\n")
+  #cat("*****************************************\n")
+  #cat(q)
+  #cat("\n*****************************************\n")
+  
+  # calculate the druation
+  res$duration = abs(res[[3]]-res[[4]])
+  res$schemeID = substr(res$schemeID, 52, nchar(res$schemeID)-1)
+  
+  # deal with region
+  
+  # if(!is.null(region) & !any(region == c("International","international", 
+  #                                        "North America", "South China", "North China", 
+  #                                        "West Europe", "Britain", "New Zealand",
+  #                                        "Japan", "Baltoscania", "Australia"))){
+  #   stop('region must be NULL or regions listed in help page')
+  # }
+  if(!is.null(region)){
+    scheme = region
+    if(region == "international" | region == "International") scheme = "isc"
+    if(region == "North America") scheme = "tsna"
+    if(region == "South China") scheme = "tssc"
+    if(region == "North China") scheme = "tsnc"
+    if(region == "West Europe") scheme = "tswe"
+    if(region == "Britain") scheme = "tsbr"
+    if(region == "New Zealand") scheme = "tsnz"
+    if(region == "Japan") scheme = "tsjp"
+    if(region == "Baltoscania") scheme = "tsba"
+    if(region == "Australia") scheme = "tsau"
+    
+    res = res[grepl(scheme, res$schemeID, fixed = T),]
+  }
+  
+  if(nrow(res)==0){
+    warning("No result returned! Possible reason could be no such concept in this region or scheme.")
+  }
+  return(res)
 }
