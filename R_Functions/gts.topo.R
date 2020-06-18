@@ -7,12 +7,13 @@
 # OUTPUT:
 # begin and end time of the geotime and its duration and all other properties.
 
-gts.topo = function(geoConcept1, region1 = NULL, iscVersion1 = NULL, geoConcept2, region2 = NULL, iscVersion2 = NULL, prefix = NULL, graph = NULL){
+gts.topo = function(geoConcept1, geoConcept2, region1 = NULL, iscVersion1 = NULL, region2 = NULL, iscVersion2 = NULL, prefix = NULL, graph = NULL){
  
   res1 = gts.range(geoConcept1, region = region1, iscVersion = iscVersion1, prefix = prefix, graph = graph)
   res2 = gts.range(geoConcept2, region = region2, iscVersion = iscVersion2, prefix = prefix, graph = graph)
   
-  
+  if(nrow(res1)>1) stop("Please specify region and/or iscVersion of geoConcept1 to make sure gts.range(geoConcept1) has one retured result")
+  if(nrow(res2)>1) stop("Please specify region and/or iscVersion of geoConcept2 to make sure gts.range(geoConcept2) has one retured result")
   
   if(res1[1]>res2[1]){
     if(res1[2]>res2[1]) topo="time:intervalBefore"
