@@ -14,6 +14,13 @@ gts.list = function(region, level=NULL){
     stop('level must be NULL, "Age", "Epoch", "Period", "Era" or "Eon", see help page for more detail')
   }
   
+  if(!is.null(region) & !any(region == c("International","international",
+                                         "North America", "South China", "North China",
+                                         "West Europe", "Britain", "New Zealand",
+                                         "Japan", "Baltoscania", "Australia"))){
+    stop('region must be NULL or regions listed in help page')
+  }
+  
   # endpoint need to update accordingly
   endpoint = "http://virtuoso.nkn.uidaho.edu:8890/sparql/"
   
