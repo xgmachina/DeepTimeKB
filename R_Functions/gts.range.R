@@ -6,7 +6,7 @@
 # OUTPUT:
 # begin and end time of the geotime and its duration.
 
-gts.range = function(geoConcept, region = NULL, prefix = NULL, graph = NULL){
+gts.range = function(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL, graph = NULL){
   
 
   # set up end point
@@ -132,13 +132,12 @@ gts.range = function(geoConcept, region = NULL, prefix = NULL, graph = NULL){
   res$schemeID = substr(res$schemeID, 52, nchar(res$schemeID)-1)
   
   # deal with region
-  
-  # if(!is.null(region) & !any(region == c("International","international", 
-  #                                        "North America", "South China", "North China", 
-  #                                        "West Europe", "Britain", "New Zealand",
-  #                                        "Japan", "Baltoscania", "Australia"))){
-  #   stop('region must be NULL or regions listed in help page')
-  # }
+  if(!is.null(region) & !any(region == c("International","international",
+                                         "North America", "South China", "North China",
+                                         "West Europe", "Britain", "New Zealand",
+                                         "Japan", "Baltoscania", "Australia"))){
+    stop('region must be NULL or regions listed in help page')
+  }
   if(!is.null(region)){
     scheme = region
     if(region == "international" | region == "International") scheme = "isc"
@@ -155,8 +154,17 @@ gts.range = function(geoConcept, region = NULL, prefix = NULL, graph = NULL){
     res = res[grepl(scheme, res$schemeID, fixed = T),]
   }
   
-  if(nrow(res)==0){
-    warning("No result returned! Possible reason could be no such concept in this region or scheme.")
+  # deal with international geological time scale version
+  if(!is.null(iscVersion)){
+    res = res[grepl(iscVersion, res$schemeID, fixed = T),]
   }
+  
+  if(region != "international" & region != "International" & !is.null(iscVersion)){
+    warning("Only International Geological Time Scale has versions. See help page for more detail.")
+  }
+  if(nrow(res)==0){
+    warning("No result returned! Possible reason could be no such concept in this region or iscVersion")
+  }
+  
   return(res)
 }
