@@ -159,9 +159,11 @@ gts.range = function(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL
     res = res[grepl(iscVersion, res$schemeID, fixed = T),]
   }
   
-  if(region != "international" & region != "International" & !is.null(iscVersion)){
-    warning("Only International Geological Time Scale has versions. See help page for more detail.")
-  }
+  # if(!is.null(region) & !is.null(iscVersion)){
+  #   if(region != "international" & region != "International"){
+  #     warning("Only International Geological Time Scale has versions. See help page for more detail.")
+  #   }
+  # }
   if(nrow(res)==0){
     warning("No result returned! Possible reason could be no such concept in this region or iscVersion")
   }
