@@ -10,6 +10,22 @@ gts.range("Harju")
 gts.range("Wordian")
 gts.range("Wordian", region = "North America")
 gts.range("Wordian", region = "international")
-gts.range("Wordian", region = "2018")
+gts.range("Wordian", region = "international", iscVersion = "2017")
 gts.range("Wordian", region = "New Zealand") # warning
+gts.range("Wordian", region = "North America", iscVersion = "2017") # warning
+
+
+gts.topo("Jurassic", "Harju") # Error in gts.topo("Jurassic", "Harju") : 
+                              # Please specify region and/or iscVersion of geoConcept1 to make sure gts.range(geoConcept1) has one retured result
+gts.topo("Jurassic", "Harju", iscVersion1 = "2012")
+gts.topo("Harju", "Wordian") # Error in gts.topo("Harju", "Wordian") : 
+                             # Please specify region and/or iscVersion of geoConcept2 to make sure gts.range(geoConcept2) has one retured result
+gts.topo("Harju", "Wordian", region2 = "North America")
+
+gts.listRegion()
+
+gts.iscSchemes("all")
+gts.iscSchemes("latest")
+gts.iscSchemes("latest", URI=F)
+gts.iscSchemes("all", URI=F)
 
