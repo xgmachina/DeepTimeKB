@@ -1,10 +1,9 @@
 # INPUT: 
-# 1. geoConcept: geological time concept, eg. Cambrian
-# 2. prefix: optional, the prefix that need to be added
-# 3. graph: optional, the graph user provided
+# 1. prefix: optional, the prefix that need to be added
+# 2. graph: optional, the graph user provided
 
 # OUTPUT:
-# begin and end time of the geotime and its duration.
+# all schemeURI and regions of the geoConcepts in the graph
 
 gts.listRegion = function(prefix = NULL, graph = NULL){
   
