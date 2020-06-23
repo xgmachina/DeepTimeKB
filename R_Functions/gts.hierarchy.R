@@ -4,10 +4,13 @@
 # 3. graph: optional, the graph user provided
 
 # OUTPUT:
-# all properties in the graph
+# The broader and narrower concept of the geoConcept
 
 gts.hierarchy = function(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL, graph = NULL){
   
+  if(is.null(graph)){
+    graph = "GRAPH <http://deeptimekb.org/iscallnew>"
+  }
   
   # set up end point
   endpoint = "http://virtuoso.nkn.uidaho.edu:8890/sparql/"
@@ -25,17 +28,21 @@ gts.hierarchy = function(geoConcept, region = NULL, iscVersion = NULL, prefix = 
     sparql_prefix = paste(prefix, sparql_prefix, sep = "/n")
   }
   
-  # run the query
-  if(!is.null(graph)){
+  # get the level of the geoConcept
+  level = gts.level(geoConcept, region = region, iscVersion = iscVersion)
+  
+  # when the geoConcept does not have narrowerConcept
+  if (level[1,3] == "Age"){
     q = paste0(
       sparql_prefix, 
       '
- SELECT  ?schemeID  ?broaderConcept ?inputConcept ?narrowerConcept
+                  SELECT  ?schemeID str(?blabel) AS ?broaderConcept str(?clabel) AS ?inputConcept
                   WHERE
                   {
                                   
-                  ', graph, '
-                     { 
+                     ', graph, '
+                     {
+                     {
                       ?inputConcept  a gts:GeochronologicEra ;
                                   rdfs:label ?clabel . 
                       FILTER strstarts(?clabel, "', geoConcept, '") 
@@ -43,80 +50,167 @@ gts.hierarchy = function(geoConcept, region = NULL, iscVersion = NULL, prefix = 
                       ?inputConcept dc:description  
                         [   
                         skos:broader ?broaderConcept ;
-                        skos:narrower ?narrowerConcept ;
                         skos:inScheme ?schemeID
                         ] .
-                  
-                      ?narrowerConcept dc:description  
-                        [   
-                           time:hasBeginning ?basePosition ; 
-                           skos:inScheme ?schemeID
-                        ] .
-                  
-                       ?basePosition time:inTemporalPosition ?baseTime .
-                  
-                       ?baseTime dc:description  
-                        [   
-                           time:numericPosition ?baseNum ; 
-                           skos:inScheme ?schemeID
-                        ] .
-                      }
-                     
-                  }
-                  ORDER BY ?schemeID 
-                  '
-    )
-  }else{
-    q = paste0(
-      sparql_prefix, 
-      '
-                  SELECT  ?schemeID ?broaderConcept ?inputConcept ?narrowerConcept
-                  WHERE
-                  {
-                                  
-                     GRAPH <http://deeptimekb.org/iscallnew>
-                     { 
-                      ?inputConcept  a gts:GeochronologicEra ;
+
+                      ?broaderConcept rdfs:label ?blabel .
+                     }  
+                     UNION 
+                     {
+                     ?inputConcept  a gts:GeochronologicEra ;
                                   rdfs:label ?clabel . 
                       FILTER strstarts(?clabel, "', geoConcept, '") 
-                   
-                      ?inputConcept dc:description  
-                        [   
+                
+                      ?inputConcept  
                         skos:broader ?broaderConcept ;
-                        skos:narrower ?narrowerConcept ;
-                        skos:inScheme ?schemeID
-                        ] .
-                  
-                      ?narrowerConcept dc:description  
-                        [   
-                           time:hasBeginning ?basePosition ; 
-                           skos:inScheme ?schemeID
-                        ] .
-                  
-                       ?basePosition time:inTemporalPosition ?baseTime .
-                  
-                       ?baseTime dc:description  
-                        [   
-                           time:numericPosition ?baseNum ; 
-                           skos:inScheme ?schemeID
-                        ] .
-                      }
-                     
+                        skos:inScheme ?schemeID .
+                      ?broaderConcept rdfs:label ?blabel .
+
+                     }
+                    }
                   }
-                  ORDER BY ?schemeID 
+                  ORDER BY ?schemeID
           '
     )
-  }
+  } else if(level[1,3] == "Supereon" | geoConcept == "Phanerozoic"){  # when the geoConcept does not have broaderConcept
+    q = paste0(
+      sparql_prefix, 
+      '
+                  SELECT  ?schemeID str(?clabel) AS ?inputConcept str(?nlabel) AS ?narrowerConcept
+                  WHERE
+                  {
+                                  
+                     ', graph, '
+                     {
+                     {
+                      ?inputConcept  a gts:GeochronologicEra ;
+                                  rdfs:label ?clabel . 
+                      FILTER strstarts(?clabel, "', geoConcept, '") 
+                   
+                      ?inputConcept dc:description  
+                        [   
+                        skos:narrower ?narrowerConcept ;
+                        skos:inScheme ?schemeID
+                        ] .
+                  
+                      ?narrowerConcept dc:description  
+                        [   
+                           time:hasBeginning ?basePosition ; 
+                           skos:inScheme ?schemeID
+                        ] .
+                  
+                       ?basePosition time:inTemporalPosition ?baseTime .
+                  
+                       ?baseTime dc:description  
+                        [   
+                           time:numericPosition ?baseNum ; 
+                           skos:inScheme ?schemeID
+                        ] .
+                      ?narrowerConcept rdfs:label ?nlabel .
+                     }  
+                     UNION 
+                     {
+                     ?inputConcept  a gts:GeochronologicEra ;
+                                  rdfs:label ?clabel . 
+                      FILTER strstarts(?clabel, "', geoConcept, '") 
+                   
+                      ?inputConcept  
+                        skos:inScheme ?schemeID .
+                        
+                      ?narrowerConcept skos:broader ?inputConcept ; 
+                           time:hasBeginning ?basePosition . 
+
+                      ?basePosition time:inTemporalPosition ?baseTime .
+                  
+                      ?baseTime time:numericPosition ?baseNum .
+                      ?narrowerConcept rdfs:label ?nlabel .
+                     }
+                    }
+                  }
+                  ORDER BY ?schemeID ?baseNum
+          '
+    )
+  } else {   # when the geoConcept have both broaderConcept and narrowerConcept
+    q = paste0(
+      sparql_prefix, 
+      '
+                  SELECT  ?schemeID str(?blabel) AS ?broaderConcept str(?clabel) AS ?inputConcept str(?nlabel) AS ?narrowerConcept
+                  WHERE
+                  {
+                                  
+                     ', graph, '
+                     {
+                     {
+                      ?inputConcept  a gts:GeochronologicEra ;
+                                  rdfs:label ?clabel . 
+                      FILTER strstarts(?clabel, "', geoConcept, '") 
+                   
+                      ?inputConcept dc:description  
+                        [   
+                        skos:broader ?broaderConcept ;
+                        skos:narrower ?narrowerConcept ;
+                        skos:inScheme ?schemeID
+                        ] .
+                  
+                      ?narrowerConcept dc:description  
+                        [   
+                           time:hasBeginning ?basePosition ; 
+                           skos:inScheme ?schemeID
+                        ] .
+                  
+                       ?basePosition time:inTemporalPosition ?baseTime .
+                  
+                       ?baseTime dc:description  
+                        [   
+                           time:numericPosition ?baseNum ; 
+                           skos:inScheme ?schemeID
+                        ] .
+                      ?broaderConcept rdfs:label ?blabel .
+                      ?narrowerConcept rdfs:label ?nlabel .
+                     }  
+                     UNION 
+                     {
+                     ?inputConcept  a gts:GeochronologicEra ;
+                                  rdfs:label ?clabel . 
+                      FILTER strstarts(?clabel, "', geoConcept, '") 
+                   
+                      ?inputConcept  
+                        skos:broader ?broaderConcept ;
+                        skos:inScheme ?schemeID .
+                        
+                      ?narrowerConcept skos:broader ?inputConcept ; 
+                           time:hasBeginning ?basePosition . 
+
+                      ?basePosition time:inTemporalPosition ?baseTime .
+                  
+                      ?baseTime time:numericPosition ?baseNum .
+                      ?broaderConcept rdfs:label ?blabel .
+                      ?narrowerConcept rdfs:label ?nlabel .
+                     }
+                      
+                    }
+                     
+                  }
+                  ORDER BY ?schemeID ?baseNum
+          '
+    )
+  }   
+  
+  # run the query
   res = SPARQL(endpoint, q)$results
+  
+  # select only the name of the schemeID
   res[,1] = sub(".*/", "", res[,1])
   res[,1] = substr(res[,1], 1, nchar(res[,1])-1)
-  res[,2] = sub(".*/", "", res[,2])
-  res[,2] = substr(res[,2], 1, nchar(res[,2])-1)
-  res[,3] = sub(".*/", "", res[,3])
-  res[,3] = substr(res[,3], 1, nchar(res[,3])-1)
-  res[,4] = sub(".*/", "", res[,4])
-  res[,4] = substr(res[,4], 1, nchar(res[,4])-1)
   
+  # add the missing column as "not exist"
+  if (level[1,3] == "Age"){
+    res$narrowerConcept = "not exist"
+  }
+  if (level[1,3] == "Supereon" | geoConcept == "Phanerozoic"){
+    res$broaderConcept  = "not exist"
+    res = subset(res, select = c(1,4,2,3))
+  }
   
   return(res)
 }
