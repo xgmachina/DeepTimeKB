@@ -7,17 +7,18 @@
 
 # required pacakge: leaflet, htmltools, htmlwidgets
 
-gssp.map = function (iscVersion = NULL, map = 1){
+gssp.map = function (iscVersion = NULL, map = 2){
   
-  
+  # get the gssp
+  res = gts.gssp(iscVersion = iscVersion) 
   
   # title of the GSSP plot
-  if(is.null(iscVersion)) isc = "GSSP"
-  else {
+  if(is.null(iscVersion)) {
+    isc = "GSSP"
+  } else {
     isc = paste("GSSP of ", res[1,1])
-    res = gts.gssp(iscVersion = iscVersion)
   }
-
+  
   # GSSP names
   concept <- res[,2]
   # take out only the long and lat records from the sparql query results
