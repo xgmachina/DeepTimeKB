@@ -9,11 +9,14 @@
 
 gssp.map = function (iscVersion = NULL, map = 1){
   
-  res = gts.gssp(iscVersion = iscVersion)
+  
   
   # title of the GSSP plot
   if(is.null(iscVersion)) isc = "GSSP"
-  else isc = paste("GSSP of ", res[1,1])
+  else {
+    isc = paste("GSSP of ", res[1,1])
+    res = gts.gssp(iscVersion = iscVersion)
+  }
 
   # GSSP names
   concept <- res[,2]
