@@ -46,20 +46,25 @@ gts.iscSchemes("latest", URI=F)
 gts.iscSchemes("all", URI=F)
 
 a = gts("Jurassic")
+View(a)
 a = gts("Harju")
+View(a)
 
 gts.hierarchy("Jurassic")
-gts.hierarchy("Harju") # need to add local inputs
+gts.hierarchy("Harju") 
+gts.hierarchy("Wordian") # not narrowerConcept
+gts.hierarchy("Precambrian") # no broaderCocnept
 
 gts.level("Jurassic")
 gts.level("Wordian")
 
 gts.point(50)
 
-gts.gssp()
+gts.gssp() # get GSSP data from all ISC versions
 gts.gssp("latest")
 gts.gssp("2009")
 
-gssp.map("latest", map=2)
+gssp.map("latest")
 gssp.map()
+gssp.map("2009", map=1)
 
