@@ -10,8 +10,11 @@ gts.gssp = function(iscVersion = NULL, prefix = NULL, graph = NULL){
   
   if(is.null(graph)){
     graph = "GRAPH <http://deeptimekb.org/iscallnew>"
-  } else if(iscVersion == "latest") {
-    iscVersion = gts.iscSchemes(id="latest", URI = F)
+  } 
+  if(!is.null(iscVersion)){
+    if(iscVersion == "latest") {
+      iscVersion = gts.iscSchemes(id="latest", URI = F)
+  }
   }
   
   endpoint = "http://virtuoso.nkn.uidaho.edu:8890/sparql/"
