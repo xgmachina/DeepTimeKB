@@ -60,6 +60,6 @@ gts.gssp()
 gts.gssp("latest")
 gts.gssp("2009")
 
-gts.map("latest")
-gts.map()
+gssp.map("latest", map=2)
+gssp.map()
 
