@@ -1,3 +1,19 @@
+library(SPARQL)
+
+source("gts.hierarchy.R")
+source("gts.iscSchemes.R")
+source("gts.list.R")
+source("gts.listRegion.R")
+source("gts.R")
+source("gts.range.R")
+source("gts.topo.R")
+source("gts.within.R")
+source("gts.level")
+source("gts.point.R")
+source("gts.gssp.R")
+source("gssp.map.R")
+
+
 gts.list("international") # international should be the latest isc
 gts.list("international", "Epoch")
 gts.list("North America", "Epoch")
@@ -28,4 +44,22 @@ gts.iscSchemes("all")
 gts.iscSchemes("latest")
 gts.iscSchemes("latest", URI=F)
 gts.iscSchemes("all", URI=F)
+
+a = gts("Jurassic")
+a = gts("Harju")
+
+gts.hierarchy("Jurassic")
+gts.hierarchy("Harju") # need to add local inputs
+
+gts.level("Jurassic")
+gts.level("Wordian")
+
+gts.point(50)
+
+gts.gssp()
+gts.gssp("latest")
+gts.gssp("2009")
+
+gts.map("latest")
+gts.map()
 
