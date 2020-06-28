@@ -1,4 +1,9 @@
 library(SPARQL)
+library(rworldmap)
+library(htmlwidgets)
+library(htmltools)
+library(leaflet)
+
 
 source("gts.hierarchy.R")
 source("gts.iscSchemes.R")
@@ -8,7 +13,7 @@ source("gts.R")
 source("gts.range.R")
 source("gts.topo.R")
 source("gts.within.R")
-source("gts.level")
+source("gts.level.R")
 source("gts.point.R")
 source("gts.gssp.R")
 source("gssp.map.R")
