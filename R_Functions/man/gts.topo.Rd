@@ -6,7 +6,10 @@ Topology of two geological time concept
 \description{
 }
 \usage{
-gts.topo(geoConcept1, geoConcept2, prefix = NULL, graph = NULL)
+gts.topo(geoConcept1, geoConcept2, 
+          region1 = NULL, iscVersion1 = NULL, 
+          region2 = NULL, iscVersion2 = NULL, 
+          prefix = NULL, graph = NULL)
 }
 \arguments{
   \item{geoConcept1}{
@@ -14,6 +17,24 @@ gts.topo(geoConcept1, geoConcept2, prefix = NULL, graph = NULL)
 }
   \item{geoConcept2}{
 [character] Geological time concept, eg. "Jurassic"
+}
+  \item{region1}{
+[character] Region of geoConcept1, eg. "International". The options are: "International",
+                                         "North America", "South China", "North China",
+                                         "West Europe", "Britain", "New Zealand",
+                                         "Japan", "Baltoscania", "Australia".
+}
+  \item{iscVersion1}{
+[character] Geological time concept, eg. "isc2018-08". See gts.iscSchemes() for all ISC versions.
+}
+  \item{region2}{
+[character] Region of geoConcept1, eg. "International". The options are: "International",
+                                         "North America", "South China", "North China",
+                                         "West Europe", "Britain", "New Zealand",
+                                         "Japan", "Baltoscania", "Australia".
+}
+  \item{iscVersion2}{
+[character] Geological time concept, eg. "isc2018-08". See gts.iscSchemes() for all ISC versions.
 }
   \item{prefix}{
 [character] prefix for SPARQL querying. [Optional, default is NULL]
@@ -39,12 +60,20 @@ Topology of two geological time concept. All possible topology in time is refere
 }
 
 \seealso{
- \code{\link{gts1}}
+ \code{\link{gts.iscSchemes}}
+ \code{\link{gts.listRegion}}
+ \code{\link{gts.range}}
 }
 \examples{
 # Adavere Age (local) vs. Jurassic Period (global). Should be Before
 gts.topo(geoConcept1 = "Adavere", geoConcept2 = "Jurassic")
+
 # Jurassic Period (global) vs. Panerozoic Eon (global). Should be During
 gts.topo(geoConcept1 = "Jurassic", geoConcept2 = "Phanerozoic")  
+
+gts.topo("Harju", "Wordian", region2 = "North America")
+
+gts.topo("Jurassic", "Harju", iscVersion1 = "2012")
+
 }
 

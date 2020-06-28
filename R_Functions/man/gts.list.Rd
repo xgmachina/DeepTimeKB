@@ -1,19 +1,22 @@
 \name{gts.list}
 \alias{gts.list}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Function querying all the geological concept of "North America"
+Function querying all the geological time concept of a region or international geological time concept.
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-gts.list()
+gts.list(region, level=NULL)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{gts.list()}{
-All geological time concept of North America
+\item{region}{
+[character] region of the geologcial time concept. The options are: "International",
+                                         "North America", "South China", "North China",
+                                         "West Europe", "Britain", "New Zealand",
+                                         "Japan", "Baltoscania", "Australia".
+}
+\item{level}{
+[character] The level of the geological time concept, e.g. "Age". [Optional]
 }
 \item{prefix}{
 [character] prefix for SPARQL querying. [Optional]
@@ -22,31 +25,15 @@ All geological time concept of North America
 [character] GRAPH for SPARQL querying. [Optional]
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
-\value{
-All geological time concept for the given function
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-}
+
 \references{
 %% ~put references to the literature/web site here ~
 }
-\author{
-%%  ~~who you are~~
-}
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-gts.list()
+# query the Age level geological time concept for the North America
+gts.list(region = "North America", level = "Age")
 }

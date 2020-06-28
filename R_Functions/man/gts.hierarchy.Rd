@@ -1,19 +1,18 @@
-\name{gts.range}
-\alias{gts.range}
+\name{gts.hierarchy}
+\alias{gts.hierarchy}
 \title{
-Function querying start time, end time and duration of a specific geological time concept
+Get the broader and narrower concept of one geological time concept in database
 }
 \description{
 }
 \usage{
-gts.range(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL, graph = NULL)
+gts.hierarchy(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL, graph = NULL)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{geoConcept}{
 [character] Geological time concept, eg. "Cambrian"
 }
-\item{region}{
+  \item{region}{
 [character] region of the geologcial time concept. The options are: "International",
                                          "North America", "South China", "North China",
                                          "West Europe", "Britain", "New Zealand",
@@ -30,14 +29,15 @@ gts.range(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL, graph = N
 }
 }
 
-\seealso{
- \code{\link{gts.topo}}
+\references{
 }
+
+
 \examples{
-# Local concept in North America
-gts1("Roadian") 
-# Global concept
-gts1("Jurassic") 
+gts.hierarchy("Jurassic")
+gts.hierarchy("Harju") 
+gts.hierarchy("Wordian") # not narrowerConcept
+gts.hierarchy("Precambrian") # no broaderCocnept
 
 }
 
