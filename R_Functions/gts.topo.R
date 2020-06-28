@@ -1,13 +1,20 @@
 # INPUT: 
 # 1. geoConcept1: geological time concept, eg. Cambrian
 # 2. geoConcept2: geological time concept, eg. Jurassic
-# 3. prefix: optional, the prefix that need to be added
-# 4. graph: optional, the graph user provided
+# 3. region1: region for geoConcept1
+# 4. iscVersion1: the version of geoConcept1
+# 5. region2: region for geoConcept2 
+# 6. iscVersion2: the version of geoConcept1
+# 7. prefix: optional, the prefix that need to be added
+# 8. graph: optional, the graph user provided
 
 # OUTPUT:
 # begin and end time of the geotime and its duration and all other properties.
 
-gts.topo = function(geoConcept1, geoConcept2, region1 = NULL, iscVersion1 = NULL, region2 = NULL, iscVersion2 = NULL, prefix = NULL, graph = NULL){
+gts.topo = function(geoConcept1, geoConcept2, 
+                    region1 = NULL, iscVersion1 = NULL, 
+                    region2 = NULL, iscVersion2 = NULL, 
+                    prefix = NULL, graph = NULL){
  
   res1 = gts.range(geoConcept1, region = region1, iscVersion = iscVersion1, prefix = prefix, graph = graph)
   res2 = gts.range(geoConcept2, region = region2, iscVersion = iscVersion2, prefix = prefix, graph = graph)
