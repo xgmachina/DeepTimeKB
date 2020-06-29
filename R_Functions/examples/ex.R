@@ -19,7 +19,7 @@
 # source("gssp.map.R")
 
 # install deeptimekb package from github
-devtools::install_github("Demerara/dtkb/tree/master/dtkb", upgrade = FALSE, force = T)
+devtools::install_github("Demerara/DeepTimeKB", upgrade = FALSE, force = T)
 library(deeptimekb)
 
 gts.list("international") # international should be the latest isc
