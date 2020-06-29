@@ -20,7 +20,7 @@
 
 # install deeptimekb package from github
 devtools::install_github("Demerara/DeepTimeKB", upgrade = FALSE, force = T)
-library(deeptimekb)
+library(DeepTimeKB)
 
 gts.list("international") # international should be the latest isc
 gts.list("international", "Epoch")
