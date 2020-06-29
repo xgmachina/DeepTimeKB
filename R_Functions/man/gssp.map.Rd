@@ -3,7 +3,9 @@
 \title{
 Plot the locations of the Global Boundary Stratotype Section and Point (GSSP) on the world map.
 }
-
+\description{
+Plot the locations of the Global Boundary Stratotype Section and Point (GSSP) on the world map.
+}
 \usage{
 gssp.map(iscVersion = NULL)
 }

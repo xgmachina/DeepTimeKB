@@ -3,7 +3,7 @@
 \title{
 Get all the properties of one geological time concept in database
 }
-\description{
+\description{Get all the properties of one geological time concept in database
 }
 \usage{
 gts(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL, graph = NULL)

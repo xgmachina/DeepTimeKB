@@ -3,7 +3,7 @@
 \title{
 Get the broader and narrower concept of one geological time concept in database
 }
-\description{
+\description{Get the broader and narrower concept of one geological time concept in database
 }
 \usage{
 gts.hierarchy(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL, graph = NULL)

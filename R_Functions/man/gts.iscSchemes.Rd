@@ -3,7 +3,8 @@
 \title{
 Function querying start time, end time and duration of a specific geological time concept
 }
-\description{
+\description{Function querying start time, end time and duration of a specific geological time concept
+
 }
 \usage{
 gts.iscSchemes(id = "all", prefix = NULL, graph = NULL, URI = TRUE)
@@ -18,12 +19,15 @@ gts.iscSchemes(id = "all", prefix = NULL, graph = NULL, URI = TRUE)
   \item{graph}{
 [character] GRAPH for SPARQL querying. [Optional, default is NULL]
 }
+  \item{URI}{
+[character] Show result as URI or not. [TRUE (default) or FALSE]
+}
 }
 
 \examples{
 gts.iscSchemes("all")
 gts.iscSchemes("latest")
-gts.iscSchemes("latest", URI=F)
-gts.iscSchemes("all", URI=F)
+gts.iscSchemes("latest", URI=FALSE)
+gts.iscSchemes("all", URI=FALSE)
 }
 

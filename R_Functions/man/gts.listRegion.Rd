@@ -3,7 +3,7 @@
 \title{
 Function querying all the geological time concept of a region or international geological time concept.
 }
-\description{
+\description{Function querying all the geological time concept of a region or international geological time concept.
 }
 \usage{
 gts.listRegion(prefix = NULL, graph = NULL)

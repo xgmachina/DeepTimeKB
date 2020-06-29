@@ -3,7 +3,7 @@
 \title{
 Get the level of the geological time concept
 }
-\description{
+\description{Get the level of the geological time concept
 }
 \usage{
 gts.level(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL, graph = NULL)

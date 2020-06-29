@@ -3,7 +3,9 @@
 \title{
 Query the GSSP data
 }
-
+\description{
+Query the GSSP data
+}
 \usage{
 gts.gssp(iscVersion = NULL, prefix = NULL, graph = NULL)
 }

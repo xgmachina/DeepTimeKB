@@ -1,9 +1,9 @@
 \name{gts.topo}
+\alias{gts.topo}
 \title{
 Topology of two geological time concept
-
 }
-\description{
+\description{Topology of two geological time concept.
 }
 \usage{
 gts.topo(geoConcept1, geoConcept2, 
@@ -65,12 +65,6 @@ Topology of two geological time concept. All possible topology in time is refere
  \code{\link{gts.range}}
 }
 \examples{
-# Adavere Age (local) vs. Jurassic Period (global). Should be Before
-gts.topo(geoConcept1 = "Adavere", geoConcept2 = "Jurassic")
-
-# Jurassic Period (global) vs. Panerozoic Eon (global). Should be During
-gts.topo(geoConcept1 = "Jurassic", geoConcept2 = "Phanerozoic")  
-
 gts.topo("Harju", "Wordian", region2 = "North America")
 
 gts.topo("Jurassic", "Harju", iscVersion1 = "2012")

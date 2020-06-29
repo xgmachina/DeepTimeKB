@@ -3,7 +3,7 @@
 \title{
 Function querying  all the geological time concepts that include the time point
 }
-\description{
+\description{Function querying  all the geological time concepts that include the time point
 }
 \usage{
 gts.point(time, prefix = NULL, graph = NULL)

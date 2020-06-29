@@ -1,8 +1,9 @@
 \name{gts.within}
+\alias{gts.within}
 \title{
 Function querying all geological time concepts within a time interval
 }
-\description{
+\description{Function querying all geological time concepts within a time interval
 }
 \usage{
 gts.within(geotime1, geotime2, prefix=NULL, graph=NULL)

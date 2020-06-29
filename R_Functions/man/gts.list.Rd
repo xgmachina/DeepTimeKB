@@ -3,7 +3,7 @@
 \title{
 Function querying all the geological time concept of a region or international geological time concept.
 }
-\description{
+\description{Function querying all the geological time concept of a region or international geological time concept.
 }
 \usage{
 gts.list(region, level=NULL)
@@ -17,12 +17,6 @@ gts.list(region, level=NULL)
 }
 \item{level}{
 [character] The level of the geological time concept, e.g. "Age". [Optional]
-}
-\item{prefix}{
-[character] prefix for SPARQL querying. [Optional]
-}
-\item{graph}{
-[character] GRAPH for SPARQL querying. [Optional]
 }
 }
 
