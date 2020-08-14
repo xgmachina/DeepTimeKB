@@ -56,19 +56,19 @@ gts.range = function(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL
                              ?tconcept dc:description
                              [time:hasBeginning ?beg ;
                               time:hasEnd ?end ;
-                              skos:inScheme  ts:isc2012-08].
+                              skos:inScheme  ?schemeID].
                               ?beg time:inTemporalPosition ?begTime .
                               ?end time:inTemporalPosition ?endTime .
                               ?begTime dc:description
                               [time:numericPosition ?begTimeValue ;
-                              skos:inScheme  ts:isc2012-08].
+                              skos:inScheme  ?schemeID].
                               ?endTime dc:description
                               [time:numericPosition ?endTimeValue ;
-                              skos:inScheme  ts:isc2012-08 ;
                               skos:inScheme ?schemeID].
                              }
                      }
                    }
+                   ORDER BY DESC (?schemeID) 
                   '
     )
   }else{
@@ -102,19 +102,19 @@ gts.range = function(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL
                              ?tconcept dc:description
                              [time:hasBeginning ?beg ;
                               time:hasEnd ?end ;
-                              skos:inScheme  ts:isc2012-08].
+                              skos:inScheme  ?schemeID].
                               ?beg time:inTemporalPosition ?begTime .
                               ?end time:inTemporalPosition ?endTime .
                               ?begTime dc:description
                               [time:numericPosition ?begTimeValue ;
-                              skos:inScheme  ts:isc2012-08].
+                              skos:inScheme  ?schemeID].
                               ?endTime dc:description
                               [time:numericPosition ?endTimeValue ;
-                              skos:inScheme  ts:isc2012-08 ;
                               skos:inScheme ?schemeID].
                              }
                      }
                    }
+                   ORDER BY DESC (?schemeID) 
                   '
               )
   }
