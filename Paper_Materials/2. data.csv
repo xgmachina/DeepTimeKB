@@ -1,0 +1,5 @@
+Region,NamespacePrefix,ConceptName,ConceptLevel, Top (Ma), Bottom (Ma),broader is local?, broader, broaderTransitive, broaderTransitive, broaderTransitive
+Boreal,tsbo,Valanginian,Age,137.27,139.27,N,Lower Cretaceous,Cretaceous,Mesozoic,Phanerozoic
+California,tsca,Bulitian,Age,52.87,56.02,None,None,Paleogene,Cenozoic,Phanerozoic
+Russia Platform,tsru,Tatarian,Age,257.55,268.8,Y,Tatarian,Permian,Paleozoic,Phanerozoic
+West Europe,tswe,Senonian,Epoch,66.04,90.05,N,Cretaceous,Mesozoic,Phanerozoic,

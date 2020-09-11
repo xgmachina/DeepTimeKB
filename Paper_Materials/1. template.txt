@@ -1,0 +1,46 @@
+REPLACE0:REPLACE1
+  rdf:type gts:REPLACE2 ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+  rdfs:label "REPLACE1 REPLACE2"@en ;
+  skos:broader REPLACE3:REPLACE4 ;
+  skos:broaderTransitive isc:REPLACE5 ;
+  skos:broaderTransitive isc:REPLACE6 ;
+  skos:broaderTransitive isc:Phanerozoic ;
+  skos:inScheme ts:REPLACE02019 ;
+  time:hasBeginning  REPLACE0:BaseREPLACE1 ;
+  time:hasEnd REPLACE0:REPLACE7 ;
+.
+
+REPLACE0:BaseREPLACE1
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Base of REPLACE1"@en ;
+  skos:prefLabel "Base of REPLACE1"@en ;
+  time:inTemporalPosition REPLACE0:BaseREPLACE1Time ;
+.
+
+REPLACE0:BaseREPLACE1Time
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "REPLACE8"^^xsd:decimal ;
+.
+
+REPLACE0:TopREPLACE1
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  rdfs:label "Top of REPLACE1"@en ;
+  skos:prefLabel "Top of REPLACE1"@en ;
+  time:inTemporalPosition REPLACE0:TopREPLACE1Time ;
+.
+
+REPLACE0:TopREPLACE1Time
+  rdf:type time:TimePosition ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition "REPLACE9"^^xsd:decimal ;
+.
