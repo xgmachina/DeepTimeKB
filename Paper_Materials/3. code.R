@@ -22,10 +22,10 @@ for (i in 1:nrow(data)){
   ex1 <- gsub(pattern = "REPLACE2", replace = as.character(data[i,4]), x = ex1)
   
   ## REPLACE3:broader's region
-  if(data[1,7] == "Y"){
+  if(data[i,7] == "Y"){
     ex1 <- gsub(pattern = "REPLACE3", replace = as.character(data[i,2]), x = ex1) # if it has local broader in Series then use region's short name, this only works for concepts in Age
   }
-  if(data[1,7] == "N"){
+  if(data[i,7] == "N"){
     ex1 <- gsub(pattern = "REPLACE3", replace = "isc", x = ex1) # if broader in Series is from international then use "isc"
   }
   
@@ -50,12 +50,12 @@ for (i in 1:nrow(data)){
     }
     
   }
-
+  
   ## REPLACE8:bottom age of the concept
   ex1 <- gsub(pattern = "REPLACE8", replace = as.character(data[i,6]), x = ex1)
   ## REPLACE9:top age of the concept
   ex1 <- gsub(pattern = "REPLACE9", replace = as.character(data[i,5]), x = ex1)
-
+  
   # remove broader or broaderTransitive that does not exist, or duplicated broaderTransitive
   if(data[i,8] == "None"){   # if no broader concept
     ex1[7]= "REMOVE"
