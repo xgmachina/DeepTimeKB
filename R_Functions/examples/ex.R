@@ -74,5 +74,5 @@ gts.gssp("2009")
 
 gssp.map("latest")
 gssp.map()
-gssp.map("2009", map=1)
+gssp.map("2009")
 
