@@ -1,23 +1,3 @@
-# library(SPARQL)
-# library(rworldmap)
-# library(htmlwidgets)
-# library(htmltools)
-# library(leaflet)
-# 
-# 
-# source("gts.hierarchy.R")
-# source("gts.iscSchemes.R")
-# source("gts.list.R")
-# source("gts.listRegion.R")
-# source("gts.R")
-# source("gts.range.R")
-# source("gts.topo.R")
-# source("gts.within.R")
-# source("gts.level.R")
-# source("gts.point.R")
-# source("gts.gssp.R")
-# source("gssp.map.R")
-
 # install deeptimekb package from github
 devtools::install_github("Demerara/DeepTimeKB", upgrade = FALSE, force = T)
 library(DeepTimeKB)
