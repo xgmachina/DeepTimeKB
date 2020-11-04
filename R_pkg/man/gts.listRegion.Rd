@@ -1,9 +1,9 @@
 \name{gts.listRegion}
 \alias{gts.listRegion}
 \title{
-Function querying all the geological time concept of a region or international geological time concept.
+Function querying the geological time concept of a region or the international geological time concept
 }
-\description{Function querying all the geological time concept of a region or international geological time concept.
+\description{Function querying the geological time concept of a region or the international geological time concept.
 }
 \usage{
 gts.listRegion(prefix = NULL, graph = NULL)

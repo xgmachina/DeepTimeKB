@@ -3,18 +3,17 @@
 \title{
 Function querying start time, end time and duration of a specific geological time concept
 }
-\description{Function querying start time, end time and duration of a specific geological time concept
-
+\description{Function querying start time, end time, and duration of a specific geological time concept.
 }
 \usage{
 gts.iscSchemes(id = "all", prefix = NULL, graph = NULL, URI = TRUE)
 }
 \arguments{
   \item{id}{
-[character] "all" or "latest". If "all", return all the isc schemes in the database; if "latest", return the latest isc scheme in the database.
+[character] "all" or "latest". If "all", return all the isc schemes in the database; if "latest", return the latest ISC scheme in the database.
 }
   \item{prefix}{
-[character] prefix for SPARQL querying. [Optional, default is NULL]
+[character] Prefix for SPARQL querying. [Optional, default is NULL]
 }
   \item{graph}{
 [character] GRAPH for SPARQL querying. [Optional, default is NULL]
