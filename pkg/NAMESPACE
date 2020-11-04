@@ -1,0 +1,12 @@
+exportPattern("^[[:alpha:]]+")
+importFrom ("rworldmap", "getMap")
+importFrom ("SPARQL", "SPARQL")
+importFrom("graphics", "points")
+importFrom("sp", "plot")
+import("leaflet")
+import("htmltools")
+import("htmlwidgets")
+#import("RCurl")
+#import("XML")
+#import("SPARQL")
+
