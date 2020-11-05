@@ -1,7 +1,7 @@
 \name{gts.list}
 \alias{gts.list}
 \title{
-Function querying the geological time concept of a region or the international geological time concept.
+Function querying the geological time concept of a region or the international geological time concept
 }
 \description{Function querying the geological time concept of a region or the international geological time concept.
 }
