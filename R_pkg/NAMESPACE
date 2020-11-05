@@ -6,7 +6,4 @@ importFrom("sp", "plot")
 import("leaflet")
 import("htmltools")
 import("htmlwidgets")
-#import("RCurl")
-#import("XML")
-#import("SPARQL")
 
