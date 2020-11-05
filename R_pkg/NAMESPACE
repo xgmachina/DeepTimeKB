@@ -1,4 +1,4 @@
-exportPattern("^[[:alpha:]]+")
+#exportPattern("^[[:alpha:]]+")
 importFrom ("rworldmap", "getMap")
 importFrom ("SPARQL", "SPARQL")
 importFrom("graphics", "points")
