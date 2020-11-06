@@ -33,6 +33,11 @@ gts.range(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL, graph = N
 \seealso{
  \code{\link{gts.topo}}
 }
+
+\references{
+Ma, X., Ma, C. and Wang, C., 2020. A new structure for representing and tracking version information in a deep time knowledge graph. Computers & Geosciences, p.104620. https://doi.org/10.1016/j.cageo.2020.104620 
+}
+
 \examples{
 # Local concept in North America
 gts.range("Roadian") 

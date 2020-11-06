@@ -21,12 +21,9 @@ gts.list(region, level=NULL)
 }
 
 \references{
-%% ~put references to the literature/web site here ~
+Ma, X., Ma, C. and Wang, C., 2020. A new structure for representing and tracking version information in a deep time knowledge graph. Computers & Geosciences, p.104620. https://doi.org/10.1016/j.cageo.2020.104620 
 }
 
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
 # query the Age level geological time concept for North America
 gts.list(region = "North America", level = "Age")

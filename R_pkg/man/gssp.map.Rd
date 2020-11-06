@@ -20,7 +20,12 @@ gssp.map(iscVersion = NULL)
 \code{\link{gts.gssp}}
 \code{\link{gts.iscSchemes}}
 }
+
+\references{
+Ma, X., Ma, C. and Wang, C., 2020. A new structure for representing and tracking version information in a deep time knowledge graph. Computers & Geosciences, p.104620. https://doi.org/10.1016/j.cageo.2020.104620 
+}
+
 \examples{
 # Plot the GSSP in the latest version of the International Stratigraphic Chart (ISC)
-gssp.map(iscVersion = "latest")
+gssp.map(iscVersion = "2018")
 }

@@ -15,7 +15,6 @@ Imports:
 Depends: R (>= 3.5), SPARQL
 Suggests: 
     knitr,
-    rmarkdown,
     testthat,
     covr
 VignetteBuilder: knitr

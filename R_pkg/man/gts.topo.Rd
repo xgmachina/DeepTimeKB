@@ -43,21 +43,15 @@ gts.topo(geoConcept1, geoConcept2,
 [character] GRAPH for SPARQL querying. [Optional, default is NULL]
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 Topology of two geological time concepts. All possible topologies in time are referred to here: https://www.w3.org/TR/owl-time/#topology
 }
+
 \references{
-%% ~put references to the literature/web site here ~
+Ma, X., Ma, C. and Wang, C., 2020. A new structure for representing and tracking version information in a deep time knowledge graph. Computers & Geosciences, p.104620. https://doi.org/10.1016/j.cageo.2020.104620 
 }
-\author{
-%%  ~~who you are~~
-}
-\note{
-%%  ~~further notes~~
-}
+
 
 \seealso{
  \code{\link{gts.iscSchemes}}
