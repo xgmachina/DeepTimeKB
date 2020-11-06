@@ -2,7 +2,4 @@ importFrom ("rworldmap", "getMap")
 importFrom ("SPARQL", "SPARQL")
 importFrom("graphics", "points")
 importFrom("sp", "plot")
-import("leaflet")
-import("htmltools")
-import("htmlwidgets")
 
