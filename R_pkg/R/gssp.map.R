@@ -5,8 +5,6 @@
 # OUTPUT
 # 1. Plot all the golden spikes on the map and displays the concept name.
 
-# required pacakge: leaflet, htmltools, htmlwidgets
-
 gssp.map = function (iscVersion = NULL){
   
   # get the gssp
