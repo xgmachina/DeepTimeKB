@@ -6,7 +6,7 @@
 # OUTPUT:
 # all properties in the graph
 
-gts = function(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL, graph = NULL){
+gts = function(geoConcept, prefix = NULL, graph = NULL){
   
   
   # set up end point
