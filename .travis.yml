@@ -2,5 +2,7 @@
 
 language: R
 cache: packages
+before_install:
+  - cd R_pkg
 script:
   - cd R_pkg
