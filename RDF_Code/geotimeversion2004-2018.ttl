@@ -767,7 +767,7 @@ isc:TimePositions
   skos:member isc:BaseLanghianTime ;
   skos:member isc:BaseLopingianTime ;
   skos:member isc:BaseLudfordianTime ;
-  skos:member isc:BaseLudlowPosition ;
+  skos:member isc:BaseLudlowTime ;
   skos:member isc:BaseLutetianTime ;
   skos:member isc:BaseMaastrichtianTime ;
   skos:member isc:BaseMeghalayanTime;
@@ -2597,7 +2597,7 @@ isc:BaseLudlow
   skos:altLabel "Base of Gorstian"@en ;
   skos:prefLabel "Base of Ludlow"@en ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
-  time:inTemporalPosition isc:BaseLudlowPosition ;
+  time:inTemporalPosition isc:BaseLudlowTime ;
 .
 isc:BaseLudlowTime
   rdf:type time:TimePosition ;
@@ -6970,7 +6970,7 @@ isc:BaseTortonianTime
   dc:description
     [ 
     time:numericPosition "11.63"^^xsd:decimal ;
-    skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08 
+    skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08
     ],
 
     [ 
@@ -7497,8 +7497,6 @@ isc:Precambrian
   rdf:type gts:Super-Eon ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -4567 +|-1 Ma"@en ;
-  rdfs:comment "younger bound -541.0 +|-1.0 Ma"@en ;
   rdfs:label "Precambrian Supereon"@en ;
   owl:sameAs <http://dbpedia.org/resource/Precambrian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -7632,8 +7630,6 @@ isc:Hadean
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -4567 +|-1 Ma"@en ;
-  rdfs:comment "younger bound -4000 Ma"@en ;
   rdfs:label "Hadean Eon"@en ;
   owl:sameAs <http://dbpedia.org/resource/Hadean> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08 ;
@@ -7683,8 +7679,6 @@ isc:Archean
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -4000 Ma"@en ;
-  rdfs:comment "younger bound -2500 Ma"@en ;
   rdfs:label "Archean Eon"@en ;
   owl:sameAs <http://dbpedia.org/resource/Archean> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -7764,8 +7758,6 @@ isc:Eoarchean
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -4000 Ma"@en ;
-  rdfs:comment "younger bound -3600 Ma"@en ;
   rdfs:label "Eoarchean Era"@en ;
   owl:sameAs <http://dbpedia.org/resource/Eoarchean> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -7827,8 +7819,6 @@ isc:Paleoarchean
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -3600 Ma"@en ;
-  rdfs:comment "younger bound -3200 Ma"@en ;
   rdfs:label "Paleoarchean Era"@en ;
   owl:sameAs <http://dbpedia.org/resource/Paleoarchean> ; 
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -7881,8 +7871,6 @@ isc:Mesoarchean
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -3200 Ma"@en ;
-  rdfs:comment "younger bound -2800 Ma"@en ;
   rdfs:label "Mesoarchean Era"@en ;
   owl:sameAs <http://dbpedia.org/resource/Mesoarchean> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -7935,8 +7923,6 @@ isc:Neoarchean
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -2800 Ma"@en ;
-  rdfs:comment "younger bound -2500 Ma"@en ;
   rdfs:label "Neoarchean Era"@en ;
   owl:sameAs <http://dbpedia.org/resource/Neoarchean> ; 
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -7991,8 +7977,6 @@ isc:Proterozoic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -2500 Ma"@en ;
-  rdfs:comment "younger bound -541.0 +|-1.0 Ma"@en ;
   rdfs:label "Proterozoic Eon"@en ;
   owl:sameAs <http://dbpedia.org/resource/Proterozoic> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8117,8 +8101,6 @@ isc:Paleoproterozoic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -2500 Ma"@en ;
-  rdfs:comment "younger bound -1600 Ma"@en ;
   rdfs:label "Paleoproterozoic Era"@en ;
   owl:sameAs <http://dbpedia.org/resource/Paleoproterozoic> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8181,8 +8163,6 @@ isc:Siderian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -2500 Ma"@en ;
-  rdfs:comment "younger bound -2300 Ma"@en ;
   rdfs:label "Siderian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Siderian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8235,8 +8215,6 @@ isc:Rhyacian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -2300 Ma"@en ;
-  rdfs:comment "younger bound -2050 Ma"@en ;
   rdfs:label "Rhyacian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Rhyacian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8288,8 +8266,6 @@ isc:Orosirian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -2050 Ma"@en ;
-  rdfs:comment "younger bound -1800 Ma"@en ;
   rdfs:label "Orosirian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Orosirian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8341,8 +8317,6 @@ isc:Statherian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -1800 Ma"@en ;
-  rdfs:comment "younger bound -1600 Ma"@en ;
   rdfs:label "Statherian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Statherian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8395,8 +8369,6 @@ isc:Mesoproterozoic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -1600 Ma"@en ;
-  rdfs:comment "younger bound -1000 Ma"@en ;
   rdfs:label "Mesoproterozoic Era"@en ;
   owl:sameAs <http://dbpedia.org/resource/Mesoproterozoic> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8455,8 +8427,6 @@ isc:Calymmian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -1600 Ma"@en ;
-  rdfs:comment "younger bound -1400 Ma"@en ;
   rdfs:label "Calymmian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Calymmian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8509,8 +8479,6 @@ isc:Ectasian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -1400 Ma"@en ;
-  rdfs:comment "younger bound -1200 Ma"@en ;
   rdfs:label "Ectasian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Ectasian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8562,8 +8530,6 @@ isc:Stenian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -1200 Ma"@en ;
-  rdfs:comment "younger bound -1000 Ma"@en ;
   rdfs:label "Stenian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Stenian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8616,8 +8582,6 @@ isc:Neoproterozoic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -1000 Ma"@en ;
-  rdfs:comment "younger bound -541.0 +|-1.0 Ma"@en ;
   rdfs:label "Neoproterozoic Era"@en ;
   owl:sameAs <http://dbpedia.org/resource/Neoproterozoic> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8732,8 +8696,6 @@ isc:Tonian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -1000 Ma"@en ;
-  rdfs:comment "younger bound -720 Ma"@en ;
   rdfs:label "Tonian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Tonian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8786,8 +8748,6 @@ isc:Cryogenian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -720 Ma"@en ;
-  rdfs:comment "younger bound -635 Ma"@en ;
   rdfs:label "Cryogenian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Cryogenian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8840,8 +8800,6 @@ isc:Ediacaran
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   dc:description "Enorama Creek, Flinders Ranges, South Australia |  31.3314 S 138.6334 E |  Base of the Marinoan cap Carbonate |  (1) rapid decay of Marinoan ice sheets and onset of distinct cap carbonates throughout the world, and (2) the beginning of a distinctive pattern of secular changes in carbon isotopes. |  Ratified 1990 |  Lethaia 39, p.13 30, 2006 | http://stratigraphy.science.purdue.edu/references/Ediacaran_Lethaia060SP.pdf"@en ;
-  rdfs:comment "older bound -635 Ma"@en ;
-  rdfs:comment "younger bound -541.0 +|-1.0 Ma"@en ;
   rdfs:label "Ediacaran Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Ediacaran> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -8938,8 +8896,6 @@ isc:Phanerozoic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -541.0 +|-1.0 Ma"@en ;
-  rdfs:comment "younger bound -0.0 Ma"@en ;
   rdfs:label "Phanerozoic Eon"@en ;
   owl:sameAs <http://dbpedia.org/resource/Phanerozoic> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -9145,8 +9101,6 @@ isc:Paleozoic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -541.0 +|-1.0 Ma"@en ;
-  rdfs:comment "younger bound -251.902 +|-0.024 Ma"@en ;
   rdfs:label "Paleozoic Era"@en ;
   owl:sameAs <http://dbpedia.org/resource/Paleozoic> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -9288,8 +9242,6 @@ isc:Cambrian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -541.0 +|-1.0 Ma"@en ;
-  rdfs:comment "younger bound -485.4 +|-1.9 Ma"@en ;
   rdfs:label "Cambrian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Cambrian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -9391,8 +9343,6 @@ isc:Terreneuvian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -541.0 +|-1.0 Ma"@en ;
-  rdfs:comment "younger bound -521 Ma"@en ;
   rdfs:label "Terreneuvian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Terreneuvian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -9472,8 +9422,6 @@ isc:Fortunian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -541.0 +|-1.0 Ma"@en ;
-  rdfs:comment "younger bound -529 Ma"@en ;
   rdfs:label "Fortunian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Fortunian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12 ;
@@ -9529,8 +9477,6 @@ isc:CambrianStage2
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -529 Ma"@en ;
-  rdfs:comment "younger bound -521 Ma"@en ;
   rdfs:label "Cambrian Stage 2 Age"@en ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12 ;
   skos:notation "a1.1.3.6.4.1"^^gts:EraCode ;
@@ -9582,8 +9528,6 @@ isc:CambrianSeries2
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -521 Ma"@en ;
-  rdfs:comment "younger bound -509 Ma"@en ;
   rdfs:label "Cambrian Series 2 Epoch"@en ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
   skos:notation "a1.1.3.6.3"^^gts:EraCode ;
@@ -9657,8 +9601,6 @@ isc:CambrianStage3
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -521 Ma"@en ;
-  rdfs:comment "younger bound -514 Ma"@en ;
   rdfs:label "Cambrian Stage 3 Age"@en ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12 ;
   skos:notation "a1.1.3.6.3.2"^^gts:EraCode ;
@@ -9710,8 +9652,6 @@ isc:CambrianStage4
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -514 Ma"@en ;
-  rdfs:comment "younger bound -509 Ma"@en ;
   rdfs:label "Cambrian Stage 4 Age"@en ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12 ;
   skos:notation "a1.1.3.6.3.1"^^gts:EraCode ;
@@ -9763,8 +9703,6 @@ isc:Miaolingian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -509 Ma"@en ;
-  rdfs:comment "younger bound -497 Ma"@en ;
   rdfs:label "Miaolingian Epoch"@en ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12 ;
   skos:notation "a1.1.3.6.2"^^gts:EraCode ;
@@ -9822,8 +9760,6 @@ isc:Wuliuan
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -509 Ma"@en ;
-  rdfs:comment "younger bound -504.5 Ma"@en ;
   rdfs:label "Wuliuan Age"@en ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12 ;
   skos:notation "a1.1.3.6.2.3"^^gts:EraCode ;
@@ -9875,8 +9811,6 @@ isc:Drumian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -504.5 Ma"@en ;
-  rdfs:comment "younger bound -500.5 Ma"@en ;
   rdfs:label "Drumian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Drumian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12 ;
@@ -9929,8 +9863,6 @@ isc:Guzhangian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -500.5 Ma"@en ;
-  rdfs:comment "younger bound -497 Ma"@en ;
   rdfs:label "Guzhangian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Guzhangian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12 ;
@@ -9984,8 +9916,6 @@ isc:Furongian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -497 Ma"@en ;
-  rdfs:comment "younger bound -485.4 +|-1.9 Ma"@en ;
   rdfs:label "Furongian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Furongian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -10067,8 +9997,6 @@ isc:Paibian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -497 Ma"@en ;
-  rdfs:comment "younger bound -494 Ma"@en ;
   rdfs:label "Paibian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Paibian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -10130,8 +10058,6 @@ isc:Jiangshanian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -494 Ma"@en ;
-  rdfs:comment "younger bound -489.5 Ma"@en ;
   rdfs:label "Jiangshanian Age"@en ;
   owl:sameAs isc:CambrianStage9 ;
   skos:exactMatch isc:CambrianStage9 ;
@@ -10185,8 +10111,6 @@ isc:CambrianStage10
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -489.5 Ma"@en ;
-  rdfs:comment "younger bound -485.4 +|-1.9 Ma"@en ;
   rdfs:label "Cambrian Stage 10 Age"@en ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12 ;
   skos:notation "a1.1.3.6.1.1"^^gts:EraCode ;
@@ -10239,8 +10163,6 @@ isc:Ordovician
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -485.4 +|-1.9 Ma"@en ;
-  rdfs:comment "younger bound -443.8 +|-1.5 Ma"@en ;
   rdfs:label "Ordovician Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Ordovician> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -10369,8 +10291,6 @@ isc:LowerOrdovician
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -485.4 +|-1.9 Ma"@en ;
-  rdfs:comment "younger bound -470.0 +|-1.4 Ma"@en ;
   rdfs:label "Lower Ordovician Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/LowerOrdovician> ;
   skos:altLabel "オルドビス紀前期"@ja ;
@@ -10475,8 +10395,6 @@ isc:Tremadocian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -485.4 +|-1.9 Ma"@en ;
-  rdfs:comment "younger bound -477.7 +|-1.4 Ma"@en ;
   rdfs:label "Tremadocian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Tremadocian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -10553,8 +10471,6 @@ isc:Floian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -477.7 +|-1.4 Ma"@en ;
-  rdfs:comment "younger bound -470.0 +|-1.4 Ma"@en ;
   rdfs:label "Floian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Floian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08 ;
@@ -10722,8 +10638,6 @@ isc:Dapingian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -470.0 +|-1.4 Ma"@en ;
-  rdfs:comment "younger bound -467.3 +|-1.1 Ma"@en ;
   rdfs:label "Dapingian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Dapingian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08 ;
@@ -11059,8 +10973,6 @@ isc:Katian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -453 +|-0.7 Ma"@en ;
-  rdfs:comment "younger bound -445.2 +|-1.4 Ma"@en ;
   rdfs:label "Katian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Katian> ;
   owl:sameAs isc:OrdovicianStage6 ;
@@ -11135,8 +11047,6 @@ isc:Hirnantian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -445.2 +|-1.4 Ma"@en ;
-  rdfs:comment "younger bound -443.8 +|-1.5 Ma"@en ;
   rdfs:label "Hirnantian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Hirnantian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11214,8 +11124,6 @@ isc:Silurian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -443.8 +|-1.5 Ma"@en ;
-  rdfs:comment "younger bound -419.2 +|-3.2 Ma"@en ;
   rdfs:label "Silurian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Silurian> ;
   skos:definition "The Silurian is a geologic period and system that extends from the end of the Ordovician Period, about 443.7 ± 1.5 million years ago (mya), to the beginning of the Devonian Period, about 416.0 ± 2.8 mya. As with other geologic periods, the rock beds that define the period's start and end are well identified, but the exact dates are uncertain by several million years. The Base of the Silurian is set at a major extinction event when 60% of marine eciesSP were wiped out."@en ;
@@ -11286,8 +11194,6 @@ isc:Llandovery
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -443.8 +|-1.5 Ma"@en ;
-  rdfs:comment "younger bound -433.4 +|-0.8 Ma"@en ;
   rdfs:label "Llandovery Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Llandovery> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11348,8 +11254,6 @@ isc:Rhuddanian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -443.8 +|-1.5 Ma"@en ;
-  rdfs:comment "younger bound -440.8 +|-1.2 Ma"@en ;
   rdfs:label "Rhuddanian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Rhuddanian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11404,8 +11308,6 @@ isc:Aeronian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -440.8 +|-1.2 Ma"@en ;
-  rdfs:comment "younger bound -438.5 +|-1.1 Ma"@en ;
   rdfs:label "Aeronian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Aeronian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11458,8 +11360,6 @@ isc:Telychian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -438.5 +|-1.1 Ma"@en ;
-  rdfs:comment "younger bound -433.4 +|-0.8 Ma"@en ;
   rdfs:label "Telychian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Telychian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11513,8 +11413,6 @@ isc:Wenlock
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -433.4 +|-0.8 Ma"@en ;
-  rdfs:comment "younger bound -427.4 +|-0.5 Ma"@en ;
   rdfs:label "Wenlock Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Wenlock> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11572,8 +11470,6 @@ isc:Sheinwoodian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -433.4 +|-0.8 Ma"@en ;
-  rdfs:comment "younger bound -430.5 +|-0.7 Ma"@en ;
   rdfs:label "Sheinwoodian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Sheinwoodian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11627,8 +11523,6 @@ isc:Homerian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -430.5 +|-0.7 Ma"@en ;
-  rdfs:comment "younger bound -427.4 +|-0.5 Ma"@en ;
   rdfs:label "Homerian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Homerian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11682,8 +11576,6 @@ isc:Ludlow
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -427.4 +|-0.5 Ma"@en ;
-  rdfs:comment "younger bound -423 +|-2.3 Ma"@en ;
   rdfs:label "Ludlow Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Ludlow> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11740,8 +11632,6 @@ isc:Gorstian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -427.4 +|-0.5 Ma"@en ;
-  rdfs:comment "younger bound -425.6 +|-0.9 Ma"@en ;
   rdfs:label "Gorstian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Gorstian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11795,8 +11685,6 @@ isc:Ludfordian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -425.6 +|-0.9 Ma"@en ;
-  rdfs:comment "younger bound -423 +|-2.3 Ma"@en ;
   rdfs:label "Ludfordian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Ludfordian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11849,8 +11737,6 @@ isc:Pridoli
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -423 +|-2.3 Ma"@en ;
-  rdfs:comment "younger bound -419.2 +|-3.2 Ma"@en ;
   rdfs:label "Pridoli Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Pridoli> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11905,8 +11791,6 @@ isc:Devonian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -419.2 +|-3.2 Ma"@en ;
-  rdfs:comment "younger bound -358.9 +|-0.4 Ma"@en ;
   rdfs:label "Devonian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Devonian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -11974,8 +11858,6 @@ isc:LowerDevonian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -419.2 +|-3.2 Ma"@en ;
-  rdfs:comment "younger bound -393.3 +|-1.2 Ma"@en ;
   rdfs:label "Lower Devonian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/LowerDevonian> ;
   skos:altLabel "デボン紀前期"@ja ;
@@ -12037,8 +11919,6 @@ isc:Lochkovian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -419.2 +|-3.2 Ma"@en ;
-  rdfs:comment "younger bound -410.8 +|-2.8 Ma"@en ;
   rdfs:label "Lochkovian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Lochkovian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -12092,8 +11972,6 @@ isc:Pragian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -410.8 +|-2.8 Ma"@en ;
-  rdfs:comment "younger bound -407.6 +|-2.6 Ma"@en ;
   rdfs:label "Pragian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Pragian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -12146,8 +12024,6 @@ isc:Emsian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -407.6 +|-2.6 Ma"@en ;
-  rdfs:comment "younger bound -393.3 +|-1.2 Ma"@en ;
   rdfs:label "Emsian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Emsian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -12201,8 +12077,6 @@ isc:MiddleDevonian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -393.3 +|-1.2 Ma"@en ;
-  rdfs:comment "younger bound -382.7 +|-1.6 Ma"@en ;
   rdfs:label "Middle Devonian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/MiddleDevonian> ;
   skos:altLabel "デボン紀中期"@ja ;
@@ -12262,8 +12136,6 @@ isc:Eifelian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -393.3 +|-1.2 Ma"@en ;
-  rdfs:comment "younger bound -387.7 +|-0.8 Ma"@en ;
   rdfs:label "Eifelian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Eifelian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -12317,8 +12189,6 @@ isc:Givetian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -387.7 +|-0.8 Ma"@en ;
-  rdfs:comment "younger bound -382.7 +|-1.6 Ma"@en ;
   rdfs:label "Givetian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Givetian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -12372,8 +12242,6 @@ isc:UpperDevonian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -382.7 +|-1.6 Ma"@en ;
-  rdfs:comment "younger bound -358.9 +|-0.4 Ma"@en ;
   rdfs:label "Upper Devonian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/UpperDevonian> ;
   skos:altLabel "デボン紀後期"@ja ;
@@ -12435,8 +12303,6 @@ isc:Frasnian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -382.7 +|-1.6 Ma"@en ;
-  rdfs:comment "younger bound -372.2 +|-1.6 Ma"@en ;
   rdfs:label "Frasnian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Frasnian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -12490,8 +12356,6 @@ isc:Famennian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -372.2 +|-1.6 Ma"@en ;
-  rdfs:comment "younger bound -358.9 +|-0.4 Ma"@en ;
   rdfs:label "Famennian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Famennian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -12547,8 +12411,6 @@ isc:Carboniferous
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -358.9 +|-0.4 Ma"@en ;
-  rdfs:comment "younger bound -298.9 +|-0.15 Ma"@en ;
   rdfs:label "Carboniferous Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Carboniferous> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -12620,8 +12482,6 @@ isc:Mississippian
   rdf:type gts:Sub-Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -358.9 +|-0.4 Ma"@en ;
-  rdfs:comment "younger bound -323.2 +|-0.4 Ma"@en ;
   rdfs:label "Mississippian Sub-period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Mississippian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -12686,8 +12546,6 @@ isc:LowerMississippian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -358.9 +|-0.4 Ma"@en ;
-  rdfs:comment "younger bound -346.7 +|-0.4 Ma"@en ;
   rdfs:label "Lower Mississippian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/LowerMississippian> ;
   skos:altLabel "ミシシッピアン紀前期"@ja ;
@@ -12727,8 +12585,6 @@ isc:Tournaisian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -358.9 +|-0.4 Ma"@en ;
-  rdfs:comment "younger bound -346.7 +|-0.4 Ma"@en ;
   rdfs:label "Tournaisian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Tournaisian> ;
   skos:altLabel "Early Mississippian"@en ;
@@ -12785,8 +12641,6 @@ isc:MiddleMississippian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -346.7 +|-0.4 Ma"@en ;
-  rdfs:comment "younger bound -330.9 +|-0.2 Ma"@en ;
   rdfs:label "Middle Mississippian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/MiddleMississippian> ;
   skos:altLabel "ミシシッピアン紀中期"@ja ;
@@ -12825,8 +12679,6 @@ isc:Visean
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -346.7 +|-0.4 Ma"@en ;
-  rdfs:comment "younger bound -330.9 +|-0.2 Ma"@en ;
   rdfs:label "Visean Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Visean> ;
   skos:altLabel "Middle Mississippian"@en ;
@@ -12882,8 +12734,6 @@ isc:UpperMississippian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -330.9 +|-0.2 Ma"@en ;
-  rdfs:comment "younger bound -298.9 +|-0.15 Ma"@en ;
   rdfs:label "Upper Mississippian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/UpperMississippian> ;
   skos:altLabel "ミシシッピアン紀後期"@ja ;
@@ -12924,8 +12774,6 @@ isc:Serpukhovian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -330.9 +|-0.2 Ma"@en ;
-  rdfs:comment "younger bound -323.2 +|-0.4 Ma"@en ;
   rdfs:label "Serpukhovian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Serpukhovian> ;
   skos:altLabel "Late Mississippian"@en ;
@@ -12983,8 +12831,6 @@ isc:Pennsylvanian
   rdf:type gts:Sub-Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -323.2 +|-0.4 Ma"@en ;
-  rdfs:comment "younger bound -298.9 +|-0.15 Ma"@en ;
   rdfs:label "Pennsylvanian Sub-period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Pennsylvanian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -13049,8 +12895,6 @@ isc:LowerPennsylvanian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -323.2 +|-0.4 Ma"@en ;
-  rdfs:comment "younger bound -315.2 +|-0.2 Ma"@en ;
   rdfs:label "Lower Pennsylvanian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/LowerPennsylvanian> ;
   skos:altLabel "ペンシルバニア紀前期"@ja ;
@@ -13089,8 +12933,6 @@ isc:Bashkirian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -323.2 +|-0.4 Ma"@en ;
-  rdfs:comment "younger bound -315.2 +|-0.2 Ma"@en ;
   rdfs:label "Bashkirian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Bashkirian> ;
   skos:altLabel "Early Pennsylvanian"@en ;
@@ -13146,8 +12988,6 @@ isc:MiddlePennsylvanian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -315.2 +|-0.2 Ma"@en ;
-  rdfs:comment "younger bound -307 +|-0.1 Ma"@en ;
   rdfs:label "Middle Pennsylvanian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/MiddlePennsylvanian> ;
   skos:altLabel "ペンシルバニア紀中期"@ja ;
@@ -13186,8 +13026,6 @@ isc:Moscovian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -315.2 +|-0.2 Ma"@en ;
-  rdfs:comment "younger bound -307 +|-0.1 Ma"@en ;
   rdfs:label "Moscovian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Moscovian> ;
   skos:altLabel "Middle Pennsylvanian"@en ;
@@ -13243,8 +13081,6 @@ isc:UpperPennsylvanian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -307 +|-0.1 Ma"@en ;
-  rdfs:comment "younger bound -298.9 +|-0.15 Ma"@en ;
   rdfs:label "Upper Pennsylvanian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/UpperPennsylvanian> ;
   skos:altLabel "ペンシルバニア紀後期"@ja ;
@@ -13306,8 +13142,6 @@ isc:Kasimovian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -307 +|-0.1 Ma"@en ;
-  rdfs:comment "younger bound -303.7 +|-0.1 Ma"@en ;
   rdfs:label "Kasimovian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Kasimovian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -13362,8 +13196,6 @@ isc:Gzhelian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -303.7 +|-0.1 Ma"@en ;
-  rdfs:comment "younger bound -298.9 +|-0.15 Ma"@en ;
   rdfs:label "Gzhelian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Gzhelian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -13419,8 +13251,6 @@ isc:Permian
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -298.9 +|-0.15 Ma"@en ;
-  rdfs:comment "younger bound -251.902 +|-0.024 Ma"@en ;
   rdfs:label "Permian Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Permian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -13493,8 +13323,6 @@ isc:Cisuralian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -298.9 +|-0.15 Ma"@en ;
-  rdfs:comment "younger bound -272.95 +|-0.11 Ma"@en ;
   rdfs:label "Cisuralian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Cisuralian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -13559,8 +13387,6 @@ isc:Asselian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -298.9 +|-0.15 Ma"@en ;
-  rdfs:comment "younger bound -295.0 +|-0.18 Ma"@en ;
   rdfs:label "Asselian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Asselian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -13618,8 +13444,6 @@ isc:Sakmarian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -295.0 +|-0.18 Ma"@en ;
-  rdfs:comment "younger bound -290.1 +|-0.26 Ma"@en ;
   rdfs:label "Sakmarian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Sakmarian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -13672,8 +13496,6 @@ isc:Artinskian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -290.1 +|-0.26 Ma"@en ;
-  rdfs:comment "younger bound -283.5 +|-0.6 Ma"@en ;
   rdfs:label "Artinskian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Artinskian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -13726,8 +13548,6 @@ isc:Kungurian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -283.5 +|-0.6 Ma"@en ;
-  rdfs:comment "younger bound -272.95 +|-0.11 Ma"@en ;
   rdfs:label "Kungurian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Kungurian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -13781,8 +13601,6 @@ isc:Guadalupian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -272.95 +|-0.11 Ma"@en ;
-  rdfs:comment "younger bound -259.1 +|-0.5 Ma"@en ;
   rdfs:label "Guadalupian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Guadalupian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -13843,8 +13661,6 @@ isc:Roadian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -272.95 +|-0.11 Ma"@en ;
-  rdfs:comment "younger bound -268.8 +|-0.5 Ma"@en ;
   rdfs:label "Roadian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Roadian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -13899,8 +13715,6 @@ isc:Wordian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -268.8 +|-0.5 Ma"@en ;
-  rdfs:comment "younger bound -265.1 +|-0.4 Ma"@en ;
   rdfs:label "Wordian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Wordian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -13953,8 +13767,6 @@ isc:Capitanian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -265.1 +|-0.4 Ma"@en ;
-  rdfs:comment "younger bound -272.95 +|-0.11 Ma"@en ;
   rdfs:label "Capitanian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Capitanian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14008,8 +13820,6 @@ isc:Lopingian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -259.1 +|-0.5 Ma"@en ;
-  rdfs:comment "younger bound -251.902 +|-0.024 Ma"@en ;
   rdfs:label "Lopingian Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Lopingian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14068,8 +13878,6 @@ isc:Wuchiapingian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -259.1 +|-0.5 Ma"@en ;
-  rdfs:comment "younger bound -254.14 +|-0.07 Ma"@en ;
   rdfs:label "Wuchiapingian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Wuchiapingian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14122,8 +13930,6 @@ isc:Changhsingian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -254.14 +|-0.07 Ma"@en ;
-  rdfs:comment "younger bound -251.902 +|-0.024 Ma"@en ;
   rdfs:label "Changhsingian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Changhsingian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14179,8 +13985,6 @@ isc:Mesozoic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -251.902 +|-0.024 Ma"@en ;
-  rdfs:comment "younger bound -66.0 Ma"@en ;
   rdfs:label "Mesozoic Era"@en ;
   owl:sameAs <http://dbpedia.org/resource/Mesozoic> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14280,8 +14084,6 @@ isc:Triassic
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -251.902 +|-0.024 Ma"@en ;
-  rdfs:comment "younger bound -201.3 +|-0.2 Ma"@en ;
   rdfs:label "Triassic Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Triassic> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14350,8 +14152,6 @@ isc:LowerTriassic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -251.902 +|-0.024 Ma"@en ;
-  rdfs:comment "younger bound -247.2 Ma"@en ;
   rdfs:label "Lower Triassic Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/LowerTriassic> ;
   skos:altLabel "三畳紀前期"@ja ;
@@ -14413,8 +14213,6 @@ isc:Induan
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -251.902 +|-0.024 Ma"@en ;
-  rdfs:comment "younger bound -251.2 Ma"@en ;
   rdfs:label "Induan Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Induan> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14470,8 +14268,6 @@ isc:Olenekian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -251.2 Ma"@en ;
-  rdfs:comment "younger bound -247.2 Ma"@en ;
   rdfs:label "Olenekian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Olenekian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14525,8 +14321,6 @@ isc:MiddleTriassic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -247.2 Ma"@en ;
-  rdfs:comment "younger bound -237 Ma"@en ;
   rdfs:label "Middle Triassic Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/MiddleTriassic> ;
   skos:altLabel "三畳紀中期"@ja ;
@@ -14586,8 +14380,6 @@ isc:Anisian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -247.2 Ma"@en ;
-  rdfs:comment "younger bound -242 Ma"@en ;
   rdfs:label "Anisian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Anisian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14641,8 +14433,6 @@ isc:Ladinian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -242 Ma"@en ;
-  rdfs:comment "younger bound -237 Ma"@en ;
   rdfs:label "Ladinian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Ladinian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14696,8 +14486,6 @@ isc:UpperTriassic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -237 Ma"@en ;
-  rdfs:comment "younger bound -201.3 +|-0.2 Ma"@en ;
   rdfs:label "Upper Triassic Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/UpperTriassic> ;
   skos:altLabel "三畳紀後期"@ja ;
@@ -14760,8 +14548,6 @@ isc:Carnian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -237 Ma"@en ;
-  rdfs:comment "younger bound -227 Ma"@en ;
   rdfs:label "Carnian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Carnian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14815,8 +14601,6 @@ isc:Norian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -227 Ma"@en ;
-  rdfs:comment "younger bound -208.5 Ma"@en ;
   rdfs:label "Norian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Norian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14869,8 +14653,6 @@ isc:Rhaetian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -208.5 Ma"@en ;
-  rdfs:comment "younger bound -201.3 +|-0.2 Ma"@en ;
   rdfs:label "Rhaetian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Rhaetian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14925,8 +14707,6 @@ isc:Jurassic
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -201.3 +|-0.2 Ma"@en ;
-  rdfs:comment "younger bound -145.0 Ma"@en ;
   rdfs:label "Jurassic Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Jurassic> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -14998,8 +14778,6 @@ isc:LowerJurassic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -201.3 +|-0.2 Ma"@en ;
-  rdfs:comment "younger bound -174.1 +|-1.0 Ma"@en ;
   rdfs:label "Lower Jurassic Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/LowerJurassic> ;
   skos:altLabel "ジュラ紀前期"@ja ;
@@ -15064,8 +14842,6 @@ isc:Hettangian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -201.3 +|-0.2 Ma"@en ;
-  rdfs:comment "younger bound -199.3 +|-0.3 Ma"@en ;
   rdfs:label "Hettangian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Hettangian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15120,8 +14896,6 @@ isc:Sinemurian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -199.3 +|-0.3 Ma"@en ;
-  rdfs:comment "younger bound -190.8 +|-1.0 Ma"@en ;
   rdfs:label "Sinemurian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Sinemurian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15174,8 +14948,6 @@ isc:Pliensbachian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -190.8 +|-1.0 Ma"@en ;
-  rdfs:comment "younger bound -182.7 +|-0.7 Ma"@en ;
   rdfs:label "Pliensbachian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Pliensbachian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15228,8 +15000,6 @@ isc:Toarcian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -182.7 +|-0.7 Ma"@en ;
-  rdfs:comment "younger bound -174.1 +|-1.0 Ma"@en ;
   rdfs:label "Toarcian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Toarcian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15283,8 +15053,6 @@ isc:MiddleJurassic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -174.1 +|-1.0 Ma"@en ;
-  rdfs:comment "younger bound -163.5 +|-1.0 Ma"@en ;
   rdfs:label "Middle Jurassic Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/MiddleJurassic> ;
   skos:altLabel "ジュラ紀中期"@ja ;
@@ -15348,8 +15116,6 @@ isc:Aalenian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -174.1 +|-1.0 Ma"@en ;
-  rdfs:comment "younger bound -170.3 +|-1.4 Ma"@en ;
   rdfs:label "Aalenian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Aalenian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15403,8 +15169,6 @@ isc:Bajocian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -170.3 +|-1.4 Ma"@en ;
-  rdfs:comment "younger bound -168.3 +|-1.3 Ma"@en ;
   rdfs:label "Bajocian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Bajocian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15457,8 +15221,6 @@ isc:Bathonian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -168.3 +|-1.3 Ma"@en ;
-  rdfs:comment "younger bound -166.1 +|-1.2 Ma"@en ;
   rdfs:label "Bathonian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Bathonian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15511,8 +15273,6 @@ isc:Callovian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -166.1 +|-1.2 Ma"@en ;
-  rdfs:comment "younger bound -163.5 +|-1.0 Ma"@en ;
   rdfs:label "Callovian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Callovian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15566,8 +15326,6 @@ isc:UpperJurassic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -163.5 +|-1.0 Ma"@en ;
-  rdfs:comment "younger bound -145.0 Ma"@en ;
   rdfs:label "Upper Jurassic Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/UpperJurassic> ;
   skos:altLabel "ジュラ紀後期"@ja ;
@@ -15630,8 +15388,6 @@ isc:Oxfordian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -163.5 +|-1.0 Ma"@en ;
-  rdfs:comment "younger bound -157.3 +|-1.0 Ma"@en ;
   rdfs:label "Oxfordian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Oxfordian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15685,8 +15441,6 @@ isc:Kimmeridgian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -157.3 +|-1.0 Ma"@en ;
-  rdfs:comment "younger bound -152.1 +|-0.9 Ma"@en ;
   rdfs:label "Kimmeridgian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Kimmeridgian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15739,8 +15493,6 @@ isc:Tithonian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -152.1 +|-0.9 Ma"@en ;
-  rdfs:comment "younger bound -145.0 Ma"@en ;
   rdfs:label "Tithonian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Tithonian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15795,8 +15547,6 @@ isc:Cretaceous
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -145.0 Ma"@en ;
-  rdfs:comment "younger bound -66.0 Ma"@en ;
   rdfs:label "Cretaceous Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Cretaceous> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15868,8 +15618,6 @@ isc:LowerCretaceous
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -145.0 Ma"@en ;
-  rdfs:comment "younger bound -100.5 Ma"@en ;
   rdfs:label "Lower Cretaceous Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/LowerCretaceous> ;
   skos:altLabel "下白垩统"@zh ;
@@ -15938,8 +15686,6 @@ isc:Berriasian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -145.0 Ma"@en ;
-  rdfs:comment "younger bound -139.8 Ma"@en ;
   rdfs:label "Berriasian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Berriasian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -15994,8 +15740,6 @@ isc:Valanginian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -139.8 Ma"@en ;
-  rdfs:comment "younger bound -132.9 Ma"@en ;
   rdfs:label "Valanginian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Valanginian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16048,8 +15792,6 @@ isc:Hauterivian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -132.9 Ma"@en ;
-  rdfs:comment "younger bound -129.4 Ma"@en ;
   rdfs:label "Hauterivian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Hauterivian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16102,8 +15844,6 @@ isc:Barremian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -129.4 Ma"@en ;
-  rdfs:comment "younger bound -125.0 Ma"@en ;
   rdfs:label "Barremian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Barremian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16156,8 +15896,6 @@ isc:Aptian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -125.0 Ma"@en ;
-  rdfs:comment "younger bound -113.0 Ma"@en ;
   rdfs:label "Aptian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Aptian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16210,8 +15948,6 @@ isc:Albian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -113.0 Ma"@en ;
-  rdfs:comment "younger bound -100.5 Ma"@en ;
   rdfs:label "Albian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Albian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16265,8 +16001,6 @@ isc:UpperCretaceous
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -100.5 Ma"@en ;
-  rdfs:comment "younger bound -66.0 Ma"@en ;
   rdfs:label "Upper Cretaceous Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/UpperCretaceous> ;
   skos:altLabel "上白垩统"@zh ;
@@ -16336,8 +16070,6 @@ isc:Cenomanian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -100.5 Ma"@en ;
-  rdfs:comment "younger bound -93.9 Ma"@en ;
   rdfs:label "Cenomanian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Cenomanian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16391,8 +16123,6 @@ isc:Turonian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -93.9 Ma"@en ;
-  rdfs:comment "younger bound -89.8 +|-0.3 Ma"@en ;
   rdfs:label "Turonian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Turonian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16445,8 +16175,6 @@ isc:Coniacian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -89.8 +|-0.3 Ma"@en ;
-  rdfs:comment "younger bound -86.3 +|-0.5 Ma"@en ;
   rdfs:label "Coniacian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Coniacian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16499,8 +16227,6 @@ isc:Santonian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -86.3 +|-0.5 Ma"@en ;
-  rdfs:comment "younger bound -83.6 +|-0.2 Ma"@en ;
   rdfs:label "Santonian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Santonian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16553,8 +16279,6 @@ isc:Campanian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -83.6 +|-0.2 Ma"@en ;
-  rdfs:comment "younger bound -72.1 +|-0.2 Ma"@en ;
   rdfs:label "Campanian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Campanian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16607,8 +16331,6 @@ isc:Maastrichtian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -72.1 +|-0.2 Ma"@en ;
-  rdfs:comment "younger bound -66.0 Ma"@en ;
   rdfs:label "Maastrichtian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Maastrichtian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16664,8 +16386,6 @@ isc:Cenozoic
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -66.0 Ma"@en ;
-  rdfs:comment "younger bound -0.0 Ma"@en ;
   rdfs:label "Cenozoic Era"@en ;
   owl:sameAs <http://dbpedia.org/resource/Cenozoic> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16753,8 +16473,6 @@ isc:Paleogene
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -66.0 Ma"@en ;
-  rdfs:comment "younger bound -23.03 Ma"@en ;
   rdfs:label "Paleogene Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Paleogene> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16827,8 +16545,6 @@ isc:Paleocene
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -66.0 Ma"@en ;
-  rdfs:comment "younger bound -56 Ma"@en ;
   rdfs:label "Paleocene Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Paleocene> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16892,8 +16608,6 @@ isc:Danian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -66.0 Ma"@en ;
-  rdfs:comment "younger bound -61.6 Ma"@en ;
   rdfs:label "Danian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Danian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -16949,8 +16663,6 @@ isc:Selandian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -61.6 Ma"@en ;
-  rdfs:comment "younger bound -59.2 Ma"@en ;
   rdfs:label "Selandian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Selandian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17003,8 +16715,6 @@ isc:Thanetian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -59.2 Ma"@en ;
-  rdfs:comment "younger bound -56 Ma"@en ;
   rdfs:label "Thanetian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Thanetian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17058,8 +16768,6 @@ isc:Eocene
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -56 Ma"@en ;
-  rdfs:comment "younger bound -33.9 Ma"@en ;
   rdfs:label "Eocene Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Eocene> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17121,8 +16829,6 @@ isc:Ypresian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -56 Ma"@en ;
-  rdfs:comment "younger bound -47.8 Ma"@en ;
   rdfs:label "Ypresian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Ypresian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17176,8 +16882,6 @@ isc:Lutetian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -47.8 Ma"@en ;
-  rdfs:comment "younger bound -41.2 Ma"@en ;
   rdfs:label "Lutetian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Lutetian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17230,8 +16934,6 @@ isc:Bartonian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -41.2 Ma"@en ;
-  rdfs:comment "younger bound -37.8 Ma"@en ;
   rdfs:label "Bartonian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Bartonian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17284,8 +16986,6 @@ isc:Priabonian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -37.8 Ma"@en ;
-  rdfs:comment "younger bound -33.9 Ma"@en ;
   rdfs:label "Priabonian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Priabonian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17339,8 +17039,6 @@ isc:Oligocene
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -33.9 Ma"@en ;
-  rdfs:comment "younger bound -23.03 Ma"@en ;
   rdfs:label "Oligocene Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Oligocene> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17399,8 +17097,6 @@ isc:Rupelian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -33.9 Ma"@en ;
-  rdfs:comment "younger bound -28.1 Ma"@en ;
   rdfs:label "Rupelian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Rupelian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17454,8 +17150,6 @@ isc:Chattian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -28.1 Ma"@en ;
-  rdfs:comment "younger bound -23.03 Ma"@en ;
   rdfs:label "Chattian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Chattian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17510,8 +17204,6 @@ isc:Neogene
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -23.03 Ma"@en ;
-  rdfs:comment "younger bound -2.58 Ma"@en ;
   rdfs:label "Neogene Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Neogene> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17631,8 +17323,6 @@ isc:Miocene
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -23.03 Ma"@en ;
-  rdfs:comment "younger bound -5.333 Ma"@en ;
   rdfs:label "Miocene Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Miocene> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17699,8 +17389,6 @@ isc:Aquitanian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -23.03 Ma"@en ;
-  rdfs:comment "younger bound -20.44 Ma"@en ;
   rdfs:label "Aquitanian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Aquitanian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17755,8 +17443,6 @@ isc:Burdigalian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -20.44 Ma"@en ;
-  rdfs:comment "younger bound -15.97 Ma"@en ;
   rdfs:label "Burdigalian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Burdigalian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17809,8 +17495,6 @@ isc:Langhian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -15.97 Ma"@en ;
-  rdfs:comment "younger bound -13.82 Ma"@en ;
   rdfs:label "Langhian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Langhian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17863,8 +17547,6 @@ isc:Serravallian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -13.82 Ma"@en ;
-  rdfs:comment "younger bound -11.63 Ma"@en ;
   rdfs:label "Serravallian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Serravallian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17917,8 +17599,6 @@ isc:Tortonian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -11.63 Ma"@en ;
-  rdfs:comment "younger bound -7.246 Ma"@en ;
   rdfs:label "Tortonian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Tortonian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -17971,8 +17651,6 @@ isc:Messinian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -7.246 Ma"@en ;
-  rdfs:comment "younger bound -5.333 Ma"@en ;
   rdfs:label "Messinian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Messinian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -18026,8 +17704,6 @@ isc:Pliocene
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -5.333 Ma"@en ;
-  rdfs:comment "younger bound -2.58 Ma"@en ;
   rdfs:label "Pliocene Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Pliocene> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -18135,8 +17811,6 @@ isc:Zanclean
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -5.333 Ma"@en ;
-  rdfs:comment "younger bound -3.6 Ma"@en ;
   rdfs:label "Zanclean Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Zanclean> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -18190,8 +17864,6 @@ isc:Piacenzian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -3.6 Ma"@en ;
-  rdfs:comment "younger bound -2.58 Ma"@en ;
   rdfs:label "Piacenzian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Piacenzian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -18269,8 +17941,6 @@ isc:Gelasian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -2.58 Ma"@en ;
-  rdfs:comment "younger bound -1.80 Ma"@en ;
   rdfs:label "Gelasian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Gelasian> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -18365,8 +18035,6 @@ isc:Quaternary
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -2.58 Ma"@en ;
-  rdfs:comment "younger bound -0.0 Ma"@en ;
   rdfs:label "Quaternary Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Quaternary> ;
   skos:broader isc:Cenozoic ;
@@ -18470,8 +18138,6 @@ isc:Pleistocene
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -2.58 Ma"@en ;
-  rdfs:comment "younger bound -0.0117 Ma"@en ;
   rdfs:label "Pleistocene Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Pleistocene> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
@@ -18585,8 +18251,6 @@ isc:Calabrian
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -1.80 Ma"@en ;
-  rdfs:comment "younger bound -0.781 Ma"@en ;
   rdfs:label "Calabrian Age"@en ;
   dcterms:replaces isc:LowerPleistocene ;
   owl:sameAs <http://dbpedia.org/resource/Calabrian> ;
@@ -18692,8 +18356,6 @@ isc:MiddlePleistocene
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   dcterms:replaces isc:Ionian ;
-  rdfs:comment "older bound -0.781 Ma"@en ;
-  rdfs:comment "younger bound -0.126 Ma"@en ;
   rdfs:label "Middle Pleistocene Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Ionian> ;
   owl:sameAs isc:Ionian ;
@@ -18814,8 +18476,6 @@ isc:UpperPleistocene
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -0.126 Ma"@en ;
-  rdfs:comment "younger bound -0.0117 Ma"@en ;
   rdfs:label "Upper Pleistocene Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/UpperPleistocene> ;
   skos:altLabel "上更新世"@zh ;
@@ -18888,8 +18548,6 @@ isc:Holocene
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  rdfs:comment "older bound -0.0117 Ma"@en ;
-  rdfs:comment "younger bound -0.0 Ma"@en ;
   rdfs:label "Holocene Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/Holocene> ;
   skos:inScheme ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12, ts:isc2004-04 ;
