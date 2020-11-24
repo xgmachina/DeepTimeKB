@@ -5700,7 +5700,7 @@ isc:BaseBarremianTime
   dc:description
     [ 
     time:numericPosition "129.4"^^xsd:decimal ;
-    skos:inScheme ts:isc2020-03, tsc:isc2020-01, ts:isc2019-05, ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08 
+    skos:inScheme ts:isc2020-03, ts:isc2020-01, ts:isc2019-05, ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08 
     ],
 
     [ 
