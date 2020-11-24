@@ -1,7 +1,7 @@
 Package: DeepTimeKB
 Type: Package
 Title: Deep time knowledge base extraction
-Version: 1.0
+Version: 1.0.0
 Author: Chao Ma, Xiaogang Ma, Amuruta Kale, Tyler Clemens, Ronald Crump
 Maintainer: Chao Ma <chao@uidaho.edu>
 Description: Query the deeptime knowledge base.
