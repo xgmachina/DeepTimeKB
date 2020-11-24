@@ -6,7 +6,7 @@ Get all the properties of one geological time concept in the database
 \description{Get all the properties of one geological time concept in the database.
 }
 \usage{
-gts(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL, graph = NULL)
+gts(geoConcept, prefix = NULL, graph = NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
