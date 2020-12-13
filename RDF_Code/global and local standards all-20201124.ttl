@@ -3,6 +3,7 @@
 # 20200601 - merge the global time scale vocabulary and several local time scale vocabularies in one ttl file 
 # 20200605 - add triples for several gssps 
 # 20201124 - add 2019-05, 2020-01 and 2020-03
+# 20201211 - add 17 regional scales: North America, East Avalonian, West Europe, California, British, Iberian-Morocco, Baltoscania, Boreal, South China, North China, Russia Platform, N-E Siberia, Japan, Kazakhstan, Australia, Tethyan, New Zealand
 
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -33891,7 +33892,7 @@ tsbo:Valanginian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Valanginian Age"@en ;
-  skos:broader isc:Lower Cretaceous ;
+  skos:broader isc:LowerCretaceous ;
   skos:broaderTransitive isc:Cretaceous ;
   skos:broaderTransitive isc:Mesozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -33937,7 +33938,7 @@ tsbo:Ryazanian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Ryazanian Age"@en ;
-  skos:broader isc:Lower Cretaceous ;
+  skos:broader isc:LowerCretaceous ;
   skos:broaderTransitive isc:Cretaceous ;
   skos:broaderTransitive isc:Mesozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -33997,7 +33998,7 @@ tsbo:Kimmeridgian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Kimmeridgian Age"@en ;
-  skos:broader isc:Upper Jurassic ;
+  skos:broader isc:UpperJurassic ;
   skos:broaderTransitive isc:Jurassic ;
   skos:broaderTransitive isc:Mesozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -34028,7 +34029,7 @@ tsbo:Oxfordian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Oxfordian Age"@en ;
-  skos:broader isc:Upper Jurassic ;
+  skos:broader isc:UpperJurassic ;
   skos:broaderTransitive isc:Jurassic ;
   skos:broaderTransitive isc:Mesozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -34951,7 +34952,7 @@ tsru:Valanginian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Valanginian Age"@en ;
-  skos:broader isc:Lower Cretaceous ;
+  skos:broader isc:LowerCretaceous ;
   skos:broaderTransitive isc:Cretaceous ;
   skos:broaderTransitive isc:Mesozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -34997,7 +34998,7 @@ tsru:Ryazanian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Ryazanian Age"@en ;
-  skos:broader isc:Lower Cretaceous ;
+  skos:broader isc:LowerCretaceous ;
   skos:broaderTransitive isc:Cretaceous ;
   skos:broaderTransitive isc:Mesozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35057,7 +35058,7 @@ tsru:Kimmeridgian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Kimmeridgian Age"@en ;
-  skos:broader isc:Upper Jurassic ;
+  skos:broader isc:UpperJurassic ;
   skos:broaderTransitive isc:Jurassic ;
   skos:broaderTransitive isc:Mesozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35088,7 +35089,7 @@ tsru:Oxfordian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Oxfordian Age"@en ;
-  skos:broader isc:Upper Jurassic ;
+  skos:broader isc:UpperJurassic ;
   skos:broaderTransitive isc:Jurassic ;
   skos:broaderTransitive isc:Mesozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35351,7 +35352,7 @@ tsru:Orenburgian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Orenburgian Age"@en ;
-  skos:broader isc:Upper Pennsylvanian ;
+  skos:broader isc:UpperPennsylvanian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35382,7 +35383,7 @@ tsru:Gzhelian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Gzhelian Age"@en ;
-  skos:broader isc:Upper Pennsylvanian ;
+  skos:broader isc:UpperPennsylvanian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35413,7 +35414,7 @@ tsru:Kasimovian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Kasimovian Age"@en ;
-  skos:broader isc:Upper Pennsylvanian ;
+  skos:broader isc:UpperPennsylvanian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35504,7 +35505,7 @@ tsru:Serpukhovian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Serpukhovian Age"@en ;
-  skos:broader isc:Upper Mississipian ;
+  skos:broader isc:UpperMississipian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35565,7 +35566,7 @@ tsru:Tournaisian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Tournaisian Age"@en ;
-  skos:broader isc:Lower Mississipian ;
+  skos:broader isc:LowerMississipian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35596,7 +35597,7 @@ tsru:Khantaian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Khantaian Age"@en ;
-  skos:broader isc:Lower Ordovician ;
+  skos:broader isc:LowerOrdovician ;
   skos:broaderTransitive isc:Ordovician ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35642,7 +35643,7 @@ tsru:Tukalandian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Tukalandian Age"@en ;
-  skos:broader tsru:Upper Cambrian ;
+  skos:broader tsru:UpperCambrian ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35673,7 +35674,7 @@ tsru:Gorbiyachinian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Gorbiyachinian Age"@en ;
-  skos:broader tsru:Upper Cambrian ;
+  skos:broader tsru:UpperCambrian ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35704,7 +35705,7 @@ tsru:Kulyumbean
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Kulyumbean Age"@en ;
-  skos:broader tsru:Upper Cambrian ;
+  skos:broader tsru:UpperCambrian ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35735,7 +35736,7 @@ tsru:Mayan
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Mayan Age"@en ;
-  skos:broader tsru:Middle Cambrian ;
+  skos:broader tsru:MiddleCambrian ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35766,7 +35767,7 @@ tsru:Amgan
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Amgan Age"@en ;
-  skos:broader tsru:Middle Cambrian ;
+  skos:broader tsru:MiddleCambrian ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35797,7 +35798,7 @@ tsru:Toyonian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Toyonian Age"@en ;
-  skos:broader tsru:Lower Cambrian ;
+  skos:broader tsru:LowerCambrian ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35828,7 +35829,7 @@ tsru:Botomian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Botomian Age"@en ;
-  skos:broader tsru:Lower Cambrian ;
+  skos:broader tsru:LowerCambrian ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35859,7 +35860,7 @@ tsru:Atdabanian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Atdabanian Age"@en ;
-  skos:broader tsru:Lower Cambrian ;
+  skos:broader tsru:LowerCambrian ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35890,7 +35891,7 @@ tsru:Tommotian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Tommotian Age"@en ;
-  skos:broader tsru:Lower Cambrian ;
+  skos:broader tsru:LowerCambrian ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -35915,32 +35916,32 @@ tsru:BaseTommotianTime
   time:numericPosition "525.5"^^xsd:decimal ;
 .
 
-tsru:Nemakit - Daldynian
+tsru:Nemakit-Daldynian
   rdf:type gts:Age ;
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Nemakit - Daldynian Age"@en ;
-  skos:broader tsru:Lower Cambrian ;
+  skos:broader tsru:LowerCambrian ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsru2019 ;
-  time:hasBeginning  tsru:BaseNemakit - Daldynian ;
+  time:hasBeginning  tsru:BaseNemakit-Daldynian ;
   time:hasEnd tsru:BaseTommotian ;
 .
 
-tsru:BaseNemakit - Daldynian
+tsru:BaseNemakit-Daldynian
   rdf:type gts:GeochronologicBoundary ;
   rdf:type thors:EraBoundary ;
   rdf:type skos:Concept ;
   rdf:type time:Instant ;
   rdfs:label "Base of Nemakit - Daldynian"@en ;
   skos:prefLabel "Base of Nemakit - Daldynian"@en ;
-  time:inTemporalPosition tsru:BaseNemakit - DaldynianTime ;
+  time:inTemporalPosition tsru:BaseNemakit-DaldynianTime ;
 .
 
-tsru:BaseNemakit - DaldynianTime
+tsru:BaseNemakit-DaldynianTime
   rdf:type time:TimePosition ;
   time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
   time:numericPosition "541"^^xsd:decimal ;
@@ -36051,7 +36052,7 @@ tsru:BaseCisuralianTime
   time:numericPosition "298.88"^^xsd:decimal ;
 .
 
-tsru:Upper Cambrian
+tsru:UpperCambrian
   rdf:type gts:Epoch ;
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
@@ -36061,42 +36062,42 @@ tsru:Upper Cambrian
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsru2019 ;
-  time:hasBeginning  tsru:BaseUpper Cambrian ;
-  time:hasEnd tsru:TopUpper Cambrian ;
+  time:hasBeginning  tsru:BaseUpperCambrian ;
+  time:hasEnd tsru:TopUpperCambrian ;
 .
 
-tsru:BaseUpper Cambrian
+tsru:BaseUpperCambrian
   rdf:type gts:GeochronologicBoundary ;
   rdf:type thors:EraBoundary ;
   rdf:type skos:Concept ;
   rdf:type time:Instant ;
   rdfs:label "Base of Upper Cambrian"@en ;
   skos:prefLabel "Base of Upper Cambrian"@en ;
-  time:inTemporalPosition tsru:BaseUpper CambrianTime ;
+  time:inTemporalPosition tsru:BaseUpperCambrianTime ;
 .
 
-tsru:BaseUpper CambrianTime
+tsru:BaseUpperCambrianTime
   rdf:type time:TimePosition ;
   time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
   time:numericPosition "499.1"^^xsd:decimal ;
 .
 
-tsru:TopUpper Cambrian
+tsru:TopUpperCambrian
   rdf:type gts:GeochronologicBoundary ;
   rdf:type thors:EraBoundary ;
   rdf:type skos:Concept ;
   rdf:type time:Instant ;
   rdfs:label "Top of Upper Cambrian"@en ;
   skos:prefLabel "Top of Upper Cambrian"@en ;
-  time:inTemporalPosition tsru:TopUpper CambrianTime ;
+  time:inTemporalPosition tsru:TopUpperCambrianTime ;
 .
 
-tsru:TopUpper CambrianTime
+tsru:TopUpperCambrianTime
   rdf:type time:TimePosition ;
   time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
   time:numericPosition "485.78"^^xsd:decimal ;
 .
-tsru:Middle Cambrian
+tsru:MiddleCambrian
   rdf:type gts:Epoch ;
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
@@ -36106,27 +36107,27 @@ tsru:Middle Cambrian
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsru2019 ;
-  time:hasBeginning  tsru:BaseMiddle Cambrian ;
-  time:hasEnd tsru:BaseUpper Cambrian ;
+  time:hasBeginning  tsru:BaseMiddleCambrian ;
+  time:hasEnd tsru:BaseUpperCambrian ;
 .
 
-tsru:BaseMiddle Cambrian
+tsru:BaseMiddleCambrian
   rdf:type gts:GeochronologicBoundary ;
   rdf:type thors:EraBoundary ;
   rdf:type skos:Concept ;
   rdf:type time:Instant ;
   rdfs:label "Base of Middle Cambrian"@en ;
   skos:prefLabel "Base of Middle Cambrian"@en ;
-  time:inTemporalPosition tsru:BaseMiddle CambrianTime ;
+  time:inTemporalPosition tsru:BaseMiddleCambrianTime ;
 .
 
-tsru:BaseMiddle CambrianTime
+tsru:BaseMiddleCambrianTime
   rdf:type time:TimePosition ;
   time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
   time:numericPosition "510.5"^^xsd:decimal ;
 .
 
-tsru:Lower Cambrian
+tsru:LowerCambrian
   rdf:type gts:Epoch ;
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
@@ -36136,21 +36137,21 @@ tsru:Lower Cambrian
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsru2019 ;
-  time:hasBeginning  tsru:BaseLower Cambrian ;
-  time:hasEnd tsru:BaseMiddle Cambrian ;
+  time:hasBeginning  tsru:BaseLowerCambrian ;
+  time:hasEnd tsru:BaseMiddleCambrian ;
 .
 
-tsru:BaseLower Cambrian
+tsru:BaseLowerCambrian
   rdf:type gts:GeochronologicBoundary ;
   rdf:type thors:EraBoundary ;
   rdf:type skos:Concept ;
   rdf:type time:Instant ;
   rdfs:label "Base of Lower Cambrian"@en ;
   skos:prefLabel "Base of Lower Cambrian"@en ;
-  time:inTemporalPosition tsru:BaseLower CambrianTime ;
+  time:inTemporalPosition tsru:BaseLowerCambrianTime ;
 .
 
-tsru:BaseLower CambrianTime
+tsru:BaseLowerCambrianTime
   rdf:type time:TimePosition ;
   time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
   time:numericPosition "541"^^xsd:decimal ;
@@ -36239,7 +36240,7 @@ tssi:Kyglitassian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Kyglitassian Age"@en ;
-  skos:broader isc:Upper Pennsylvanian ;
+  skos:broader isc:UpperPennsylvanian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -36300,7 +36301,7 @@ tssi:Natalian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Natalian Age"@en ;
-  skos:broader isc:Lower Pennsylvanian ;
+  skos:broader isc:LowerPennsylvanian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -36391,7 +36392,7 @@ tssi:Chuguchanian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Chuguchanian Age"@en ;
-  skos:broader isc:Middle Mississipian ;
+  skos:broader isc:MiddleMississipian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -36422,7 +36423,7 @@ tssi:Kirinian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Kirinian Age"@en ;
-  skos:broader isc:Middle Mississipian ;
+  skos:broader isc:MiddleMississipian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -36453,7 +36454,7 @@ tssi:Bazovian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Bazovian Age"@en ;
-  skos:broader isc:Middle Mississipian ;
+  skos:broader isc:MiddleMississipian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -36484,7 +36485,7 @@ tssi:Khamamitian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Khamamitian Age"@en ;
-  skos:broader isc:Lower Mississipian ;
+  skos:broader isc:LowerMississipian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -36548,7 +36549,7 @@ tska:Ungurian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Ungurian Age"@en ;
-  skos:broader isc:Lower Ordovician ;
+  skos:broader isc:LowerOrdovician ;
   skos:broaderTransitive isc:Ordovician ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -36594,7 +36595,7 @@ tska:Aisha-Bibaian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Aisha-Bibaian Age"@en ;
-  skos:broader isc:Lower Ordovician ;
+  skos:broader isc:LowerOrdovician ;
   skos:broaderTransitive isc:Ordovician ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -36811,7 +36812,7 @@ tska:Toyonian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Toyonian Age"@en ;
-  skos:broader isc:Series 2 ;
+  skos:broader isc:Series2 ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -36857,7 +36858,7 @@ tska:Botomian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Botomian Age"@en ;
-  skos:broader isc:Series 2 ;
+  skos:broader isc:Series2 ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -36888,7 +36889,7 @@ tska:Atdabanian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Atdabanian Age"@en ;
-  skos:broader isc:Series 2 ;
+  skos:broader isc:Series2 ;
   skos:broaderTransitive isc:Cambrian ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -37274,7 +37275,7 @@ tste:Dastarian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Dastarian Age"@en ;
-  skos:broader isc:Upper Pennsylvanian ;
+  skos:broader isc:UpperPennsylvanian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -37305,7 +37306,7 @@ tste:Gzhelian
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Gzhelian Age"@en ;
-  skos:broader isc:Upper Pennsylvanian ;
+  skos:broader isc:UpperPennsylvanian ;
   skos:broaderTransitive isc:Carboniferous ;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -37336,7 +37337,7 @@ tste:Mittiwali
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
   rdfs:label "Mittiwali Age"@en ;
-  skos:broader isc:Lower Triassic ;
+  skos:broader isc:LowerTriassic ;
   skos:broaderTransitive isc:Triassic ;
   skos:broaderTransitive isc:Mesozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
@@ -37726,7 +37727,7 @@ tsav:BaseMerionethianTime
   time:numericPosition "498.4"^^xsd:decimal ;
 .
 
-tsav:St. David's
+tsav:StDavids
   rdf:type gts:Epoch ;
   rdf:type gts:GeochronologicEra ;
   rdf:type skos:Concept ;
@@ -37736,21 +37737,21 @@ tsav:St. David's
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsav2019 ;
-  time:hasBeginning  tsav:BaseSt. David's ;
+  time:hasBeginning  tsav:BaseStDavids ;
   time:hasEnd tsav:BaseMerionethian ;
 .
 
-tsav:BaseSt. David's
+tsav:BaseStDavids
   rdf:type gts:GeochronologicBoundary ;
   rdf:type thors:EraBoundary ;
   rdf:type skos:Concept ;
   rdf:type time:Instant ;
   rdfs:label "Base of St. David's"@en ;
   skos:prefLabel "Base of St. David's"@en ;
-  time:inTemporalPosition tsav:BaseSt. David'sTime ;
+  time:inTemporalPosition tsav:BaseStDavidsTime ;
 .
 
-tsav:BaseSt. David'sTime
+tsav:BaseStDavidsTime
   rdf:type time:TimePosition ;
   time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
   time:numericPosition "509"^^xsd:decimal ;
@@ -37767,7 +37768,7 @@ tsav:Comley
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsav2019 ;
   time:hasBeginning  tsav:BaseComley ;
-  time:hasEnd tsav:BaseSt. David's ;
+  time:hasEnd tsav:BaseStDavids ;
 .
 
 tsav:BaseComley
