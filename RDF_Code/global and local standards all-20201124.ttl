@@ -34,14 +34,14 @@
 @prefix tsba: <http://deeptimekb.org/tsba#> .
 @prefix tsjp: <http://deeptimekb.org/tsjp#> .
 @prefix tsau: <http://deeptimekb.org/tsau#> .
-@prefix tsau: <http://deeptimekb.org/tsbo#> .
-@prefix tsau: <http://deeptimekb.org/tsca#> .
-@prefix tsau: <http://deeptimekb.org/tsibmo#> .
-@prefix tsau: <http://deeptimekb.org/tsru#> .
-@prefix tsau: <http://deeptimekb.org/tssi#> .
-@prefix tsau: <http://deeptimekb.org/tska#> .
-@prefix tsau: <http://deeptimekb.org/tste#> .
-@prefix tsau: <http://deeptimekb.org/tsav#> .
+@prefix tsbo: <http://deeptimekb.org/tsbo#> .
+@prefix tsca: <http://deeptimekb.org/tsca#> .
+@prefix tsibmo: <http://deeptimekb.org/tsibmo#> .
+@prefix tsru: <http://deeptimekb.org/tsru#> .
+@prefix tssi: <http://deeptimekb.org/tssi#> .
+@prefix tska: <http://deeptimekb.org/tska#> .
+@prefix tste: <http://deeptimekb.org/tste#> .
+@prefix tsav: <http://deeptimekb.org/tsav#> .
  
 
 isc:
