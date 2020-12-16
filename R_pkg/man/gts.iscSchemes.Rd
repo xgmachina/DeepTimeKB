@@ -1,9 +1,9 @@
 \name{gts.iscSchemes}
 \alias{gts.iscSchemes}
 \title{
-Function querying start time, end time and duration of a specific geological time concept
+List all versions of the ISC
 }
-\description{Function querying start time, end time, and duration of a specific geological time concept.
+\description{List all versions of the ISC.
 }
 \usage{
 gts.iscSchemes(id = "all", prefix = NULL, graph = NULL, URI = TRUE)
