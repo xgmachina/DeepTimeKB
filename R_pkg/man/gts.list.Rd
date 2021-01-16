@@ -11,9 +11,12 @@ gts.list(region, level=NULL)
 \arguments{
 \item{region}{
 [character] Region of the geologcial time concept. The options are: "International",
-                                         "North America", "South China", "North China",
-                                         "West Europe", "Britain", "New Zealand",
-                                         "Japan", "Baltoscania", "Australia".
+                                         "West Europe", "Tethyan", "N-E Siberia",     
+                                         "South China", "Russia Platform", "New Zealand",
+                                         "North China", "North America","Kazakhstan",
+                                         "Japan", "Iberian-Morocco", "California", "Britain"
+                                         , "Boreal", "Baltoscania" ,"East Avalonian",
+                                         "Australia" .
 }
 \item{level}{
 [character] The level of the geological time concept, e.g. "Age". [Optional]

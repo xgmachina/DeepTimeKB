@@ -15,9 +15,13 @@ gts.level(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL, graph = N
 }
   \item{region}{
 [character] region of the geologcial time concept. The options are: "International",
-                                         "North America", "South China", "North China",
-                                         "West Europe", "Britain", "New Zealand",
-                                         "Japan", "Baltoscania", "Australia". [If no input is provided, this is treated                                           as all regions, including the global one.]
+                                         "West Europe", "Tethyan", "N-E Siberia",     
+                                         "South China", "Russia Platform", "New Zealand",
+                                         "North China", "North America","Kazakhstan",
+                                         "Japan", "Iberian-Morocco", "California", "Britain"
+                                         , "Boreal", "Baltoscania" ,"East Avalonian",
+                                         "Australia" .
+                                         [If no input is provided, this is treated                                           as all regions, including the global one.]
 }
   \item{iscVersion}{
 [character] ersion of the geological time concept, e.g. "isc2018-08". See \code{\link{gts.iscSchemes}} for all ISC versions.

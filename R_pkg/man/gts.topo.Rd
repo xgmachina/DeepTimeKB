@@ -20,18 +20,24 @@ gts.topo(geoConcept1, geoConcept2,
 }
   \item{region1}{
 [character] Region of geoConcept1, eg. "International". The options are: "International",
-                                         "North America", "South China", "North China",
-                                         "West Europe", "Britain", "New Zealand",
-                                         "Japan", "Baltoscania", "Australia".
+                                         "West Europe", "Tethyan", "N-E Siberia",     
+                                         "South China", "Russia Platform", "New Zealand",
+                                         "North China", "North America","Kazakhstan",
+                                         "Japan", "Iberian-Morocco", "California", "Britain"
+                                         , "Boreal", "Baltoscania" ,"East Avalonian",
+                                         "Australia" .
 }
   \item{iscVersion1}{
 [character] Geological time concept, e.g. "isc2018-08". See gts.iscSchemes() for all ISC versions.
 }
   \item{region2}{
 [character] Region of geoConcept1, e.g. "International". The options are: "International",
-                                         "North America", "South China", "North China",
-                                         "West Europe", "Britain", "New Zealand",
-                                         "Japan", "Baltoscania", "Australia".
+                                         "West Europe", "Tethyan", "N-E Siberia",     
+                                         "South China", "Russia Platform", "New Zealand",
+                                         "North China", "North America","Kazakhstan",
+                                         "Japan", "Iberian-Morocco", "California", "Britain"
+                                         , "Boreal", "Baltoscania" ,"East Avalonian",
+                                         "Australia" .
 }
   \item{iscVersion2}{
 [character] Geological time concept, e.g. "isc2018-08". See gts.iscSchemes() for all ISC versions.
