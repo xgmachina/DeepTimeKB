@@ -127,30 +127,21 @@ gts.range = function(geoConcept, region = NULL, iscVersion = NULL, prefix = NULL
   #cat(q)
   #cat("\n*****************************************\n")
   
-  # calculate the druation
+  # calculate the duration
   res$duration = abs(res[[3]]-res[[4]])
   res$schemeID = substr(res$schemeID, 52, nchar(res$schemeID)-1)
   
+  regionScheme = gts.regionalSchemeTable()
   # deal with region
   if(!is.null(region) & !any(region == c("International","international",
-                                         "North America", "South China", "North China",
-                                         "West Europe", "Britain", "New Zealand",
-                                         "Japan", "Baltoscania", "Australia"))){
+                                         regionScheme$region))){
     stop('region must be NULL or regions listed in help page')
   }
   if(!is.null(region)){
-    scheme = region
-    if(region == "international" | region == "International") scheme = "isc"
-    if(region == "North America") scheme = "tsna"
-    if(region == "South China") scheme = "tssc"
-    if(region == "North China") scheme = "tsnc"
-    if(region == "West Europe") scheme = "tswe"
-    if(region == "Britain") scheme = "tsbr"
-    if(region == "New Zealand") scheme = "tsnz"
-    if(region == "Japan") scheme = "tsjp"
-    if(region == "Baltoscania") scheme = "tsba"
-    if(region == "Australia") scheme = "tsau"
-    
+    scheme = regionScheme[which(regionScheme$region == region),2]
+    if (region == "international" | region == "International"){
+      scheme = "isc"
+    } 
     res = res[grepl(scheme, res$schemeID, fixed = T),]
   }
   

@@ -15,12 +15,12 @@ gts.list = function(region, level=NULL){
     stop('level must be NULL, "Age", "Epoch", "Period", "Era" or "Eon", see help page for more detail')
   }
   
+  regionScheme = gts.regionalSchemeTable()
   if(!is.null(region) & !any(region == c("International","international",
-                                         "North America", "South China", "North China",
-                                         "West Europe", "Britain", "New Zealand",
-                                         "Japan", "Baltoscania", "Australia"))){
+                                         regionScheme$region))){
     stop('region must be NULL or regions listed in help page')
   }
+  
   
   # endpoint need to update accordingly
   endpoint = "http://virtuoso.nkn.uidaho.edu:8890/sparql/"
@@ -34,17 +34,10 @@ gts.list = function(region, level=NULL){
                 prefix isc: <http://resource.geosciml.org/classifier/ics/ischart/> 
         "
   
-  if(region == "international" | region == "International") scheme = "isc"
-  if(region == "North America") scheme = "tsna"
-  if(region == "South China") scheme = "tssc"
-  if(region == "North China") scheme = "tsnc"
-  if(region == "West Europe") scheme = "tswe"
-  if(region == "Britain") scheme = "tsbr"
-  if(region == "New Zealand") scheme = "tsnz"
-  if(region == "Japan") scheme = "tsjp"
-  if(region == "Baltoscania") scheme = "tsba"
-  if(region == "Australia") scheme = "tsau"
-  
+    scheme = regionScheme[which(regionScheme$region == region),2]
+    if (region == "international" | region == "International"){
+      scheme = "isc"
+    } 
   
   if(scheme == "isc"){
     q = paste0(sparql_prefix, '
