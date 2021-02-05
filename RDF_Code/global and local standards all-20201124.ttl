@@ -22496,7 +22496,7 @@ tsna:Ochoan
   rdf:type time:ProperInterval ;
   rdfs:label "Ochoan Epoch"@en ;
   rdfs:seeAlso <http://dbpedia.org/resource/Ochoan> ;
-  skos:broader isc:Permain;
+  skos:broader isc:Permian;
   skos:broaderTransitive isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:tsna2019 ;
