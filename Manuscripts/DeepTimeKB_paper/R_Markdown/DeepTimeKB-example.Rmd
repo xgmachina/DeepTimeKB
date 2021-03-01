@@ -31,7 +31,7 @@ install.packages("devtools", repos = "https://cloud.r-project.org")
 
 Install _DeepTimeKB_ package from GitHub
 ```{r message=FALSE, results='hide'}
-devtools::install_github("xgmachina/DeepTimeKB/R_pkg", force = T)
+devtools::install_github("xgmachina/DeepTimeKB/DeeptTimeKB_RLib", force = T)
 ```
 Load _DeepTimeKB_
 ```{r message=FALSE}
