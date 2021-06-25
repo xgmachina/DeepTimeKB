@@ -18470,8 +18470,6 @@ isc:Quaternary
   rdfs:comment "younger bound -0.0 Ma"@en ;
   rdfs:label "Quaternary Period"@en ;
   owl:sameAs <http://dbpedia.org/resource/Quaternary> ;
-  skos:broader isc:Cenozoic ;
-  skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:isc2020-03, ts:isc2020-01, ts:isc2019-05, ts:isc2018-08, ts:isc2018-07, ts:isc2017-02, ts:isc2016-10, ts:isc2016-04, ts:isc2015-01, ts:isc2014-10, ts:isc2014-02, ts:isc2013-01, ts:isc2012-08, ts:isc2010-09, ts:isc2009-08, ts:isc2008-08, ts:isc2006-04, ts:isc2005-12 ;
   skos:notation "a1.1.1.1"^^gts:EraCode ;
   skos:prefLabel "Cuaternario"@es ;
