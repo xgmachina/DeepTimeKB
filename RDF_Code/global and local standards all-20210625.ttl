@@ -35365,7 +35365,6 @@ isc:Cisuralian
       time:intervalMetBy isc:Carboniferous ;
       time:intervalMetBy isc:Gzhelian ;
       time:intervalMetBy isc:Pennsylvanian ;
-      time:intervalMetBy isc:UpperMississippian ;
       time:intervalMetBy isc:UpperPennsylvanian ;
       time:intervalStartedBy isc:Asselian ;
       time:intervalStarts isc:Permian ;
