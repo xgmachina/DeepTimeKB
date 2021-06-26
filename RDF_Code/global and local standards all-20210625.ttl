@@ -40580,6 +40580,7 @@ isc:Lopingian
       time:intervalMeets isc:Mesozoic ;
       time:intervalMeets isc:Triassic ;
       time:intervalMetBy isc:Guadalupian ;
+      time:intervalMetBy isc:Capitanian ;
       time:intervalStartedBy isc:Wuchiapingian ;
     ] ;
   rdfs:comment "older bound -259.1 +|-0.5 Ma"@en ;
@@ -53306,6 +53307,7 @@ isc:Wuchiapingian
       time:intervalIn isc:Lopingian ;
       time:intervalMeets isc:Changhsingian ;
       time:intervalMetBy isc:Guadalupian ;
+      time:intervalMetBy isc:Capitanian ;      
       time:intervalStarts isc:Lopingian ;
     ] ;
   rdfs:comment "older bound -259.1 +|-0.5 Ma"@en ;
