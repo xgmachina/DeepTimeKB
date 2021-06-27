@@ -24234,23 +24234,6 @@ isc:BaseHauterivian
   rdf:type time:Instant ;
   dc:description [
       gts:stratotype isc:BaseHauterivianSP ;
-      skos:inScheme ts:isc2004-04 ;
-      skos:inScheme ts:isc2005-12 ;
-      skos:inScheme ts:isc2006-04 ;
-      skos:inScheme ts:isc2008-08 ;
-      skos:inScheme ts:isc2009-08 ;
-      skos:inScheme ts:isc2010-09 ;
-      skos:inScheme ts:isc2012-08 ;
-      skos:inScheme ts:isc2013-01 ;
-      skos:inScheme ts:isc2014-02 ;
-      skos:inScheme ts:isc2014-10 ;
-      skos:inScheme ts:isc2015-01 ;
-      skos:inScheme ts:isc2016-04 ;
-      skos:inScheme ts:isc2016-10 ;
-      skos:inScheme ts:isc2017-02 ;
-      skos:inScheme ts:isc2018-07 ;
-      skos:inScheme ts:isc2018-08 ;
-      skos:inScheme ts:isc2019-05 ;
       skos:inScheme ts:isc2020-01 ;
       skos:inScheme ts:isc2020-03 ;
     ] ;
@@ -24286,6 +24269,7 @@ isc:BaseHauterivian-location
 isc:BaseHauterivianSP
   rdf:type gts:StratigraphicPoint ;
   samfl:shape isc:BaseHauterivian-location ;
+  dc:source "Episodes 44/2, p. 129-150, 2021"@en ;
   gts:boundaryLevel "base of bed number 189 "@en ;
   gts:correlationEvent "The FO of the ammonite genus Acanthodiscus and the top of Chron M10Nn.3n coincides with the base of the Hauterivian. "@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
@@ -24293,6 +24277,8 @@ isc:BaseHauterivianSP
   rdfs:label "Stratotype Point Base of Hauterivian"@en ;
   rdfs:seeAlso <http://cretaceous.stratigraphy.org/gssps/gssp-hauterivian-stage> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
+  rdfs:seeAlso <https://doi.org/10.18814/epiiugs/2020/020072> ;
+  rdfs:seeAlso <https://timescalefoundation.org/gssp/> ;
 .
 isc:BaseHauterivianTime
   rdf:type time:TimePosition ;
@@ -27829,6 +27815,53 @@ isc:BaseNorthgrippianTime
     ] ;
   time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
 .
+
+isc:BaseChibanian
+  rdf:type gts:GeochronologicBoundary ;
+  rdf:type thors:EraBoundary ;
+  rdf:type skos:Concept ;
+  rdf:type time:Instant ;
+  dc:description [
+      gts:stratotype isc:BaseChibanianSP ;
+      skos:inScheme ts:isc2020-01 ;
+      skos:inScheme ts:isc2020-03 ;
+    ] ;
+  rdfs:label "Base of Chibanian"@en ;
+  skos:inScheme ts:isc2020-01 ;
+  skos:inScheme ts:isc2020-03 ;
+  skos:prefLabel "Base of Chibanian"@en ;
+  time:inTemporalPosition isc:BaseChibanianTime ;
+.
+isc:BaseChibanian-location
+  rdf:type geo:Geometry ;
+  rdf:type sf:Point ;
+  geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(35.2943, 140.1465) "^^geo:wktLiteral ;
+  rdfs:label "Location of Stratotype Point Base of Chibanian"@en ;
+.
+isc:BaseChibanianSP
+  rdf:type gts:StratigraphicPoint ;
+  samfl:shape isc:BaseChibanian-location ;
+  dc:source "Episodes, published online on February 01, 2021"@en ;
+  gts:boundaryLevel "Base of Byk-E tephra bed"@en ;
+  gts:correlationEvent "Byk-E tephra; 1.1 m below directional midpoint of Brunhes–Matuyama magnetic reversal (base of Chron 1n)"@en ;
+  gts:ratifiedGSSP "true"^^xsd:boolean ;
+  gts:status "Ratified 2019"@en ;
+  rdfs:comment "Astronomical cycles in sediments, enhanced accuracy"@en ;
+  rdfs:label "Stratotype Point Base of Chibanian"@en ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
+  rdfs:seeAlso <https://doi.org/10.18814/epiiugs/2020/020080> ;
+  rdfs:seeAlso <https://timescalefoundation.org/gssp/> ;
+.
+isc:BaseChibanianTime
+  rdf:type time:TimePosition ;
+  dc:description [
+      skos:inScheme ts:isc2020-01 ;
+      skos:inScheme ts:isc2020-03 ;
+      time:numericPosition 0.774 ;
+    ] ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+.
+
 isc:BaseOlenekian
   rdf:type gts:GeochronologicBoundary ;
   rdf:type thors:EraBoundary ;
@@ -43135,8 +43168,6 @@ isc:MiddlePleistocene
       skos:inScheme ts:isc2018-07 ;
       skos:inScheme ts:isc2018-08 ;
       skos:inScheme ts:isc2019-05 ;
-      skos:inScheme ts:isc2020-01 ;
-      skos:inScheme ts:isc2020-03 ;
     ] ;
   dc:description [
       skos:inScheme ts:isc2004-04 ;
@@ -43164,8 +43195,6 @@ isc:MiddlePleistocene
       skos:inScheme ts:isc2018-07 ;
       skos:inScheme ts:isc2018-08 ;
       skos:inScheme ts:isc2019-05 ;
-      skos:inScheme ts:isc2020-01 ;
-      skos:inScheme ts:isc2020-03 ;
       time:hasBeginning isc:BaseMiddlePleistocene ;
       time:hasEnd isc:BaseUpperPleistocene ;
       time:intervalDuring isc:Pleistocene ;
@@ -43218,8 +43247,6 @@ isc:MiddlePleistocene
   skos:inScheme ts:isc2018-07 ;
   skos:inScheme ts:isc2018-08 ;
   skos:inScheme ts:isc2019-05 ;
-  skos:inScheme ts:isc2020-01 ;
-  skos:inScheme ts:isc2020-03 ;
   skos:notation "a1.1.1.1.2.2"^^gts:EraCode ;
   skos:prefLabel "Kesk-Pleistotseen"@et ;
   skos:prefLabel "Keski-Pleistoseeni"@fi ;
@@ -43242,6 +43269,47 @@ isc:MiddlePleistocene
   skos:prefLabel "Среден Плейѿтоцен"@bg ;
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Ionian> ;
 .
+
+isc:Chibanian
+  rdf:type gts:Age ;
+  rdf:type gts:GeochronologicEra ;
+  rdf:type skos:Concept ;
+  rdf:type time:ProperInterval ;
+
+  dc:description [
+      skos:broader isc:Pleistocene ;
+      skos:broaderTransitive isc:Cenozoic ;
+      skos:broaderTransitive isc:Phanerozoic ;
+      skos:broaderTransitive isc:Quaternary ;
+      skos:inScheme ts:isc2020-01 ;
+      skos:inScheme ts:isc2020-03 ;
+    ] ;
+  dc:description [
+      skos:inScheme ts:isc2020-01 ;
+      skos:inScheme ts:isc2020-03 ;
+      time:hasBeginning isc:BaseChibanian ;
+      time:hasEnd isc:BaseUpperPleistocene ;
+      time:intervalDuring isc:Pleistocene ;
+      time:intervalIn isc:Pleistocene ;
+      time:intervalMeets isc:UpperPleistocene ;
+      time:intervalMetBy isc:Calabrian ;
+    ] ;
+  dcterms:replaces isc:MiddlePleistocene ;
+  rdfs:comment "older bound -0.774 Ma"@en ;
+  rdfs:comment "younger bound -0.129 Ma"@en ;
+  rdfs:label "Chibanian Age"@en ;
+  owl:sameAs <http://dbpedia.org/resource/Ionian> ;
+  owl:sameAs isc:Ionian, isc:MiddlePleistocene ;
+  skos:exactMatch isc:Ionian, isc:MiddlePleistocene ;
+  skos:historyNote "Previously known as 'Ionian' and MiddlePleistocene" ;
+  skos:inScheme ts:isc2020-01 ;
+  skos:inScheme ts:isc2020-03 ;
+  skos:notation "a1.1.1.1.2.2"^^gts:EraCode ;
+  skos:prefLabel "千叶期"@zh ;
+  skos:prefLabel "チバニアン期"@ja ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Ionian> ;
+.
+
 isc:MiddleTriassic
   rdf:type gts:Epoch ;
   rdf:type gts:GeochronologicEra ;
@@ -48560,8 +48628,6 @@ isc:Quaternary
       skos:inScheme ts:isc2018-07 ;
       skos:inScheme ts:isc2018-08 ;
       skos:inScheme ts:isc2019-05 ;
-      skos:inScheme ts:isc2020-01 ;
-      skos:inScheme ts:isc2020-03 ;
       skos:narrower isc:Holocene ;
       skos:narrower isc:Pleistocene ;
       skos:narrowerTransitive isc:Calabrian ;
@@ -48572,6 +48638,21 @@ isc:Quaternary
       skos:narrowerTransitive isc:Northgrippian ;
       skos:narrowerTransitive isc:UpperPleistocene ;
     ] ;
+  dc:description [
+      skos:broader isc:Cenozoic ;
+      skos:broaderTransitive isc:Phanerozoic ;
+      skos:inScheme ts:isc2020-01 ;
+      skos:inScheme ts:isc2020-03 ;
+      skos:narrower isc:Holocene ;
+      skos:narrower isc:Pleistocene ;
+      skos:narrowerTransitive isc:Calabrian ;
+      skos:narrowerTransitive isc:Gelasian ;
+      skos:narrowerTransitive isc:Greenlandian ;
+      skos:narrowerTransitive isc:Meghalayan ;
+      skos:narrowerTransitive isc:Chibanian ;
+      skos:narrowerTransitive isc:Northgrippian ;
+      skos:narrowerTransitive isc:UpperPleistocene ;
+    ] ;  
   dc:description [
       skos:inScheme ts:isc2008-08 ;
       skos:inScheme ts:isc2009-08 ;
