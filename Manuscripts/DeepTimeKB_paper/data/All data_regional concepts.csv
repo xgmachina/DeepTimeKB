@@ -1,0 +1,497 @@
+Number,Region,geoConcpet,Level,schemeID,begTimeValue (Ma),endTimeValue (Ma),Duration (Myr)
+1,West Europe,Senonian,Epoch,tswe2019,90.05,66.04,24.01
+2,West Europe,Neocomian,Epoch,tswe2019,145.01,130.77,14.24
+3,West Europe,Bundsandstein,Epoch,tswe2019,252.4,249.9,2.5
+4,West Europe,Zechstein,Epoch,tswe2019,258.96,256.41,2.55
+5,West Europe,Rotliegend,Epoch,tswe2019,302.15,260.34,41.81
+6,West Europe,Silesian,Epoch,tswe2019,329.06,302.15,26.91
+7,West Europe,Dinantian,Epoch,tswe2019,358.94,329.06,29.88
+8,West Europe,Ashgill,Epoch,tswe2019,448.84,443.83,5.01
+9,West Europe,Caradoc,Epoch,tswe2019,458.36,448.84,9.52
+10,West Europe,Llanvirn,Epoch,tswe2019,465.32,458.36,6.96
+11,West Europe,Arenig,Epoch,tswe2019,477.72,465.32,12.4
+12,West Europe,Tremadoc,Epoch,tswe2019,485.37,477.72,7.65
+13,West Europe,Merionethian,Epoch,tswe2019,498.4,485.37,13.03
+14,West Europe,Arcadian,Epoch,tswe2019,509,498.4,10.6
+15,West Europe,Branchian,Epoch,tswe2019,517,509,8
+16,West Europe,Placentian,Epoch,tswe2019,541,517,24
+17,West Europe,Saxonian,Age,tswe2019,272.3,260.34,11.96
+18,West Europe,Autunian,Age,tswe2019,302.15,286.03,16.12
+19,West Europe,Stephanian,Age,tswe2019,307.22,302.15,5.07
+20,West Europe,Westphalian,Age,tswe2019,318.65,307.22,11.43
+21,West Europe,Namurian,Age,tswe2019,329.06,318.65,10.41
+22,West Europe,Visean,Age,tswe2019,346.73,329.06,17.67
+23,West Europe,Tournaisian,Age,tswe2019,358.94,346.73,12.21
+24,West Europe,Hirnantian,Age,tswe2019,445.23,443.83,1.4
+25,West Europe,Rawtheyan,Age,tswe2019,447.02,445.23,1.79
+26,West Europe,Cautleyan,Age,tswe2019,447.86,447.02,0.84
+27,West Europe,Pusgillian,Age,tswe2019,448.84,447.86,0.98
+28,West Europe,Streffordian,Age,tswe2019,451.28,448.84,2.44
+29,West Europe,Cheneyan,Age,tswe2019,452.73,451.28,1.45
+30,West Europe,Burrellian,Age,tswe2019,456.34,452.73,3.61
+31,West Europe,Aurelucian,Age,tswe2019,458.36,456.34,2.02
+32,West Europe,Llandeilian,Age,tswe2019,460.45,458.36,2.09
+33,West Europe,Abereiddian,Age,tswe2019,465.32,460.45,4.87
+34,West Europe,Fennian,Age,tswe2019,469.96,465.32,4.64
+35,West Europe,Whitlandian,Age,tswe2019,473.12,469.96,3.16
+36,West Europe,Moridunian,Age,tswe2019,477.72,473.12,4.6
+37,West Europe,Migneintian,Age,tswe2019,481.55,477.72,3.83
+38,West Europe,Cressagian,Age,tswe2019,485.37,481.55,3.82
+39,Tethyan,Mittiwali,Age,tste2019,250.96,248.54,2.42
+40,Tethyan,Kathwai,Age,tste2019,252.35,250.96,1.39
+41,Tethyan,Dorashamian,Age,tste2019,254.15,251.9,2.25
+42,Tethyan,Chhiddru,Age,tste2019,255,252.91,2.09
+43,Tethyan,Kalabagh,Age,tste2019,256.13,255,1.13
+44,Tethyan,Wargal,Age,tste2019,258.96,256.13,2.83
+45,Tethyan,Dzhulfian,Age,tste2019,259.81,254.15,5.66
+46,Tethyan,Midian,Age,tste2019,267.15,259.81,7.34
+47,Tethyan,Amb,Age,tste2019,270.55,266.6,3.95
+48,Tethyan,Murgabian,Age,tste2019,272.3,267.15,5.15
+49,Tethyan,Kubergandian,Age,tste2019,278.12,272.3,5.82
+50,Tethyan,Bolorian,Age,tste2019,282,278.12,3.88
+51,Tethyan,Yakhtashian,Age,tste2019,290.06,282,8.06
+52,Tethyan,Sakmarian,Age,tste2019,295.5,290.06,5.44
+53,Tethyan,Asselian,Age,tste2019,298.88,295.5,3.38
+54,Tethyan,Dastarian,Age,tste2019,300.22,298.88,1.34
+55,Tethyan,Gzhelian,Age,tste2019,303.4,300.22,3.18
+56,N-E Siberia,Khorokytian,Age,tssi2019,301.31,295.5,5.81
+57,N-E Siberia,Kyglitassian,Age,tssi2019,306.05,301.31,4.74
+58,N-E Siberia,Solonchanian,Age,tssi2019,316.79,306.05,10.74
+59,N-E Siberia,Natalian,Age,tssi2019,318.65,316.79,1.86
+60,N-E Siberia,Khatynykhian,Age,tssi2019,329.06,318.65,10.41
+61,N-E Siberia,Ovlachanian,Age,tssi2019,334.92,329.06,5.86
+62,N-E Siberia,Chuguchanian,Age,tssi2019,339.37,334.92,4.45
+63,N-E Siberia,Kirinian,Age,tssi2019,346.07,339.37,6.7
+64,N-E Siberia,Bazovian,Age,tssi2019,346.73,346.07,0.66
+65,N-E Siberia,Khamamitian,Age,tssi2019,358.94,346.73,12.21
+66,South China,Changshingian,Epoch,tssc2019,254.15,251.9,2.25
+67,South China,Wujiapingian,Epoch,tssc2019,259.81,254.15,5.66
+68,South China,Maokouian,Epoch,tssc2019,270.55,259.81,10.74
+69,South China,Chihsian,Epoch,tssc2019,290.06,272.3,17.76
+70,South China,Chuanshanian,Epoch,tssc2019,300.13,290.06,10.07
+71,South China,Mapingian,Epoch,tssc2019,306.66,300.13,6.53
+72,South China,Weiningian,Epoch,tssc2019,323.23,306.66,16.57
+73,South China,Tatangian,Epoch,tssc2019,347.93,323.23,24.7
+74,South China,Aikuanian,Epoch,tssc2019,358.94,347.93,11.01
+75,South China,Hunanian,Epoch,tssc2019,497,485.37,11.63
+76,South China,Wulingian,Epoch,tssc2019,509,497,12
+77,South China,Qiandongian,Epoch,tssc2019,520,509,11
+78,South China,Diandongian,Epoch,tssc2019,541,520,21
+79,South China,Penglaizhenian,Age,tssc2019,149.93,145.01,4.92
+80,South China,Suiningian,Age,tssc2019,163.06,149.93,13.13
+81,South China,Shaximioan,Age,tssc2019,166.81,163.06,3.75
+82,South China,Xintiangouan,Age,tssc2019,174.15,166.81,7.34
+83,South China,Ziliujingian,Age,tssc2019,201.36,174.15,27.21
+84,South China,Erqiaoan,Age,tssc2019,216.62,201.36,15.26
+85,South China,Huobachengian,Age,tssc2019,230.51,216.62,13.89
+86,South China,Bananian,Age,tssc2019,237,230.51,6.49
+87,South China,Falangian,Age,tssc2019,241.5,237,4.5
+88,South China,Guanlingian,Age,tssc2019,246.8,241.5,5.3
+89,South China,Yongningzhenian,Age,tssc2019,249.81,246.8,3.01
+90,South China,Feixianguanian,Age,tssc2019,251.9,249.81,2.09
+91,South China,Meishanian,Age,tssc2019,253.41,251.9,1.51
+92,South China,Baoqingian,Age,tssc2019,254.15,253.41,0.74
+93,South China,Laoshanian,Age,tssc2019,257.94,254.15,3.79
+94,South China,Laibinian,Age,tssc2019,259.81,257.94,1.87
+95,South China,Lengwuan,Age,tssc2019,265.14,259.81,5.33
+96,South China,Kuhfengian,Age,tssc2019,270.55,265.14,5.41
+97,South China,Xiangboan,Age,tssc2019,274.24,272.3,1.94
+98,South China,Luodianian,Age,tssc2019,290.06,274.24,15.82
+99,South China,Longlinian,Age,tssc2019,295.5,290.06,5.44
+100,South China,Zisongian,Age,tssc2019,300.13,295.5,4.63
+101,South China,Xiaodushanian,Age,tssc2019,306.66,300.13,6.53
+102,South China,Dalaan,Age,tssc2019,318.65,306.66,11.99
+103,South China,Huashibanian,Age,tssc2019,321.3,318.65,2.65
+104,South China,Lousuan,Age,tssc2019,323.23,321.3,1.93
+105,South China,Dewuan,Age,tssc2019,329.53,323.23,6.3
+106,South China,Shangsian,Age,tssc2019,343.54,329.53,14.01
+107,South China,Jiusian,Age,tssc2019,347.93,343.54,4.39
+108,South China,Tangbagouan,Age,tssc2019,358.94,347.93,11.01
+109,South China,Xikuangshanian,Age,tssc2019,372.24,374.5,2.26
+110,South China,Gelaohean,Age,tssc2019,374.5,358.94,15.56
+111,South China,Shetianqiaoan,Age,tssc2019,382.69,372.24,10.45
+112,South China,Dongganglingian,Age,tssc2019,387.42,382.69,4.73
+113,South China,Yingtangian,Age,tssc2019,393.25,387.42,5.83
+114,South China,Sipaian,Age,tssc2019,407.57,393.25,14.32
+115,South China,Yujianian,Age,tssc2019,409.85,407.57,2.28
+116,South China,Nagaolingian,Age,tssc2019,413.98,409.85,4.13
+117,South China,Lianhuashanian,Age,tssc2019,419.2,413.98,5.22
+118,South China,Yulongsian,Age,tssc2019,422.96,419.2,3.76
+119,South China,Miaogoalingian,Age,tssc2019,426.36,422.96,3.4
+120,South China,Guandian,Age,tssc2019,429.8,426.36,3.44
+121,South China,Xiushanian,Age,tssc2019,433.86,429.8,4.06
+122,South China,Baishaean,Age,tssc2019,436.49,433.86,2.63
+123,South China,Shinulanian,Age,tssc2019,439.99,436.49,3.5
+124,South China,Longmaxian,Age,tssc2019,443.83,439.99,3.84
+125,South China,Chientangkiangian,Age,tssc2019,448.38,443.83,4.55
+126,South China,Neichianshanian,Age,tssc2019,458.36,448.38,9.98
+127,South China,Darriwilian,Age,tssc2019,467.25,458.36,8.89
+128,South China,Dawanian,Age,tssc2019,471.61,467.25,4.36
+129,South China,Yushanian,Age,tssc2019,477.72,471.61,6.11
+130,South China,Ichangian,Age,tssc2019,485.37,477.72,7.65
+131,South China,Niuchehean,Age,tssc2019,489.5,485.37,4.13
+132,South China,Jiangshanian,Age,tssc2019,494,489.5,4.5
+133,South China,Paibian,Age,tssc2019,497,494,3
+134,South China,Guzhangian,Age,tssc2019,498.4,497,1.4
+135,South China,Wangcunian,Age,tssc2019,502.98,498.4,4.58
+136,South China,Taijiangian,Age,tssc2019,509,502.98,6.02
+137,South China,Duyunian,Age,tssc2019,514,509,5
+138,South China,Nangaoan,Age,tssc2019,520,514,6
+139,South China,Meishucunian,Age,tssc2019,531.93,520,11.93
+140,South China,Jinningian,Age,tssc2019,541,531.93,9.07
+141,Russia Platform,Tatarian,Epoch,tsru2019,268.8,257.55,11.25
+142,Russia Platform,Biarmian,Epoch,tsru2019,272.3,268.8,3.5
+143,Russia Platform,Cisuralian,Epoch,tsru2019,298.88,272.3,26.58
+144,Russia Platform,Upper Cambrian,Epoch,tsru2019,499.1,485.78,13.32
+145,Russia Platform,Middle Cambrian,Epoch,tsru2019,510.5,499.1,11.4
+146,Russia Platform,Lower Cambrian,Epoch,tsru2019,541,510.5,30.5
+147,Russia Platform,Valanginian,Age,tsru2019,139.39,137.39,2
+148,Russia Platform,Ryazanian,Age,tsru2019,144.1,139.39,4.71
+149,Russia Platform,Volgian,Age,tsru2019,152.06,144.1,7.96
+150,Russia Platform,Kimmeridgian,Age,tsru2019,157.25,152.06,5.19
+151,Russia Platform,Oxfordian,Age,tsru2019,163.06,157.25,5.81
+152,Russia Platform,Tatarian,Age,tsru2019,268.8,257.55,11.25
+153,Russia Platform,Kazanian,Age,tsru2019,272.3,268.8,3.5
+154,Russia Platform,Ufimian,Age,tsru2019,274.24,272.3,1.94
+155,Russia Platform,Kungurian,Age,tsru2019,282,274.24,7.76
+156,Russia Platform,Artinskian,Age,tsru2019,290.06,282,8.06
+157,Russia Platform,Sakmarian,Age,tsru2019,295.5,290.06,5.44
+158,Russia Platform,Asselian,Age,tsru2019,298.88,295.5,3.38
+159,Russia Platform,Orenburgian,Age,tsru2019,301.31,298.88,2.43
+160,Russia Platform,Gzhelian,Age,tsru2019,303.57,301.31,2.26
+161,Russia Platform,Kasimovian,Age,tsru2019,306.66,303.57,3.09
+162,Russia Platform,Moscovian,Age,tsru2019,314.6,306.66,7.94
+163,Russia Platform,Bashkirian,Age,tsru2019,323.23,314.6,8.63
+164,Russia Platform,Serpukhovian,Age,tsru2019,329.06,323.23,5.83
+165,Russia Platform,Visean,Age,tsru2019,346.73,329.06,17.67
+166,Russia Platform,Tournaisian,Age,tsru2019,359.24,346.73,12.51
+167,Russia Platform,Khantaian,Age,tsru2019,486.73,482.19,4.54
+168,Russia Platform,Tukalandian,Age,tsru2019,492.97,486.73,6.24
+169,Russia Platform,Gorbiyachinian,Age,tsru2019,496.16,492.97,3.19
+170,Russia Platform,Kulyumbean,Age,tsru2019,499.1,496.16,2.94
+171,Russia Platform,Mayan,Age,tsru2019,503.74,499.1,4.64
+172,Russia Platform,Amgan,Age,tsru2019,510.5,503.74,6.76
+173,Russia Platform,Toyonian,Age,tsru2019,512.85,510.5,2.35
+174,Russia Platform,Botomian,Age,tsru2019,515.8,512.85,2.95
+175,Russia Platform,Atdabanian,Age,tsru2019,520,515.8,4.2
+176,Russia Platform,Tommotian,Age,tsru2019,525.5,520,5.5
+177,Russia Platform,Nemakit-Daldynian,Age,tsru2019,541,525.5,15.5
+178,New Zealand,Haweran,Age,tsnz2019,0.34,0,0.34
+179,New Zealand,Castlecliffian,Age,tsnz2019,1.63,0.34,1.29
+180,New Zealand,Nukumaruan,Age,tsnz2019,2.4,1.63,0.77
+181,New Zealand,Mangapanian,Age,tsnz2019,3,2.4,0.6
+182,New Zealand,Waipipian,Age,tsnz2019,3.7,3,0.7
+183,New Zealand,Opoitian,Age,tsnz2019,5.33,3.7,1.63
+184,New Zealand,Wanganui,Epoch,tsnz2019,5.33,0,5.33
+185,New Zealand,Taranaki,Epoch,tsnz2019,11.04,5.33,5.71
+186,New Zealand,Southland,Epoch,tsnz2019,15.9,11.04,4.86
+187,New Zealand,Pareora,Epoch,tsnz2019,21.7,15.9,5.8
+188,New Zealand,Landon,Epoch,tsnz2019,34.6,21.7,12.9
+189,New Zealand,Arnold,Epoch,tsnz2019,42.51,34.6,7.91
+190,New Zealand,Dannevirke,Epoch,tsnz2019,66.04,42.51,23.53
+191,New Zealand,Mata,Epoch,tsnz2019,86.5,66.04,20.46
+192,New Zealand,Raukumara,Epoch,tsnz2019,95.5,86.5,9
+193,New Zealand,Clarence,Epoch,tsnz2019,108.4,95.5,12.9
+194,New Zealand,Taitai,Epoch,tsnz2019,145.7,108.4,37.3
+195,New Zealand,Oteke,Epoch,tsnz2019,150.02,145.7,4.32
+196,New Zealand,Kawhia,Epoch,tsnz2019,177.22,150.02,27.2
+197,New Zealand,Herangi,Epoch,tsnz2019,201.36,177.22,24.14
+198,New Zealand,Balfour,Epoch,tsnz2019,228.95,201.36,27.59
+199,New Zealand,Gore,Epoch,tsnz2019,250.86,228.95,21.91
+200,New Zealand,D'Urville,Epoch,tsnz2019,259.81,250.86,8.95
+201,New Zealand,Aparima,Epoch,tsnz2019,288.05,259.81,28.24
+202,New Zealand,LateDevonian,Epoch,tsnz2019,382.69,359.2,23.49
+203,New Zealand,MiddleDevonian,Epoch,tsnz2019,393.25,382.69,10.56
+204,New Zealand,EarlyDevonian,Epoch,tsnz2019,419.2,393.25,25.95
+205,New Zealand,Pridoli,Epoch,tsnz2019,422.96,419.2,3.76
+206,New Zealand,Ludlow,Epoch,tsnz2019,427.36,422.96,4.4
+207,New Zealand,Wenlock,Epoch,tsnz2019,433.35,427.36,5.99
+208,New Zealand,Llandovery,Epoch,tsnz2019,443.83,433.35,10.48
+209,New Zealand,LateOrdovician,Epoch,tsnz2019,458.36,443.83,14.53
+210,New Zealand,MiddleOrdovician,Epoch,tsnz2019,470.42,458.36,12.06
+211,New Zealand,EarlyOrdovician,Epoch,tsnz2019,485.43,470.42,15.01
+212,New Zealand,Furongian,Epoch,tsnz2019,497,485.43,11.57
+213,New Zealand,MiddleCambrian,Epoch,tsnz2019,511.5,497,14.5
+214,New Zealand,EarlyCambrian,Epoch,tsnz2019,541,511.5,29.5
+215,New Zealand,Kapitean,Age,tsnz2019,7.2,5.33,1.87
+216,New Zealand,Tongaporutuan,Age,tsnz2019,11.04,7.2,3.84
+217,New Zealand,Waiauan,Age,tsnz2019,13.05,11.04,2.01
+218,New Zealand,Lillburnian,Age,tsnz2019,15.1,13.05,2.05
+219,New Zealand,Clifdenian,Age,tsnz2019,15.9,15.1,0.8
+220,New Zealand,Altonian,Age,tsnz2019,18.7,15.9,2.8
+221,New Zealand,Otaian,Age,tsnz2019,21.7,18.7,3
+222,New Zealand,Waitakian,Age,tsnz2019,25.2,21.7,3.5
+223,New Zealand,Duntroonian,Age,tsnz2019,27.3,25.2,2.1
+224,New Zealand,Whaingaroan,Age,tsnz2019,34.6,27.3,7.3
+225,New Zealand,Runangan,Age,tsnz2019,36.7,34.6,2.1
+226,New Zealand,Kaiatan,Age,tsnz2019,39.1,36.7,2.4
+227,New Zealand,Bortonian,Age,tsnz2019,42.51,39.1,3.41
+228,New Zealand,Porangan,Age,tsnz2019,45.7,42.51,3.19
+229,New Zealand,Heretaungan,Age,tsnz2019,48.9,45.7,3.2
+230,New Zealand,Mangaorapan,Age,tsnz2019,52,48.9,3.1
+231,New Zealand,Waipawan,Age,tsnz2019,55.96,52,3.96
+232,New Zealand,Teurian,Age,tsnz2019,66.04,55.96,10.08
+233,New Zealand,Haumurian,Age,tsnz2019,83.64,66.04,17.6
+234,New Zealand,Piripauan,Age,tsnz2019,86.5,83.64,2.86
+235,New Zealand,Teratan,Age,tsnz2019,89.77,86.5,3.27
+236,New Zealand,Mangaotanean,Age,tsnz2019,93.7,89.77,3.93
+237,New Zealand,Arowhanan,Age,tsnz2019,95.5,93.7,1.8
+238,New Zealand,Ngaterian,Age,tsnz2019,99.5,95.5,4
+239,New Zealand,Motuan,Age,tsnz2019,103.3,99.5,3.8
+240,New Zealand,Urutawan,Age,tsnz2019,108.4,103.3,5.1
+241,New Zealand,Korangan,Age,tsnz2019,117.5,108.4,9.1
+242,New Zealand,Puaroan,Age,tsnz2019,150.02,145.7,4.32
+243,New Zealand,Ohauan,Age,tsnz2019,154.49,150.02,4.47
+244,New Zealand,Heterian,Age,tsnz2019,164.3,154.49,9.81
+245,New Zealand,Temaikan,Age,tsnz2019,177.22,164.3,12.92
+246,New Zealand,Ururoan,Age,tsnz2019,189.83,177.22,12.61
+247,New Zealand,Aratauran,Age,tsnz2019,201.36,189.83,11.53
+248,New Zealand,Otapirian,Age,tsnz2019,209.56,201.36,8.2
+249,New Zealand,Warepan,Age,tsnz2019,217,209.56,7.44
+250,New Zealand,Otamitan,Age,tsnz2019,221,217,4
+251,New Zealand,Oretian,Age,tsnz2019,228.95,221,7.95
+252,New Zealand,Kaihikuan,Age,tsnz2019,237.9,228.95,8.95
+253,New Zealand,Etalian,Age,tsnz2019,245.74,237.9,7.84
+254,New Zealand,Malakovian,Age,tsnz2019,249.01,245.74,3.27
+255,New Zealand,Nelsonian,Age,tsnz2019,250.86,249.01,1.85
+256,New Zealand,Makarewan,Age,tsnz2019,253.05,250.86,2.19
+257,New Zealand,Waiitian,Age,tsnz2019,254.2,253.05,1.15
+258,New Zealand,Puruhauan,Age,tsnz2019,259.81,254.2,5.61
+259,New Zealand,Flettian,Age,tsnz2019,266,259.81,6.19
+260,New Zealand,Barrettian,Age,tsnz2019,275.53,266,9.53
+261,New Zealand,Mangapirian,Age,tsnz2019,284.02,275.53,8.49
+262,New Zealand,Telfordian,Age,tsnz2019,288.05,284.02,4.03
+263,New Zealand,pre-Telfordian,Age,tsnz2019,298.88,288.05,10.83
+264,New Zealand,Famennian,Age,tsnz2019,372.24,359.2,13.04
+265,New Zealand,Frasnian,Age,tsnz2019,382.69,372.24,10.45
+266,New Zealand,Givetian,Age,tsnz2019,387.72,382.69,5.03
+267,New Zealand,Eifelian,Age,tsnz2019,393.25,387.72,5.53
+268,New Zealand,Emsian,Age,tsnz2019,407.57,393.25,14.32
+269,New Zealand,Pragian,Age,tsnz2019,410.78,407.57,3.21
+270,New Zealand,Lochkovian,Age,tsnz2019,419.2,410.78,8.42
+271,New Zealand,Ludfordian,Age,tsnz2019,425.57,419.2,6.37
+272,New Zealand,Gorstian,Age,tsnz2019,427.36,425.57,1.79
+273,New Zealand,Homerian,Age,tsnz2019,430.45,427.36,3.09
+274,New Zealand,Sheinwoodian,Age,tsnz2019,433.35,430.45,2.9
+275,New Zealand,Telychian,Age,tsnz2019,438.49,433.35,5.14
+276,New Zealand,Aeronian,Age,tsnz2019,440.77,438.49,2.28
+277,New Zealand,Rhuddanian,Age,tsnz2019,443.83,440.77,3.06
+278,New Zealand,Bolindian,Age,tsnz2019,448.38,443.83,4.55
+279,New Zealand,Eastonian,Age,tsnz2019,452.97,448.38,4.59
+280,New Zealand,Gisbornian,Age,tsnz2019,458.36,452.97,5.39
+281,New Zealand,Darriwillian,Age,tsnz2019,467.25,458.36,8.89
+282,New Zealand,Yapeenian,Age,tsnz2019,468.31,467.25,1.06
+283,New Zealand,Castlemainian,Age,tsnz2019,470.42,468.31,2.11
+284,New Zealand,Chewtonian,Age,tsnz2019,472.41,470.42,1.99
+285,New Zealand,Bendigonian,Age,tsnz2019,475.97,472.41,3.56
+286,New Zealand,Lancefieldian,Age,tsnz2019,484.28,475.97,8.31
+287,New Zealand,Warendian,Age,tsnz2019,485.43,484.28,1.15
+288,New Zealand,Datsonian,Age,tsnz2019,486.73,485.43,1.3
+289,New Zealand,Payntonian,Age,tsnz2019,489.5,486.73,2.77
+290,New Zealand,Iverian,Age,tsnz2019,494,489.5,4.5
+291,New Zealand,Idamean,Age,tsnz2019,497,494,3
+292,New Zealand,Mindyallan,Age,tsnz2019,499.1,497,2.1
+293,New Zealand,Boomerangian,Age,tsnz2019,500.5,499.1,1.4
+294,New Zealand,Undillian,Age,tsnz2019,502.98,500.5,2.48
+295,New Zealand,Floran,Age,tsnz2019,504.26,502.98,1.28
+296,New Zealand,Templetonian,Age,tsnz2019,507.96,504.26,3.7
+297,New Zealand,Ordian,Age,tsnz2019,511.5,507.96,3.54
+298,North China,Fengshanian,Age,tsnc2019,489.69,486.23,3.46
+299,North China,Changshanian,Age,tsnc2019,495.5,489.69,5.81
+300,North China,Kushanian,Age,tsnc2019,501.01,495.5,5.51
+301,North China,Changhian,Age,tsnc2019,503.58,501.01,2.57
+302,North China,Hsuchuangian,Age,tsnc2019,507.01,503.58,3.43
+303,North China,Maochuangian,Age,tsnc2019,509.5,507.01,2.49
+304,North China,Lungwangmaioan,Age,tsnc2019,511.75,509.5,2.25
+305,North China,Tsanglangpuan,Age,tsnc2019,514.6,511.75,2.85
+306,North China,Chiungchussuan,Age,tsnc2019,520,514.6,5.4
+307,North China,Jinningian,Age,tsnc2019,541,520,21
+308,North America,Gulfian,Epoch,tsna2019,100.5,66.04,34.46
+309,North America,Comanchean,Epoch,tsna2019,128.09,100.5,27.59
+310,North America,Coahulian,Epoch,tsna2019,145.01,128.09,16.92
+311,North America,Ochoan,Epoch,tsna2019,259.81,259.41,0.4
+312,North America,Guadalupian,Epoch,tsna2019,272.3,259.81,12.49
+313,North America,Leonardian,Epoch,tsna2019,284.02,272.3,11.72
+314,North America,Wolfcampian,Epoch,tsna2019,298.88,284.02,14.86
+315,North America,Cincinnatian,Epoch,tsna2019,450.96,443.83,7.13
+316,North America,Mohawkian,Epoch,tsna2019,456.72,450.96,5.76
+317,North America,Whiterockian,Epoch,tsna2019,469.96,456.72,13.24
+318,North America,Ibexian,Epoch,tsna2019,486.73,469.96,16.77
+319,North America,Millardan,Epoch,tsna2019,497,486.73,10.27
+320,North America,Lincolnian,Epoch,tsna2019,511.4,497,14.4
+321,North America,Waucoban,Epoch,tsna2019,519.25,511.4,7.85
+322,North America,Begadean,Epoch,tsna2019,541,519.25,21.75
+323,North America,Capitanian,Age,tsna2019,265.14,259.81,5.33
+324,North America,Wordian,Age,tsna2019,268.8,265.14,3.66
+325,North America,Roadian,Age,tsna2019,272.3,268.8,3.5
+326,North America,Cathedralian,Age,tsna2019,278.12,272.3,5.82
+327,North America,Hessian,Age,tsna2019,284.02,278.12,5.9
+328,North America,Lenoxian,Age,tsna2019,295.5,284.02,11.48
+329,North America,Nealian,Age,tsna2019,298.88,295.5,3.38
+330,North America,Virgilian,Age,tsna2019,303.51,298.88,4.63
+331,North America,Missourian,Age,tsna2019,305.91,303.51,2.4
+332,North America,Desmoinesian,Age,tsna2019,312.67,305.91,6.76
+333,North America,Atokan,Age,tsna2019,318.65,312.67,5.98
+334,North America,Morrowan,Age,tsna2019,323.23,318.65,4.58
+335,North America,Chesterian,Age,tsna2019,334.92,323.23,11.69
+336,North America,Meramecian,Age,tsna2019,345.4,334.92,10.48
+337,North America,Osagean,Age,tsna2019,352.35,345.4,6.95
+338,North America,Kinderhookian,Age,tsna2019,358.94,352.35,6.59
+339,North America,Chatauquan,Age,tsna2019,368.38,358.94,9.44
+340,North America,Senecan,Age,tsna2019,384.8,368.38,16.42
+341,North America,Erian,Age,tsna2019,387.72,384.8,2.92
+342,North America,Ulsterian,Age,tsna2019,419.2,387.72,31.48
+343,North America,Cayugan,Age,tsna2019,425.57,419.2,6.37
+344,North America,Niagaran,Age,tsna2019,439.99,425.57,14.42
+345,North America,Medinan,Age,tsna2019,443.83,439.99,3.84
+346,North America,Gamachian,Age,tsna2019,445.32,443.83,1.49
+347,North America,Richmondian,Age,tsna2019,448.84,445.32,3.52
+348,North America,Maysvillian,Age,tsna2019,449.82,448.84,0.98
+349,North America,Edenian,Age,tsna2019,450.96,449.82,1.14
+350,North America,Chatfieldian,Age,tsna2019,453.89,450.96,2.93
+351,North America,Turinian,Age,tsna2019,456.72,453.89,2.83
+352,North America,Rangerian,Age,tsna2019,469.96,468.73,1.23
+353,North America,Blackhillsian,Age,tsna2019,475.1,469.96,5.14
+354,North America,Tulean,Age,tsna2019,479.6,475.1,4.5
+355,North America,Stairsian,Age,tsna2019,480.17,479.6,0.57
+356,North America,Skullrockian,Age,tsna2019,486.73,480.17,6.56
+357,North America,Sunwaptan,Age,tsna2019,492.97,486.73,6.24
+358,North America,Steptoean,Age,tsna2019,497,492.97,4.03
+359,North America,Marjuman,Age,tsna2019,504.5,497,7.5
+360,North America,Topazan,Age,tsna2019,506.8,504.5,2.3
+361,North America,Delamaran,Age,tsna2019,511.4,506.8,4.6
+362,North America,Dyeran,Age,tsna2019,515.2,511.4,3.8
+363,North America,Montezuman,Age,tsna2019,519.25,515.2,4.05
+364,Kazakhstan,Ungurian,Age,tska2019,485.37,482.19,3.18
+365,Kazakhstan,Aisha-Bibaian,Age,tska2019,486.73,485.37,1.36
+366,Kazakhstan,Batyrbaian,Age,tska2019,490.02,486.73,3.29
+367,Kazakhstan,Aksaian,Age,tska2019,492.97,490.02,2.95
+368,Kazakhstan,Sakian,Age,tska2019,497,492.97,4.03
+369,Kazakhstan,Ayusokkanian,Age,tska2019,500.5,497,3.5
+370,Kazakhstan,Zhanarykian,Age,tska2019,502.98,500.5,2.48
+371,Kazakhstan,Tuesaian,Age,tska2019,505.31,502.98,2.33
+372,Kazakhstan,Toyonian,Age,tska2019,512.85,510.5,2.35
+373,Kazakhstan,Botomian,Age,tska2019,515.8,512.85,2.95
+374,Kazakhstan,Atdabanian,Age,tska2019,520,515.8,4.2
+375,Kazakhstan,Tommotian,Age,tska2019,525.5,520,5.5
+376,Japan,Yuzanjian,Age,tsjp2019,1.49,0.77,0.72
+377,Japan,Kechienjian,Age,tsjp2019,1.89,1.49,0.4
+378,Japan,Suchian,Age,tsjp2019,3,1.89,1.11
+379,Japan,Totomian,Age,tsjp2019,3.6,3,0.6
+380,Japan,Yuian,Age,tsjp2019,9.52,3.6,5.92
+381,Japan,Fujian,Age,tsjp2019,11.14,9.52,1.62
+382,Japan,Kaburan,Age,tsjp2019,13.51,11.14,2.37
+383,Japan,Tozawan,Age,tsjp2019,15.97,13.51,2.46
+384,Japan,Haranoyan,Age,tsjp2019,18.21,15.97,2.24
+385,Japan,Hetonian,Age,tsjp2019,78.12,66.04,12.08
+386,Japan,Urakawan,Age,tsjp2019,90.05,78.12,11.93
+387,Japan,Gyliakian,Age,tsjp2019,97.27,90.05,7.22
+388,Japan,Miyakoan,Age,tsjp2019,126.3,97.27,29.03
+389,Japan,Aritan,Age,tsjp2019,134.69,126.3,8.39
+390,Japan,Kochian,Age,tsjp2019,145.01,134.69,10.32
+391,Iberian-Morocco,Furongian,Epoch,tsibmo2019,497,485.37,11.63
+392,Iberian-Morocco,Celtiberian,Epoch,tsibmo2019,513.68,497,16.68
+393,Iberian-Morocco,Atlasian,Epoch,tsibmo2019,520,513.68,6.32
+394,Iberian-Morocco,Cordubian,Epoch,tsibmo2019,536.6,520,16.6
+395,Iberian-Morocco,Languedocian,Age,tsibmo2019,501.24,497,4.24
+396,Iberian-Morocco,Caesaraugustian,Age,tsibmo2019,505.31,501.24,4.07
+397,Iberian-Morocco,Agdzian,Age,tsibmo2019,513.68,505.31,8.37
+398,Iberian-Morocco,Banian,Age,tsibmo2019,518.22,513.68,4.54
+399,Iberian-Morocco,Issendalenian,Age,tsibmo2019,520,518.22,1.78
+400,California,Hallian,Age,tsca2019,0.01,0,0.01
+401,California,Wheelerian,Age,tsca2019,1.89,0.01,1.88
+402,California,Venturian,Age,tsca2019,2.19,1.89,0.3
+403,California,Repettian,Age,tsca2019,2.9,2.19,0.71
+404,California,Delmontian,Age,tsca2019,7.51,2.9,4.61
+405,California,Mohnian,Age,tsca2019,13.51,7.51,6
+406,California,Luisian,Age,tsca2019,15.51,13.51,2
+407,California,Relizian,Age,tsca2019,16.51,15.51,1
+408,California,Saucesian,Age,tsca2019,21.99,16.51,5.48
+409,California,Zemorrian,Age,tsca2019,33.49,21.99,11.5
+410,California,Refugian,Age,tsca2019,35.25,33.49,1.76
+411,California,Narizian,Age,tsca2019,47.36,35.25,12.11
+412,California,Ulatisian,Age,tsca2019,50.6,47.36,3.24
+413,California,Penutian,Age,tsca2019,52.87,50.6,2.27
+414,California,Bulitian,Age,tsca2019,56.02,52.87,3.15
+415,California,Ynezian,Age,tsca2019,62.07,56.02,6.05
+416,Britain,Valanginian,Age,tsbr2019,139.27,137.27,2
+417,Britain,Ryazanian,Age,tsbr2019,144.1,139.27,4.83
+418,Britain,Portlandian,Age,tsbr2019,147.93,144.1,3.83
+419,Britain,Kimmeridgian,Age,tsbr2019,157.25,147.93,9.32
+420,Britain,Oxfordian,Age,tsbr2019,163.06,157.25,5.81
+421,Boreal,Valanginian,Age,tsbo2019,139.27,137.27,2
+422,Boreal,Ryazanian,Age,tsbo2019,144.1,139.27,4.83
+423,Boreal,Volgian,Age,tsbo2019,152.06,144.1,7.96
+424,Boreal,Kimmeridgian,Age,tsbo2019,157.25,152.06,5.19
+425,Boreal,Oxfordian,Age,tsbo2019,163.06,157.25,5.81
+426,Baltoscania,Harju,Epoch,tsba2019,462.52,443.83,18.69
+427,Baltoscania,Oeland,Epoch,tsba2019,485.37,462.52,22.85
+428,Baltoscania,Viru,Epoch,tsba2019,485.37,450.23,35.14
+429,East Avalonian,Tremadoc,Epoch,tsav2019,485.37,478.6,6.77
+430,East Avalonian,Merionethian,Epoch,tsav2019,498.4,485.37,13.03
+431,East Avalonian,St.David's,Epoch,tsav2019,509,498.4,10.6
+432,East Avalonian,Comley,Epoch,tsav2019,525.5,509,16.5
+433,Baltoscania,Ohesaare,Age,tsba2019,422.13,419.2,2.93
+434,Baltoscania,Kaugetuma,Age,tsba2019,422.96,422.13,0.83
+435,Baltoscania,Kuressaare,Age,tsba2019,423.32,422.96,0.36
+436,Baltoscania,Paadla,Age,tsba2019,427.36,423.32,4.04
+437,Baltoscania,Rootsikula,Age,tsba2019,428.49,427.36,1.13
+438,Baltoscania,Jaagarahu,Age,tsba2019,431.41,428.49,2.92
+439,Baltoscania,Jaani,Age,tsba2019,433.46,431.41,2.05
+440,Baltoscania,Adavere,Age,tsba2019,438.76,433.46,5.3
+441,Baltoscania,Raikkula,Age,tsba2019,441.57,438.76,2.81
+442,Baltoscania,Juuru,Age,tsba2019,443.83,441.57,2.26
+443,Baltoscania,Porkuni,Age,tsba2019,445.16,443.83,1.33
+444,Baltoscania,Pirgu,Age,tsba2019,448.38,445.16,3.22
+445,Baltoscania,Vormsi,Age,tsba2019,449.3,448.38,0.92
+446,Baltoscania,Nabala,Age,tsba2019,450.23,449.3,0.93
+447,Baltoscania,Rakvere,Age,tsba2019,451.87,450.23,1.64
+448,Baltoscania,Oandu,Age,tsba2019,452.97,451.87,1.1
+449,Baltoscania,Keila,Age,tsba2019,453.99,452.97,1.02
+450,Baltoscania,Haljala,Age,tsba2019,456.63,453.99,2.64
+451,Baltoscania,Kukruse,Age,tsba2019,458.19,456.63,1.56
+452,Baltoscania,Uhaku,Age,tsba2019,460.84,458.19,2.65
+453,Baltoscania,Lasnamagi,Age,tsba2019,461.95,460.84,1.11
+454,Baltoscania,Aseri,Age,tsba2019,462.52,461.95,0.57
+455,Baltoscania,Kunda,Age,tsba2019,466.17,462.52,3.65
+456,Baltoscania,Volkhov,Age,tsba2019,470.42,466.17,4.25
+457,Baltoscania,Billingen,Age,tsba2019,475.46,470.42,5.04
+458,Baltoscania,Hunneberg,Age,tsba2019,479.86,475.46,4.4
+459,Baltoscania,Varangu,Age,tsba2019,481.61,479.86,1.75
+460,Baltoscania,Pakerort,Age,tsba2019,485.37,481.61,3.76
+461,Australia,Werrikooian,Age,tsau2019,1.8,0.99,0.81
+462,Australia,Yatalan,Age,tsau2019,3.4,1.8,1.6
+463,Australia,Kalimnan,Age,tsau2019,4.29,3.4,0.89
+464,Australia,Cheltenhamian,Age,tsau2019,5,4.29,0.71
+465,Australia,Mitchellian,Age,tsau2019,10.53,5,5.53
+466,Australia,Bairnsdalian,Age,tsau2019,15,10.53,4.47
+467,Australia,Balcombian,Age,tsau2019,15.51,15,0.51
+468,Australia,Batesfordian,Age,tsau2019,16.51,15.51,1
+469,Australia,Longfordian,Age,tsau2019,27.18,16.51,10.67
+470,Australia,Janjukian,Age,tsau2019,29.77,27.18,2.59
+471,Australia,Aldingan,Age,tsau2019,36.48,29.77,6.71
+472,Australia,Johannian,Age,tsau2019,51.73,36.48,15.25
+473,Australia,Wangerripian,Age,tsau2019,62.29,51.73,10.56
+474,Australia,Melbournian,Age,tsau2019,433.35,419.2,14.15
+475,Australia,Eildonian,Age,tsau2019,436.49,433.35,3.14
+476,Australia,Keiloran,Age,tsau2019,443.83,436.49,7.34
+477,Australia,Bolindian,Age,tsau2019,448.38,443.83,4.55
+478,Australia,Eastonian,Age,tsau2019,452.97,448.38,4.59
+479,Australia,Gisbornian,Age,tsau2019,458.36,452.97,5.39
+480,Australia,Darriwilian,Age,tsau2019,467.25,458.36,8.89
+481,Australia,Yapeenian,Age,tsau2019,468.31,467.25,1.06
+482,Australia,Castlemainian,Age,tsau2019,470.42,468.31,2.11
+483,Australia,Chewtonian,Age,tsau2019,472.41,470.42,1.99
+484,Australia,Bendigonian,Age,tsau2019,475.97,472.41,3.56
+485,Australia,Lancefieldian,Age,tsau2019,484.28,475.97,8.31
+486,Australia,Warendan,Age,tsau2019,485.43,484.28,1.15
+487,Australia,Datsonian,Age,tsau2019,486.73,485.43,1.3
+488,Australia,Payntonian,Age,tsau2019,489.5,486.73,2.77
+489,Australia,Iverian,Age,tsau2019,494,489.5,4.5
+490,Australia,Idamean,Age,tsau2019,497,494,3
+491,Australia,Mindyallan,Age,tsau2019,499.1,497,2.1
+492,Australia,Boomerangian,Age,tsau2019,500.5,499.1,1.4
+493,Australia,Undillan,Age,tsau2019,502.98,500.5,2.48
+494,Australia,Floran,Age,tsau2019,504.5,502.98,1.52
+495,Australia,Templetonian,Age,tsau2019,507.96,504.5,3.46
+496,Australia,Ordian,Age,tsau2019,511.5,507.96,3.54
