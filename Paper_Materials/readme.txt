@@ -1,4 +1,4 @@
-| Number  | Name | Instruction
+| Number  | Name | Instruction |
 | ------------- | ------------- |------------- |
 |  template.txt |  | |
 | data.csv |  | |
