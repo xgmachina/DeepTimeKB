@@ -4,5 +4,4 @@
 | 2|data.csv | Section 3.1 and Figure 8  | data table of geologic time standards that has specific format ready to be transformed to RDF code|
 | 3|code.R | Section 3.1|R code used to transform geologic time standards to RDF code |
 | 4|result.docx| Section 3.2 | results of SPARQL query of three examples in Section 3.2|
-| 5|pbdb.R |  | |
-|  |  | |
+| 5|pbdb.R | Section 3.3 | example of our KG used in PBDB data query |
